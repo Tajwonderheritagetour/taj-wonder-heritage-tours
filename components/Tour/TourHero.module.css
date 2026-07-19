@@ -1,0 +1,142 @@
+.hero {
+  position: relative;
+  padding: 150px 0 90px;
+  background: linear-gradient(135deg, #08142d 0%, #12284d 100%);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.badge {
+  display: inline-block;
+  background: #d4af37;
+  color: #08142d;
+  padding: 10px 22px;
+  border-radius: 40px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.infoCard {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(12px);
+  color: white;
+  padding: 14px 22px;
+  border-radius: 14px;
+}
+
+.priceLabel {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.price {
+  color: white;
+  font-size: 56px;
+  font-weight: 800;
+  margin: 8px 0 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bookBtn {
+  background: #d4af37;
+  color: #08142d;
+  padding: 18px 38px;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.bookBtn:hover {
+  transform: translateY(-3px);
+}
+
+.whatsappBtn {
+  background: #25D366;
+  color: white;
+  padding: 18px 38px;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.whatsappBtn:hover {
+  transform: translateY(-3px);
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.imageBox {
+  position: relative;
+  height: 620px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 35px 70px rgba(0,0,0,.35);
+}
+
+.image {
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .imageBox {
+    height: 420px;
+  }
+
+  .title {
+    font-size: 44px;
+  }
+
+  .price {
+    font-size: 42px;
+  }
+}
