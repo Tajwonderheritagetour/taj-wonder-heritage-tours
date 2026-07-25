@@ -8,12 +8,13 @@ import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: {
-    default: "Taj Wonder Heritage Tours | Private India Tours",
-    template: "%s | Taj Wonder Heritage Tours",
-  },
+  default:
+    "Private India Tours | Taj Mahal Tours & Golden Triangle Tours | Taj Wonder Heritage Tours",
+  template: "%s | Taj Wonder Heritage Tours",
+},
 
   description:
-    "Experience India's rich heritage with private luxury tours. Taj Mahal Tours, Golden Triangle Tours, Rajasthan Tours, Same Day Agra Tours and customized holidays across India.",
+  "Book private India tours with Taj Wonder Heritage Tours. Explore the Taj Mahal, Golden Triangle, Rajasthan, Agra, Jaipur and Delhi with expert local guides, luxury transport and personalized itineraries.",
 
   keywords: [
     "Taj Mahal Tour",
@@ -56,7 +57,7 @@ metadataBase: new URL("https://tajwonderheritagetours.com"),
     description:
       "Luxury Private India Tours | Taj Mahal | Golden Triangle | Rajasthan | Same Day Tours",
 
-    url: "https://www.tajwonderheritagetour.com",
+url: "https://tajwonderheritagetours.com",
 
     siteName: "Taj Wonder Heritage Tours",
 
