@@ -6,26 +6,29 @@ export const sameDayTajMahal: Tour = {
   title: "Same Day Taj Mahal Tour",
 
   shortDescription:
-    "Discover the beauty of the Taj Mahal on a private same-day tour from Delhi with Agra Fort and comfortable transportation.",
+    "Experience the world-famous Taj Mahal on a private same-day tour from Delhi with Agra Fort, a professional chauffeur and a comfortable air-conditioned vehicle.",
 
   featured: true,
 
   seoTitle:
-    "Same Day Taj Mahal Tour from Delhi | Taj Wonder Heritage Tour",
+    "Same Day Taj Mahal Tour from Delhi | Private Agra Tour",
 
   seoDescription:
-    "Book a private Same Day Taj Mahal Tour from Delhi with Agra Fort, private chauffeur, flexible pickup and unforgettable memories.",
+    "Book a private Same Day Taj Mahal Tour from Delhi with Taj Wonder Heritage Tours. Visit the Taj Mahal and Agra Fort with a professional chauffeur, flexible pickup and personalized service.",
 
   canonical:
-    "https://www.tajwonderheritagetour.com/tours/same-day-taj-mahal-tour",
+    "https://www.tajwonderheritagetours.com/tours/same-day-taj-mahal-tour",
 
   keywords: [
     "Same Day Taj Mahal Tour",
+    "Same Day Agra Tour",
     "Taj Mahal Tour from Delhi",
+    "Private Taj Mahal Tour",
     "Private Agra Tour",
-    "Agra Day Trip",
-    "Taj Mahal Day Tour",
-    "Delhi to Agra Tour"
+    "Delhi to Agra Tour",
+    "Agra Sightseeing Tour",
+    "Luxury India Tours",
+    "Taj Wonder Heritage Tours"
   ],
 
   image: "/images/tours/same-day-taj-mahal.jpg",
@@ -43,15 +46,14 @@ export const sameDayTajMahal: Tour = {
 
   language: "English",
 
- tourType: "Same Day Tour",
+  tourType: "Same Day Tour",
+
   rating: 5,
 
   reviewCount: 41,
 
-  price: "₹5,500",
-
   overview:
-    "Experience one of the world's greatest monuments on a private same-day tour from Delhi. Visit the magnificent Taj Mahal, explore the historic Agra Fort and travel comfortably in a private air-conditioned vehicle with an experienced chauffeur.",
+    "Experience the world-famous Taj Mahal on a private same-day tour from Delhi. Travel comfortably in a private air-conditioned vehicle with a professional chauffeur, visit the magnificent Taj Mahal, explore the UNESCO-listed Agra Fort and enjoy a personalized journey designed for international travelers seeking comfort, flexibility and authentic experiences.",
 
   highlights: [
     "Private Air-conditioned Vehicle",
@@ -67,22 +69,22 @@ export const sameDayTajMahal: Tour = {
     {
       title: "Morning Pickup",
       description:
-        "Pickup from your hotel, airport or preferred location in Delhi, Noida or Gurugram and drive to Agra via Yamuna Expressway."
+        "Pickup from your hotel, airport or preferred location in Delhi, Noida or Gurugram. Travel to Agra via the Yamuna Expressway in a comfortable private air-conditioned vehicle."
     },
     {
-      title: "Visit Taj Mahal",
+      title: "Visit the Taj Mahal",
       description:
-        "Explore the magnificent Taj Mahal with plenty of time for sightseeing and photography."
+        "Explore the breathtaking Taj Mahal, one of the Seven Wonders of the World. Enjoy ample time for sightseeing, photography and learning about its fascinating history."
     },
     {
-      title: "Agra Fort",
+      title: "Explore Agra Fort",
       description:
-        "Visit the UNESCO World Heritage Site Agra Fort and discover its beautiful palaces and courtyards."
+        "Visit the magnificent UNESCO World Heritage-listed Agra Fort, home to beautiful palaces, royal courtyards and impressive Mughal architecture."
     },
     {
       title: "Return to Delhi",
       description:
-        "After sightseeing, drive back comfortably to Delhi and get dropped off at your preferred location."
+        "After a memorable day in Agra, relax on your drive back to Delhi and enjoy drop-off at your hotel, airport or preferred location."
     }
   ],
 
@@ -97,35 +99,38 @@ export const sameDayTajMahal: Tour = {
   ],
 
   excludes: [
-    "Monument Tickets",
+    "Monument Entrance Tickets",
     "Tour Guide",
-    "Meals",
+    "Lunch or Meals",
     "Personal Expenses",
-    "Tips"
+    "Tips & Gratuities"
   ],
 
   knowBefore: [
-    "Carry a valid Photo ID.",
+    "Carry a valid photo ID.",
     "The Taj Mahal remains closed every Friday.",
     "Wear comfortable walking shoes.",
-    "Large bags are not permitted inside the Taj Mahal."
+    "Large bags and restricted items are not permitted inside the Taj Mahal.",
+    "Pickup time can be customized according to your preference."
   ],
+
+price: "",
 
   faqs: [
     {
       question: "Is this a private tour?",
       answer:
-        "Yes, this is a completely private tour with your own vehicle and chauffeur."
+        "Yes. This is a completely private tour with your own vehicle and professional chauffeur."
     },
     {
-      question: "Can I customize pickup time?",
+      question: "Can I customize the pickup time?",
       answer:
-        "Yes, pickup time can be customized according to your preference."
+        "Yes. We offer flexible pickup times based on your travel plans."
     },
     {
-      question: "Do you provide airport pickup?",
+      question: "Do you provide airport pickup and drop-off?",
       answer:
-        "Yes, airport pickup and drop-off are available."
+        "Yes. Airport pickup and drop-off are available in Delhi, Noida and Gurugram."
     }
   ]
 };

@@ -14,17 +14,12 @@ import TourKnowBefore from "@/components/Tour/TourKnowBefore";
 import TourFAQ from "@/components/Tour/TourFAQ";
 import PremiumBookingSidebar from "@/components/Tour/PremiumBookingSidebar";
 import TourInquiryForm from "@/components/Tour/TourInquiryForm";
+import Script from "next/script";
 
 interface PageProps {
   params: Promise<{
     slug: string;
   }>;
-}
-
-export async function generateStaticParams() {
-  return Object.values(tours).map((tour) => ({
-    slug: tour.slug,
-  }));
 }
 
 export async function generateMetadata({
@@ -54,7 +49,6 @@ export async function generateMetadata({
       title: tour.seoTitle,
       description: tour.seoDescription,
       url: tour.canonical,
-
       images: [
         {
           url: tour.image,
@@ -62,6 +56,13 @@ export async function generateMetadata({
           height: 630,
         },
       ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: tour.seoTitle,
+      description: tour.seoDescription,
+      images: [tour.image],
     },
   };
 }
@@ -81,6 +82,25 @@ export default async function TourPage({
 
   return (
     <>
+  <Script
+    id="faq-schema"
+    type="application/ld+json"
+    strategy="afterInteractive"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: tour.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      }),
+    }}
+  />
       <Navbar />
 
       <TourHero
