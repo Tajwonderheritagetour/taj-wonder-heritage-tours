@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
   publisher: "Taj Wonder Heritage Tours",
 
-  metadataBase: new URL("https://www.tajwonderheritagetour.com"),
+metadataBase: new URL("https://tajwonderheritagetours.com"),
 
   alternates: {
     canonical: "/",
