@@ -110,6 +110,50 @@ export default function RootLayout({
 
         <Footer />
       </body>
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+
+      name: "Taj Wonder Heritage Tours",
+
+      url: "https://www.tajwonderheritagetours.com",
+
+      logo: "https://www.tajwonderheritagetours.com/logo.png",
+
+      image: "https://www.tajwonderheritagetours.com/images/hero/taj-mahal-hero.jpg",
+
+      description:
+        "Luxury private India tours including Taj Mahal Tours, Golden Triangle Tours, Rajasthan Tours and customized holidays across India.",
+
+      telephone: "+91-7830716981",
+
+      email: "info@tajwonderheritagetours.com",
+
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Building No. 9, Deepika Vihar, Barauli Ahir",
+        addressLocality: "Agra",
+        addressRegion: "Uttar Pradesh",
+        postalCode: "282001",
+        addressCountry: "IN",
+      },
+
+      areaServed: "India",
+
+      priceRange: "$$",
+
+      sameAs: [
+        "https://www.facebook.com/",
+        "https://www.instagram.com/",
+        "https://www.tripadvisor.com/",
+        "https://www.viator.com/",
+      ],
+    }),
+  }}
+/>
     </html>
   );
 }

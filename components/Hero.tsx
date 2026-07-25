@@ -15,7 +15,7 @@ export default function Hero() {
         alignItems: "center",
       }}
     >
-      {/* Overlay */}
+      {/* Dark Overlay */}
       <div
         style={{
           position: "absolute",
@@ -24,7 +24,7 @@ export default function Hero() {
         }}
       />
 
-      {/* Content */}
+      {/* Hero Content */}
       <div
         style={{
           position: "relative",
@@ -35,41 +35,51 @@ export default function Hero() {
           padding: "0 20px",
         }}
       >
-        <div style={{ maxWidth: "700px" }}>
+        <div
+          style={{
+            maxWidth: "760px",
+          }}
+        >
           <span
             style={{
               color: "#d4af37",
               fontWeight: 700,
               letterSpacing: "4px",
               textTransform: "uppercase",
+              fontSize: "14px",
             }}
           >
-            Luxury Private Tours in India
+            Luxury Private India Tours
           </span>
 
-          <h1
-            style={{
-              fontSize: "68px",
-              lineHeight: "1.1",
-              color: "#fff",
-              marginTop: "20px",
-              marginBottom: "30px",
-            }}
-          >
-            Discover Incredible India with Private Luxury Tours
+         <h1
+  style={{
+    fontSize: "56px",
+    lineHeight: "1.2",
+    color: "#fff",
+    marginTop: "20px",
+    marginBottom: "24px",
+    fontWeight: 700,
+    maxWidth: "700px",
+  }}
+>
+            Private India Tours | Taj Mahal, Golden Triangle & Rajasthan Tours
           </h1>
 
           <p
-            style={{
-              color: "#e4e4e4",
-              fontSize: "20px",
-              lineHeight: "36px",
-              marginBottom: "40px",
-            }}
-          >
-            Explore the Taj Mahal, Golden Triangle, Rajasthan and India's
-            finest destinations with professional chauffeurs, expert guides
-            and unforgettable private experiences.
+  style={{
+    color: "#e5e5e5",
+    fontSize: "18px",
+    lineHeight: "32px",
+    marginBottom: "35px",
+    maxWidth: "680px",
+  }}
+>
+            Experience India's most iconic destinations with fully private
+            luxury tours. Explore the Taj Mahal, Agra, Delhi, Jaipur,
+            Rajasthan and the famous Golden Triangle with licensed local
+            guides, professional chauffeurs, luxury vehicles and customized
+            itineraries designed just for you.
           </p>
 
           <div
@@ -85,9 +95,11 @@ export default function Hero() {
                 background: "#d4af37",
                 color: "#08142d",
                 textDecoration: "none",
-                padding: "18px 34px",
+                padding: "18px 36px",
                 borderRadius: "50px",
                 fontWeight: 700,
+                fontSize: "17px",
+                transition: ".3s",
               }}
             >
               Explore Tours
@@ -96,16 +108,34 @@ export default function Hero() {
             <Link
               href="/contact"
               style={{
-                border: "2px solid white",
+                border: "2px solid #fff",
                 color: "#fff",
                 textDecoration: "none",
-                padding: "18px 34px",
+                padding: "18px 36px",
                 borderRadius: "50px",
                 fontWeight: 700,
+                fontSize: "17px",
               }}
             >
-              Contact Us
+              Get Free Quote
             </Link>
+          </div>
+
+          {/* Trust Line */}
+          <div
+            style={{
+              marginTop: "35px",
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "18px",
+              color: "#d9d9d9",
+              fontSize: "16px",
+            }}
+          >
+            <span>⭐ 5-Star Guest Experience</span>
+            <span>🚘 100% Private Tours</span>
+            <span>🏛 Licensed Local Guides</span>
+            <span>📞 24/7 WhatsApp Support</span>
           </div>
         </div>
       </div>

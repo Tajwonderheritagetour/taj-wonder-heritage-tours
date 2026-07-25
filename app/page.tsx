@@ -6,7 +6,7 @@ import Tours from "@/components/Tours";
 import Destinations from "@/components/Destinations";
 import Fleet from "@/components/Fleet";
 import FAQ from "@/components/FAQ";
-
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -23,6 +23,80 @@ export default function Home() {
 
         {/* Trust Bar */}
         <TrustBar />
+        
+<section
+  style={{
+    padding: "90px 20px",
+    background: "#fff",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1100px",
+      margin: "0 auto",
+      textAlign: "center",
+    }}
+  >
+    <span
+      style={{
+        color: "#d4af37",
+        letterSpacing: "3px",
+        fontWeight: 700,
+        textTransform: "uppercase",
+      }}
+    >
+      Private India Tours
+    </span>
+
+    <h2
+      style={{
+        fontSize: "46px",
+        color: "#08142d",
+        marginTop: "20px",
+        marginBottom: "25px",
+      }}
+    >
+      Explore India with Trusted Local Experts
+    </h2>
+
+    <p
+      style={{
+        maxWidth: "900px",
+        margin: "0 auto",
+        fontSize: "19px",
+        color: "#555",
+        lineHeight: "34px",
+      }}
+    >
+      Taj Wonder Heritage Tours offers premium private tours across India,
+      including the Taj Mahal, Agra, Delhi, Jaipur, Rajasthan and the famous
+      <a
+  href="/tours/golden-triangle-tour"
+  style={{
+    color: "#d4af37",
+    fontWeight: 600,
+    textDecoration: "none",
+  }}
+>
+  Golden Triangle Tour
+</a>
+<a
+  href="/tours/same-day-taj-mahal-tour"
+  style={{
+    color: "#d4af37",
+    fontWeight: 600,
+    textDecoration: "none",
+  }}
+>
+  Same Day Taj Mahal Tour
+</a>
+
+      luxury Golden Triangle journey, or a customized India holiday, our
+      experienced chauffeurs and local guides ensure a comfortable, authentic
+      and unforgettable travel experience.
+    </p>
+  </div>
+</section>
 
         {/* Statistics */}
       
