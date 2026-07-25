@@ -1,4 +1,7 @@
-export const goldenTriangle5DayTour = {
+import { Tour } from "./types";
+
+export const goldenTriangle5DayTour: Tour = {
+  
   slug: "golden-triangle-tour",
 
   title: "5-Day Golden Triangle Tour",
@@ -44,7 +47,7 @@ gallery: [
 
 language: "English",
 
-tourType: "Private Tour",
+tourType: "Heritage Tour",
 
 rating: 4.9,
 

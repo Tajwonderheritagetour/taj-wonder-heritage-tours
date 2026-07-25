@@ -1,74 +1,88 @@
-import Link from "next/link";
+"use client";
+
+import Image from "next/image";
 
 export default function AboutHero() {
   return (
     <section
       style={{
-        background:
-          "linear-gradient(rgba(8,20,45,.82), rgba(8,20,45,.82)), url('/images/about/founder.jpg') center/cover",
-        color: "white",
-        padding: "170px 20px 140px",
-        textAlign: "center",
+        position: "relative",
+        height: "85vh",
+        overflow: "hidden",
       }}
     >
+      <Image
+        src="/hero/taj-mahal.jpg"
+        alt="Taj Mahal"
+        fill
+        priority
+        style={{
+          objectFit: "cover",
+        }}
+      />
+
       <div
         style={{
-          maxWidth: "900px",
+          position: "absolute",
+          inset: 0,
+          background:
+            "linear-gradient(rgba(8,20,45,.72), rgba(8,20,45,.72))",
+        }}
+      />
+
+      <div
+        style={{
+          position: "relative",
+          zIndex: 2,
+          maxWidth: "1200px",
           margin: "0 auto",
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          padding: "0 20px",
+          color: "#fff",
         }}
       >
         <span
           style={{
             color: "#d4af37",
+            fontSize: "18px",
             letterSpacing: "3px",
-            fontWeight: 700,
+            marginBottom: "20px",
             textTransform: "uppercase",
           }}
         >
-          About Taj Wonder Heritage Tours
+          Taj Wonder Heritage Tours
         </span>
 
         <h1
           style={{
-            fontSize: "60px",
-            marginTop: "25px",
-            marginBottom: "25px",
-            lineHeight: 1.2,
+            fontSize: "68px",
+            lineHeight: "78px",
+            fontWeight: 800,
+            maxWidth: "750px",
+            marginBottom: "30px",
           }}
         >
-          Creating Unforgettable Journeys Across Incredible India
+          Discover India Through
+          <br />
+          Authentic Heritage Experiences
         </h1>
 
         <p
           style={{
-            fontSize: "20px",
-            lineHeight: "34px",
-            color: "#ddd",
-            maxWidth: "760px",
-            margin: "0 auto 40px",
+            maxWidth: "700px",
+            fontSize: "22px",
+            lineHeight: "38px",
+            color: "#f2f2f2",
           }}
         >
-          We believe every traveler deserves a personal, authentic and
-          unforgettable experience. From the iconic Taj Mahal to the royal
-          palaces of Rajasthan, we help visitors discover the real beauty of
-          India with comfort, safety and local expertise.
+          We create unforgettable private journeys across India with
+          luxury transportation, professional local guides, and
+          personalized itineraries designed especially for international
+          travellers.
         </p>
-
-        <Link
-          href="/contact"
-          style={{
-            display: "inline-block",
-            background: "#d4af37",
-            color: "#08142d",
-            padding: "18px 40px",
-            borderRadius: "40px",
-            fontWeight: "bold",
-            textDecoration: "none",
-            fontSize: "18px",
-          }}
-        >
-          Plan Your Journey
-        </Link>
       </div>
     </section>
   );

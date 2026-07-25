@@ -43,8 +43,7 @@ export const sameDayTajMahal: Tour = {
 
   language: "English",
 
-  tourType: "Private Tour",
-
+ tourType: "Same Day Tour",
   rating: 5,
 
   reviewCount: 41,

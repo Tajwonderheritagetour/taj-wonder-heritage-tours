@@ -43,7 +43,7 @@ export const delhiSightseeing: Tour = {
 
   language: "English",
 
-  tourType: "Private Tour",
+  tourType: "City Tour",
 
   rating: 5,
 

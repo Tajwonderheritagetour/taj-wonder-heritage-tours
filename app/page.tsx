@@ -28,9 +28,8 @@ export default function Home() {
       
 
         {/* Featured Tours */}
-        <Tours />
-
-        {/* Popular Destinations */}
+       
+        
         <Destinations />
 
         {/* Vehicle Fleet */}

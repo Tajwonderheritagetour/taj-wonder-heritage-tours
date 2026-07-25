@@ -1,55 +1,48 @@
 export default function CompanyStats() {
   const stats = [
     {
-      number: "500+",
-      title: "Happy Travelers",
-    },
-    {
-      number: "22+",
-      title: "Five-Star Reviews",
-    },
-    {
-      number: "8+",
+      number: "10+",
       title: "Years Experience",
+    },
+    {
+      number: "5000+",
+      title: "Happy Guests",
     },
     {
       number: "100%",
       title: "Private Tours",
+    },
+    {
+      number: "24/7",
+      title: "Customer Support",
     },
   ];
 
   return (
     <section
       style={{
+        background: "#08142d",
         padding: "90px 20px",
-        background: "#f8f8f8",
+        marginTop: "80px",
       }}
     >
       <div
         style={{
           maxWidth: "1200px",
-          margin: "0 auto",
+          margin: "auto",
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
-          gap: "30px",
+          gap: "40px",
+          textAlign: "center",
         }}
       >
-        {stats.map((item) => (
-          <div
-            key={item.title}
-            style={{
-              background: "#fff",
-              padding: "40px",
-              textAlign: "center",
-              borderRadius: "16px",
-              boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-            }}
-          >
+        {stats.map((item, index) => (
+          <div key={index}>
             <h2
               style={{
-                fontSize: "48px",
                 color: "#d4af37",
-                marginBottom: "10px",
+                fontSize: "55px",
+                marginBottom: "15px",
               }}
             >
               {item.number}
@@ -57,9 +50,8 @@ export default function CompanyStats() {
 
             <p
               style={{
-                fontSize: "18px",
-                color: "#08142d",
-                fontWeight: "600",
+                color: "#fff",
+                fontSize: "20px",
               }}
             >
               {item.title}

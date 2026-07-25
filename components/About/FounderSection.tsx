@@ -22,7 +22,7 @@ export default function FounderSection() {
 
         <div>
           <Image
-           src="/images/about/guest-1.jpg"
+            src="/images/about/guest-1.jpg"
             alt="Dev Nagar with Guests"
             width={600}
             height={750}

@@ -43,8 +43,7 @@ export const tajMahalSunrise: Tour = {
 
   language: "English",
 
-  tourType: "Private Tour",
-
+ tourType: "Sunrise Tour",
   rating: 5,
 
   reviewCount: 37,

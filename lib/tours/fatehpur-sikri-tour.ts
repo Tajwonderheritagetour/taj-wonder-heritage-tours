@@ -43,8 +43,7 @@ export const fatehpurSikriTour: Tour = {
 
   language: "English",
 
-  tourType: "Private Tour",
-
+  tourType: "Heritage Tour",
   rating: 5,
 
   reviewCount: 18,

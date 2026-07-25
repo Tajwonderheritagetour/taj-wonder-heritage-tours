@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 export default function GuestGallery() {
- const images = [
-  "/images/about/guest-1.jpg",
-  "/images/about/guest-2.jpg",
-  "/images/about/guest-3.jpg",
-];
+  const images = [
+    "/images/about/guest-1.jpg",
+    "/images/about/guest-2.jpg",
+    "/images/about/guest-3.jpg",
+  ];
 
   return (
     <section
