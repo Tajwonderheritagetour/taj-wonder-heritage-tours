@@ -6,6 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BackToTop from "@/components/BackToTop";
+import OrganizationSchema from "@/components/seo/OrganizationSchema";
 
 export const metadata: Metadata = {
   title: {
@@ -103,7 +104,7 @@ export default function RootLayout({
       <body>
 
         <GoogleAnalytics />
-        
+
         <Navbar />
 
         <main>{children}</main>
