@@ -103,18 +103,21 @@ export default function RootLayout({
     <html lang="en">
       <body>
 
-        <GoogleAnalytics />
+  <GoogleAnalytics />
 
-        <Navbar />
+  <OrganizationSchema />
 
-        <main>{children}</main>
+  <Navbar />
 
-        <BackToTop />
+  <main>{children}</main>
 
-        <WhatsAppButton />
+  <BackToTop />
 
-        <Footer />
-      </body>
+  <WhatsAppButton />
+
+  <Footer />
+
+</body>
     </html>
   );
 }
