@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata = {
   title: "Jaipur Tours | Visit the Pink City | Taj Wonder Heritage Tours",
@@ -10,6 +11,13 @@ export const metadata = {
 export default function JaipurPage() {
   return (
     <main>
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Destinations", href: "/destinations" },
+    { label: "Jaipur" },
+  ]}
+/>
 
       {/* Hero */}
 
@@ -61,21 +69,24 @@ export default function JaipurPage() {
             Welcome to Jaipur
           </span>
 
-          <h1
-            style={{
-              fontSize: "60px",
-              margin: "20px 0",
-            }}
-          >
+       <h1
+  style={{
+    fontSize: "60px",
+    margin: "20px 0",
+    color: "#ffffff",
+    textShadow: "0 4px 18px rgba(0,0,0,.6)",
+  }}
+>
             Explore the Pink City of India
           </h1>
-
-          <p
-            style={{
-              fontSize: "20px",
-              lineHeight: "34px",
-            }}
-          >
+<p
+  style={{
+    fontSize: "20px",
+    lineHeight: "34px",
+    color: "#f2f2f2",
+    textShadow: "0 2px 10px rgba(0,0,0,.5)",
+  }}
+>
             Discover magnificent forts, royal palaces, colorful markets and
             Rajasthan's rich heritage with private guided tours.
           </p>

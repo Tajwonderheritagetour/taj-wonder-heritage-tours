@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata = {
   title: "Delhi Tours | Explore India's Historic Capital",
@@ -10,6 +11,13 @@ export const metadata = {
 export default function DelhiPage() {
   return (
     <main>
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Destinations", href: "/destinations" },
+    { label: "Delhi" },
+  ]}
+/>
 
       {/* Hero */}
 
@@ -62,20 +70,24 @@ export default function DelhiPage() {
           </span>
 
           <h1
-            style={{
-              fontSize: "60px",
-              margin: "20px 0",
-            }}
-          >
+  style={{
+    fontSize: "60px",
+    margin: "20px 0",
+    color: "#ffffff",
+    textShadow: "0 4px 18px rgba(0,0,0,.6)",
+  }}
+>
             Discover India's Historic Capital
           </h1>
 
           <p
-            style={{
-              fontSize: "20px",
-              lineHeight: "34px",
-            }}
-          >
+    style={{
+    fontSize: "20px",
+    lineHeight: "34px",
+    color: "#f2f2f2",
+    textShadow: "0 2px 10px rgba(0,0,0,.5)",
+  }}
+>
             Explore the perfect blend of ancient history and modern India with
             private sightseeing tours and experienced local guides.
           </p>

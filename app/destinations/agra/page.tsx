@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata = {
   title: "Agra Tours | Visit the Taj Mahal & Agra Fort",
@@ -10,6 +11,13 @@ export const metadata = {
 export default function AgraPage() {
   return (
     <main>
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Destinations", href: "/destinations" },
+    { label: "Agra" },
+  ]}
+/>
 
       {/* Hero */}
 
@@ -63,14 +71,15 @@ export default function AgraPage() {
           </span>
 
           <h1
-            style={{
-              fontSize: "60px",
-              marginTop: "20px",
-              marginBottom: "25px",
-            }}
-          >
-            Explore the City of the Taj Mahal
-          </h1>
+  style={{
+    fontSize: "60px",
+    margin: "20px 0",
+    color: "#ffffff",
+    textShadow: "0 4px 18px rgba(0,0,0,.6)",
+  }}
+>
+  Explore the City of the Taj Mahal
+</h1>
 
           <p
             style={{
@@ -350,14 +359,14 @@ export default function AgraPage() {
             Ready to Visit Agra?
           </h2>
 
-          <p
-            style={{
-              color: "#ddd",
-              fontSize: "20px",
-              lineHeight: "34px",
-              marginBottom: "45px",
-            }}
-          >
+         <p
+  style={{
+    fontSize: "20px",
+    lineHeight: "34px",
+    color: "#f2f2f2",
+    textShadow: "0 2px 10px rgba(0,0,0,.5)",
+  }}
+>
             Let Taj Wonder Heritage Tours create your perfect Agra experience
             with private transportation, knowledgeable local guides and
             personalized service.

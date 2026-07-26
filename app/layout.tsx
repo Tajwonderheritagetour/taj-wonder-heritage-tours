@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -100,6 +101,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+
+        <GoogleAnalytics />
+        
         <Navbar />
 
         <main>{children}</main>

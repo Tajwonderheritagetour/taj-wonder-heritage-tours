@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata = {
   title: "Ranthambore Tiger Safari | Wildlife Tours | Taj Wonder Heritage Tours",
@@ -10,6 +11,13 @@ export const metadata = {
 export default function RanthamborePage() {
   return (
     <main>
+<Breadcrumb
+  items={[
+    { label: "Home", href: "/" },
+    { label: "Destinations", href: "/destinations" },
+    { label: "Ranthambore" },
+  ]}
+/>
 
       {/* Hero */}
 
@@ -59,21 +67,25 @@ export default function RanthamborePage() {
             Wildlife Adventure
           </span>
 
-          <h1
-            style={{
-              fontSize: "60px",
-              margin: "20px 0",
-            }}
-          >
+         <h1
+  style={{
+    fontSize: "60px",
+    margin: "20px 0",
+    color: "#ffffff",
+    textShadow: "0 4px 18px rgba(0,0,0,.6)",
+  }}
+>
             Ranthambore National Park
           </h1>
 
-          <p
-            style={{
-              fontSize: "20px",
-              lineHeight: "34px",
-            }}
-          >
+         <p
+  style={{
+    fontSize: "20px",
+    lineHeight: "34px",
+    color: "#f2f2f2",
+    textShadow: "0 2px 10px rgba(0,0,0,.5)",
+  }}
+>
             Discover one of India's best tiger reserves with exciting jungle
             safaris, stunning landscapes and unforgettable wildlife encounters.
           </p>
