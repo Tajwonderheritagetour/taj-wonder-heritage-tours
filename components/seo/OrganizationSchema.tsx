@@ -4,7 +4,7 @@ export default function OrganizationSchema() {
     "@type": "TravelAgency",
     name: "Taj Wonder Heritage Tours",
     url: "https://www.tajwonderheritagetours.com",
-    logo: "https://www.tajwonderheritagetours.com/favicon.png",
+   logo: "https://www.tajwonderheritagetours.com/images/logo.png",
     image: "https://www.tajwonderheritagetours.com/images/og-image.jpg",
     description:
       "Taj Wonder Heritage Tours is a private India tour operator offering Taj Mahal tours, Golden Triangle tours, Rajasthan tours and customized travel experiences with local experts.",
@@ -27,11 +27,10 @@ export default function OrganizationSchema() {
 
     priceRange: "$$",
 
-    sameAs: [
-      "https://www.facebook.com/",
-      "https://www.instagram.com/",
-      "https://www.tripadvisor.com/",
-    ],
+  sameAs: [
+  "https://www.tripadvisor.com/YourProfile",
+  "https://www.viator.com/YourProfile"
+]
   };
 
   return (
