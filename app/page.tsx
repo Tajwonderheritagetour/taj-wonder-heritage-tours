@@ -7,6 +7,8 @@ import Destinations from "@/components/Destinations";
 import Fleet from "@/components/Fleet";
 import FAQ from "@/components/FAQ";
 import Link from "next/link";
+import LatestBlogs from "@/components/Home/LatestBlogs";
+import Testimonials from "@/components/Home/Testimonials";
 
 export default function Home() {
   return (
@@ -104,13 +106,20 @@ export default function Home() {
         {/* Featured Tours */}
        
         
-        <Destinations />
+       <Destinations />
 
-        {/* Vehicle Fleet */}
-        <Fleet />
+{/* Vehicle Fleet */}
+<Fleet />
 
-        {/* Why Choose Us */}
-        <section
+{/* Latest Blogs */}
+<LatestBlogs />
+
+{/* Testimonials */}
+<Testimonials />
+
+{/* Why Choose Us */}
+<section
+
           style={{
             padding: "100px 20px",
             background: "#08142d",

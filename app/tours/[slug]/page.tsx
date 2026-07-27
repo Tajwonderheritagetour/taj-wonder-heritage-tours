@@ -15,6 +15,7 @@ import TourFAQ from "@/components/Tour/TourFAQ";
 import PremiumBookingSidebar from "@/components/Tour/PremiumBookingSidebar";
 import TourInquiryForm from "@/components/Tour/TourInquiryForm";
 import Script from "next/script";
+import TourSchema from "@/components/seo/TourSchema";
 
 interface PageProps {
   params: Promise<{
