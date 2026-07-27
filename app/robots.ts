@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.tajwonderheritagetour.com/sitemap.xml",
+    sitemap: "https://www.tajwonderheritagetours.com/sitemap.xml",
   };
 }
