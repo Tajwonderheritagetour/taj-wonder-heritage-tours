@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
+
 export default function Footer() {
   return (
     <footer
@@ -182,7 +184,7 @@ export default function Footer() {
               wordBreak: "break-word",
             }}
           >
-            ✉ info@tajwonderheritagetour.com
+            ✉ info@tajwonderheritagetours.com
           </p>
 
           <p
@@ -239,7 +241,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="/terms"
+             href="/terms-and-conditions"
               style={{
                 color: "#bdbdbd",
                 textDecoration: "none",
