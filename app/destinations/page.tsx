@@ -11,6 +11,7 @@ const destinations = [
     tours: "15+ Tours",
     link: "/tours",
   },
+
   {
     name: "Delhi",
     image: "/images/destinations/delhi.jpg",
@@ -19,6 +20,7 @@ const destinations = [
     tours: "12+ Tours",
     link: "/tours",
   },
+
   {
     name: "Jaipur",
     image: "/images/destinations/jaipur.jpg",
@@ -27,6 +29,7 @@ const destinations = [
     tours: "18+ Tours",
     link: "/tours",
   },
+
   {
     name: "Ranthambore",
     image: "/images/destinations/ranthambore.jpg",
@@ -35,6 +38,7 @@ const destinations = [
     tours: "5+ Tours",
     link: "/tours",
   },
+
   {
     name: "Fatehpur Sikri",
     image: "/images/destinations/fatehpur-sikri.jpg",
@@ -43,6 +47,7 @@ const destinations = [
     tours: "6+ Tours",
     link: "/tours",
   },
+
   {
     name: "Rajasthan",
     image: "/images/destinations/rajasthan.jpg",
@@ -51,8 +56,63 @@ const destinations = [
     tours: "15+ Tours",
     link: "/tours",
   },
-];
 
+  // NEW DESTINATIONS
+
+  {
+    name: "Orchha",
+    image: "/images/destinations/orchha.jpg",
+    description:
+      "Discover magnificent Bundela palaces, riverside cenotaphs and ancient temples in one of Madhya Pradesh's hidden heritage gems.",
+    tours: "3+ Tours",
+    link: "/tours/orchha-khajuraho-varanasi-tour",
+  },
+
+  {
+    name: "Khajuraho",
+    image: "/images/destinations/khajuraho.jpg",
+    description:
+      "Explore the UNESCO World Heritage temples renowned worldwide for their breathtaking architecture and intricate stone carvings.",
+    tours: "3+ Tours",
+    link: "/tours/orchha-khajuraho-varanasi-tour",
+  },
+
+  {
+    name: "Bandhavgarh",
+    image: "/images/destinations/bandhavgarh.jpg",
+    description:
+      "One of India's finest tiger reserves offering thrilling jeep safaris and exceptional wildlife photography.",
+    tours: "2+ Tours",
+    link: "/tours/central-india-heritage-tiger-safari",
+  },
+
+  {
+    name: "Kanha National Park",
+    image: "/images/destinations/kanha.jpg",
+    description:
+      "Experience lush forests, rich wildlife and one of India's most famous tiger safari destinations.",
+    tours: "2+ Tours",
+    link: "/tours/central-india-heritage-tiger-safari",
+  },
+
+  {
+    name: "Varanasi",
+    image: "/images/destinations/varanasi.jpg",
+    description:
+      "India's oldest living city, famous for sacred ghats, Ganga Aarti and unforgettable spiritual experiences.",
+    tours: "5+ Tours",
+    link: "/tours/golden-triangle-varanasi-tour",
+  },
+
+  {
+    name: "Rishikesh",
+    image: "/images/destinations/rishikesh.jpg",
+    description:
+      "The Yoga Capital of the World, offering peaceful ghats, Himalayan scenery, yoga and spiritual retreats.",
+    tours: "5+ Tours",
+    link: "/tours/golden-triangle-rishikesh-tour",
+  },
+];
 export default function DestinationsPage() {
   return (
     <>
