@@ -5,9 +5,14 @@ import Link from "next/link";
 import { tours } from "@/lib/tours";
 
 export default function Tours() {
-  const featuredTours = Object.values(tours).filter(
-    (tour) => tour.featured
-  );
+  const homepageTours = [
+  tours.sameDayTajMahal,
+  tours.tajMahalSunrise,
+  tours.agraOvernight,
+  tours.goldenTriangle3,
+  tours.goldenTriangle5DayTour,
+  tours.goldenTriangleRanthambore,
+];
 
   return (
     <section
@@ -81,7 +86,7 @@ export default function Tours() {
             gap: "40px",
           }}
         >
-          {featuredTours.map((tour) => (
+         {homepageTours.map((tour) => (
             <div
               key={tour.slug}
               style={{

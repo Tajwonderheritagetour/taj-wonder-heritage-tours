@@ -105,14 +105,17 @@ export default function Home() {
 
         {/* Featured Tours */}
        
-        
+        <Tours />
+
        <Destinations />
 
-{/* Vehicle Fleet */}
-<Fleet />
+    {/* Latest Blogs */}
+      <LatestBlogs />
+      
+      {/* Vehicle Fleet */}
+        
+        <Fleet />
 
-{/* Latest Blogs */}
-<LatestBlogs />
 
 {/* Testimonials */}
 <Testimonials />
