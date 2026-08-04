@@ -1,8 +1,7 @@
 import { Tour } from "./types";
 
 export const goldenTriangle5DayTour: Tour = {
-  
-  slug: "golden-triangle-tour",
+  slug: "golden-triangle-5-day-tour",
 
   title: "5-Day Golden Triangle Tour",
 
@@ -13,7 +12,7 @@ export const goldenTriangle5DayTour: Tour = {
     "Explore India's famous Golden Triangle on a 5-day private tour covering Delhi, Agra and Jaipur with luxury transportation, professional local guides and unforgettable cultural experiences.",
 
   canonical:
-    "https://www.tajwonderheritagetour.com/tours/golden-triangle-tour",
+    "https://www.tajwonderheritagetour.com/tours/golden-triangle-5-day-tour",
 
   keywords: [
     "Golden Triangle Tour",
@@ -24,7 +23,7 @@ export const goldenTriangle5DayTour: Tour = {
     "Golden Triangle India",
     "India Heritage Tour",
   ],
-
+  
   image: "/images/tours/golden-triangle.jpg",
 
   duration: "5 Days",

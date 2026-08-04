@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { tours } from "@/lib/tours";
 
 import Navbar from "@/components/layout/Navbar";
-
+import RelatedTours from "@/components/Tour/RelatedTours";
 import TourHero from "@/components/Tour/TourHero";
 import TourOverview from "@/components/Tour/TourOverview";
 import TourHighlights from "@/components/Tour/TourHighlights";
@@ -145,7 +145,8 @@ export default async function TourPage({
             {/* Inquiry Form */}
 
             <TourInquiryForm />
-
+           <RelatedTours currentSlug={tour.slug} />
+           
           </div>
 
           {/* RIGHT SIDEBAR */}

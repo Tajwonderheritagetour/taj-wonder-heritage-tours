@@ -111,6 +111,27 @@ export default function BestTimeToVisitTajMahalPage() {
           }}
         >
           Published: July 2026 • Taj Wonder Heritage Tours
+          <nav
+  style={{
+    background: "#f8f9fb",
+    padding: "25px",
+    borderRadius: "12px",
+    marginBottom: "40px",
+  }}
+>
+  <h2 style={{ marginBottom: "15px", color: "#08142d" }}>
+    Table of Contents
+  </h2>
+
+  <ul style={{ lineHeight: "32px" }}>
+    <li><a href="#best-season">Best Season to Visit</a></li>
+    <li><a href="#sunrise-sunset">Sunrise vs Sunset</a></li>
+    <li><a href="#month-guide">Month-by-Month Guide</a></li>
+    <li><a href="#photography">Photography Tips</a></li>
+    <li><a href="#crowds">Crowd Tips</a></li>
+    <li><a href="#faq">Frequently Asked Questions</a></li>
+  </ul>
+</nav>
         </p>
 
         <p
@@ -366,176 +387,157 @@ export default function BestTimeToVisitTajMahalPage() {
           fewer tourists.
         </p>
 
-        <h2
-          style={{
-            marginTop: "60px",
-            fontSize: "40px",
-            color: "#08142d",
-          }}
-        >
-          Photography Tips
-        </h2>
+        <section id="photography-tips">
+  <h2
+    style={{
+      marginTop: "70px",
+      fontSize: "42px",
+      color: "#08142d",
+    }}
+  >
+    Taj Mahal Photography Tips
+  </h2>
 
-        <ul
-          style={{
-            lineHeight: "34px",
-            fontSize: "18px",
-            color: "#444",
-            marginTop: "25px",
-          }}
-        >
-          <li>📸 Arrive before sunrise for the softest light.</li>
-          <li>📸 Use the reflecting pool for iconic mirror shots.</li>
-          <li>📸 Visit on weekdays to avoid heavy crowds.</li>
-          <li>📸 Wear light-colored clothing for portraits.</li>
-          <li>📸 Keep your camera lens clean to capture marble details.</li>
-        </ul>
+  <ul
+    style={{
+      lineHeight: "36px",
+      fontSize: "18px",
+      color: "#444",
+      marginTop: "25px",
+    }}
+  >
+    <li>📸 Arrive before sunrise for soft golden lighting.</li>
+    <li>📸 Capture reflections from the central water channel.</li>
+    <li>📸 Visit on weekdays for fewer tourists.</li>
+    <li>📸 Wear light-colored clothing for portraits.</li>
+    <li>📸 Carry a microfiber cloth to keep your lens clean.</li>
+    <li>📸 Use portrait mode for beautiful marble background shots.</li>
+  </ul>
+</section>
 
-        <h2
-          style={{
-            marginTop: "60px",
-            fontSize: "40px",
-            color: "#08142d",
-          }}
-        >
-          Crowd Tips
-        </h2>
+<section id="crowd-tips">
+  <h2
+    style={{
+      marginTop: "70px",
+      fontSize: "42px",
+      color: "#08142d",
+    }}
+  >
+    Crowd & Entry Tips
+  </h2>
 
-        <p
-          style={{
-            fontSize: "19px",
-            lineHeight: "34px",
-            color: "#444",
-            marginTop: "25px",
-          }}
-        >
-          Fridays are closed for tourists because the Taj Mahal remains open
-          only for prayers. Weekends, public holidays and long weekends are
-          usually much busier than weekdays.
-        </p>
-                <h2
-          style={{
-            marginTop: "60px",
-            fontSize: "40px",
-            color: "#08142d",
-          }}
-        >
-          Frequently Asked Questions
-        </h2>
+  <p
+    style={{
+      lineHeight: "34px",
+      color: "#444",
+      marginTop: "25px",
+    }}
+  >
+    The Taj Mahal remains closed every Friday for regular visitors. Weekdays
+    generally offer a more peaceful experience than weekends and public
+    holidays. Purchasing tickets online in advance can also save valuable
+    time.
+  </p>
+</section>
 
-        <div style={{ marginTop: "35px" }}>
-          <h3 style={{ color: "#08142d" }}>
-            What is the best month to visit the Taj Mahal?
-          </h3>
+<section id="faq">
+  <h2
+    style={{
+      marginTop: "70px",
+      fontSize: "42px",
+      color: "#08142d",
+    }}
+  >
+    Frequently Asked Questions
+  </h2>
 
-          <p
-            style={{
-              lineHeight: "32px",
-              color: "#555",
-            }}
-          >
-            October to March offers the most pleasant weather and is considered
-            the best time to visit.
-          </p>
+  <div style={{ marginTop: "35px" }}>
+    <h3 style={{ color: "#08142d" }}>
+      What is the best month to visit the Taj Mahal?
+    </h3>
 
-          <h3
-            style={{
-              marginTop: "30px",
-              color: "#08142d",
-            }}
-          >
-            Is sunrise worth it?
-          </h3>
+    <p style={{ lineHeight: "32px", color: "#555" }}>
+      October to March offers the most comfortable weather and is considered
+      the ideal travel season.
+    </p>
 
-          <p
-            style={{
-              lineHeight: "32px",
-              color: "#555",
-            }}
-          >
-            Yes. Sunrise offers fewer crowds, cooler temperatures and the most
-            beautiful golden light for photography.
-          </p>
+    <h3 style={{ marginTop: "30px", color: "#08142d" }}>
+      Is sunrise worth visiting?
+    </h3>
 
-          <h3
-            style={{
-              marginTop: "30px",
-              color: "#08142d",
-            }}
-          >
-            Which day should I avoid?
-          </h3>
+    <p style={{ lineHeight: "32px", color: "#555" }}>
+      Absolutely. Sunrise offers cooler temperatures, peaceful surroundings
+      and the most beautiful lighting for photography.
+    </p>
 
-          <p
-            style={{
-              lineHeight: "32px",
-              color: "#555",
-            }}
-          >
-            The Taj Mahal is closed every Friday for regular tourists.
-          </p>
+    <h3 style={{ marginTop: "30px", color: "#08142d" }}>
+      Which day should I avoid?
+    </h3>
 
-          <h3
-            style={{
-              marginTop: "30px",
-              color: "#08142d",
-            }}
-          >
-            How much time should I spend at the Taj Mahal?
-          </h3>
+    <p style={{ lineHeight: "32px", color: "#555" }}>
+      Fridays, because the Taj Mahal is closed for tourists.
+    </p>
 
-          <p
-            style={{
-              lineHeight: "32px",
-              color: "#555",
-            }}
-          >
-            Most visitors spend around 2–3 hours exploring the monument and its
-            gardens.
-          </p>
-        </div>
+    <h3 style={{ marginTop: "30px", color: "#08142d" }}>
+      How much time should I spend?
+    </h3>
 
-        <h2
-          style={{
-            marginTop: "60px",
-            fontSize: "40px",
-            color: "#08142d",
-          }}
-        >
-          Related Travel Guides
-        </h2>
+    <p style={{ lineHeight: "32px", color: "#555" }}>
+      Most visitors spend between two and three hours exploring the monument,
+      gardens and museum.
+    </p>
+  </div>
+</section>
 
-        <ul
-          style={{
-            marginTop: "25px",
-            lineHeight: "34px",
-            fontSize: "18px",
-          }}
-        >
-          <li>
-            <Link href="/blog/best-places-to-visit-in-agra">
-              10 Best Places to Visit in Agra
-            </Link>
-          </li>
+<section id="related-guides">
+  <h2
+    style={{
+      marginTop: "70px",
+      fontSize: "42px",
+      color: "#08142d",
+    }}
+  >
+    Related Travel Guides
+  </h2>
 
-          <li>
-            <Link href="/blog/things-to-do-in-agra">
-              Top Things to Do in Agra
-            </Link>
-          </li>
+  <ul
+    style={{
+      marginTop: "25px",
+      lineHeight: "34px",
+      fontSize: "18px",
+    }}
+  >
+    <li>
+      <Link href="/blog/best-places-to-visit-in-agra">
+        10 Best Places to Visit in Agra
+      </Link>
+    </li>
 
-          <li>
-            <Link href="/blog/taj-mahal-sunrise-vs-sunset">
-              Taj Mahal Sunrise vs Sunset
-            </Link>
-          </li>
+    <li>
+      <Link href="/blog/things-to-do-in-agra">
+        Top Things to Do in Agra
+      </Link>
+    </li>
 
-          <li>
-            <Link href="/tours/same-day-taj-mahal-tour">
-              Same Day Taj Mahal Tour
-            </Link>
-          </li>
-        </ul>
+    <li>
+      <Link href="/blog/taj-mahal-sunrise-vs-sunset">
+        Taj Mahal Sunrise vs Sunset
+      </Link>
+    </li>
+
+    <li>
+      <Link href="/tours/same-day-taj-mahal-tour">
+        Same Day Taj Mahal Tour
+      </Link>
+    </li>
+
+    <li>
+      <Link href="/tours/golden-triangle-5-day-tour">
+        5-Day Golden Triangle Tour
+      </Link>
+    </li>
+  </ul>
+</section>
 
         <section
           style={{
@@ -588,5 +590,32 @@ export default function BestTimeToVisitTajMahalPage() {
       </section>
 
     </main>
+
+    {/* Breadcrumb */}
+
+<section
+  style={{
+    maxWidth: "1100px",
+    margin: "30px auto 0",
+    padding: "0 20px",
+    fontSize: "15px",
+    color: "#777",
+  }}
+>
+  <Link href="/" style={{ color: "#08142d", textDecoration: "none" }}>
+    Home
+  </Link>
+
+  {" > "}
+
+  <Link href="/blog" style={{ color: "#08142d", textDecoration: "none" }}>
+    Blog
+  </Link>
+
+  {" > "}
+
+  <span>Best Time to Visit Taj Mahal</span>
+</section>
+
   );
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BlogFilter from "@/components/Blog/BlogFilter";
 
 export const metadata = {
   title: "India Travel Blog | Taj Wonder Heritage Tours",
@@ -57,196 +58,328 @@ const posts = [
     category: "Golden Triangle",
     readTime: "10 min read",
   },
+{
+  slug: "how-to-reach-taj-mahal-from-delhi",
+  title: "How to Reach Taj Mahal from Delhi (2026 Guide)",
+  description:
+    "Complete guide to travelling from Delhi to the Taj Mahal by private car, train, bus and more.",
+  image: "/images/blog/how-to-reach-taj-mahal-from-delhi.jpg",
+  date: "August 2026",
+  category: "Travel Guide",
+  readTime: "9 min read",
+},
 ];
 
 export default function BlogPage() {
   return (
     <main>
-      {/* Hero */}
+    {/* Hero */}
 
-      <section
+<section
+  style={{
+    background: "#08142d",
+    color: "#fff",
+    padding: "90px 20px",
+    textAlign: "center",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "900px",
+      margin: "0 auto",
+    }}
+  >
+    <span
+      style={{
+        color: "#d4af37",
+        letterSpacing: "3px",
+        fontWeight: 700,
+        textTransform: "uppercase",
+      }}
+    >
+      India Travel Blog
+    </span>
+
+    <h1
+      style={{
+        fontSize: "54px",
+        marginTop: "20px",
+        marginBottom: "20px",
+      }}
+    >
+      Expert India Travel Guides
+    </h1>
+
+    <p
+      style={{
+        fontSize: "20px",
+        color: "#eee",
+        lineHeight: "34px",
+      }}
+    >
+      Helpful travel guides, destination advice, Taj Mahal tips,
+      Golden Triangle itineraries and local recommendations from
+      Taj Wonder Heritage Tours.
+    </p>
+  </div>
+</section>
+
+{/* Featured Article */}
+
+<section
+  style={{
+    maxWidth: "1200px",
+    margin: "70px auto",
+    padding: "0 20px",
+  }}
+>
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "1.2fr 1fr",
+      gap: "40px",
+      background: "#fff",
+      borderRadius: "22px",
+      overflow: "hidden",
+      boxShadow: "0 15px 40px rgba(0,0,0,.08)",
+    }}
+  >
+    <img
+      src="/images/blog/best-time-to-visit-taj-mahal.jpg"
+      alt="Best Time to Visit Taj Mahal"
+      style={{
+        width: "100%",
+        height: "100%",
+        objectFit: "contain",
+        background: "#f5f5f5",
+        minHeight: "420px",
+      }}
+    />
+
+    <div
+      style={{
+        padding: "45px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
+      <span
         style={{
-          background: "#08142d",
-          color: "#fff",
-          padding: "90px 20px",
-          textAlign: "center",
+          color: "#d4af37",
+          fontWeight: 700,
+          letterSpacing: "2px",
+          textTransform: "uppercase",
+          marginBottom: "20px",
         }}
       >
+        Featured Guide
+      </span>
+
+      <h2
+        style={{
+          fontSize: "46px",
+          color: "#08142d",
+          lineHeight: "1.2",
+          marginBottom: "25px",
+        }}
+      >
+        Best Time to Visit the Taj Mahal (2026 Guide)
+      </h2>
+
+      <p
+        style={{
+          color: "#666",
+          lineHeight: "34px",
+          fontSize: "18px",
+          marginBottom: "35px",
+        }}
+      >
+        Discover the perfect season, sunrise timings,
+        weather conditions, photography tips and expert
+        travel advice before visiting the world's most
+        beautiful monument.
+      </p>
+
+      <Link
+        href="/blog/best-time-to-visit-taj-mahal"
+        style={{
+          display: "inline-block",
+          width: "fit-content",
+          background: "#08142d",
+          color: "#fff",
+          textDecoration: "none",
+          padding: "16px 34px",
+          borderRadius: "40px",
+          fontWeight: 700,
+        }}
+      >
+        Read Complete Guide →
+      </Link>
+    </div>
+  </div>
+</section>
+{/* Popular Articles */}
+
+<section
+  style={{
+    maxWidth: "1200px",
+    margin: "0 auto 70px",
+    padding: "0 20px",
+  }}
+>
+  <h2
+    style={{
+      fontSize: "38px",
+      color: "#08142d",
+      marginBottom: "35px",
+      textAlign: "center",
+    }}
+  >
+    Most Popular Travel Guides
+  </h2>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
+      gap: "25px",
+    }}
+  >
+    {posts.slice(0, 3).map((post) => (
+      <Link
+        key={post.slug}
+        href={`/blog/${post.slug}`}
+        style={{
+          textDecoration: "none",
+          background: "#fff",
+          borderRadius: "18px",
+          overflow: "hidden",
+          boxShadow: "0 10px 25px rgba(0,0,0,.08)",
+          color: "#08142d",
+        }}
+      >
+        <img
+          src={post.image}
+          alt={post.title}
+          style={{
+            width: "100%",
+            height: "190px",
+            objectFit: "cover",
+          }}
+        />
+
         <div
           style={{
-            maxWidth: "900px",
-            margin: "0 auto",
+            padding: "22px",
           }}
         >
           <span
             style={{
               color: "#d4af37",
-              letterSpacing: "3px",
               fontWeight: 700,
-              textTransform: "uppercase",
+              fontSize: "14px",
             }}
           >
-            India Travel Blog
+            {post.category}
           </span>
 
-          <h1
+          <h3
             style={{
-              fontSize: "54px",
-              marginTop: "20px",
-              marginBottom: "20px",
+              marginTop: "12px",
+              fontSize: "24px",
+              lineHeight: "1.35",
             }}
           >
-            Expert India Travel Guides
-          </h1>
+            {post.title}
+          </h3>
 
           <p
             style={{
-              fontSize: "20px",
-              color: "#eee",
-              lineHeight: "34px",
+              color: "#666",
+              marginTop: "12px",
+              lineHeight: "28px",
             }}
           >
-            Helpful travel guides, destination advice, Taj Mahal tips,
-            Golden Triangle itineraries and local recommendations from
-            Taj Wonder Heritage Tours.
+            {post.readTime}
           </p>
         </div>
-      </section>
+      </Link>
+    ))}
+  </div>
+</section>
 
-      {/* Articles */}
+{/* Blog Cards */}
 
-      <section
-        style={{
-          maxWidth: "1200px",
-          margin: "70px auto",
-          padding: "0 20px",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "40px",
-            color: "#08142d",
-            marginBottom: "40px",
-          }}
-        >
-          Latest Articles
-        </h2>
+<BlogFilter posts={posts} />
+{/* Newsletter */}
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))",
-            gap: "35px",
-          }}
-        >
-          {posts.map((post) => (
-            <article
-              key={post.slug}
-              style={{
-                background: "#fff",
-                borderRadius: "18px",
-                overflow: "hidden",
-                boxShadow: "0 10px 30px rgba(0,0,0,.08)",
-                transition: "all .3s ease",
-              }}
-            >
-              <img
-                src={post.image}
-                alt={post.title}
-                style={{
-                  width: "100%",
-                  aspectRatio: "16 / 9",
-                  objectFit: "cover",
-                  display: "block",
-                }}
-              />
+<section
+  style={{
+    background: "#08142d",
+    color: "#fff",
+    marginTop: "90px",
+    padding: "80px 20px",
+    textAlign: "center",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "850px",
+      margin: "0 auto",
+    }}
+  >
+    <span
+      style={{
+        color: "#d4af37",
+        fontWeight: 700,
+        letterSpacing: "3px",
+        textTransform: "uppercase",
+      }}
+    >
+      Stay Updated
+    </span>
 
-              <div
-                style={{
-                  padding: "28px",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: "12px",
-                    alignItems: "center",
-                    marginBottom: "18px",
-                  }}
-                >
-                  <span
-                    style={{
-                      background: "#d4af37",
-                      color: "#08142d",
-                      padding: "5px 12px",
-                      borderRadius: "20px",
-                      fontSize: "13px",
-                      fontWeight: 700,
-                    }}
-                  >
-                    {post.category}
-                  </span>
+    <h2
+      style={{
+        fontSize: "48px",
+        margin: "20px 0",
+      }}
+    >
+      Get the Latest India Travel Tips
+    </h2>
 
-                  <span
-                    style={{
-                      color: "#888",
-                      fontSize: "14px",
-                    }}
-                  >
-                    {post.date}
-                  </span>
+    <p
+      style={{
+        color: "#ddd",
+        fontSize: "20px",
+        lineHeight: "34px",
+        marginBottom: "35px",
+      }}
+    >
+      Receive expert travel advice, destination guides,
+      seasonal offers and exclusive private tour updates
+      from Taj Wonder Heritage Tours.
+    </p>
 
-                  <span
-                    style={{
-                      color: "#888",
-                      fontSize: "14px",
-                    }}
-                  >
-                    • {post.readTime}
-                  </span>
-                </div>
+    <Link
+      href="/contact"
+      style={{
+        display: "inline-block",
+        background: "#d4af37",
+        color: "#08142d",
+        padding: "18px 42px",
+        borderRadius: "50px",
+        textDecoration: "none",
+        fontWeight: 700,
+        fontSize: "18px",
+      }}
+    >
+      Contact Our Travel Experts →
+    </Link>
+  </div>
+</section>
 
-                <h3
-                  style={{
-                    fontSize: "30px",
-                    color: "#08142d",
-                    marginBottom: "18px",
-                    lineHeight: "1.3",
-                  }}
-                >
-                  {post.title}
-                </h3>
-
-                <p
-                  style={{
-                    color: "#666",
-                    lineHeight: "30px",
-                    marginBottom: "25px",
-                  }}
-                >
-                  {post.description}
-                </p>
-
-                <Link
-                  href={`/blog/${post.slug}`}
-                  style={{
-                    display: "inline-block",
-                    background: "#d4af37",
-                    color: "#08142d",
-                    padding: "14px 30px",
-                    borderRadius: "50px",
-                    textDecoration: "none",
-                    fontWeight: 700,
-                  }}
-                >
-                  Read Article →
-                </Link>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-    </main>
+</main>
   );
 }
