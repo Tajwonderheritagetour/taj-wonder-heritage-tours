@@ -21,7 +21,7 @@ export async function POST(request: Request) {
 
     const { error } = await resend.emails.send({
       from: "Taj Wonder Heritage Tours <onboarding@resend.dev>",
-      to: ["tajwelcometours@gmail.com"],
+      to: ["info@tajwonderheritagetours.com"],
       replyTo: email,
       subject: `New Travel Inquiry from ${name}`,
       html: `

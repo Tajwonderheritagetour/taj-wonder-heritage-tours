@@ -9,8 +9,8 @@ export default function ContactCards() {
     {
       icon: "✉️",
       title: "Email",
-      text: "info@tajwonderheritagetour.com",
-      link: "mailto:info@tajwonderheritagetour.com",
+      text: "info@tajwonderheritagetours.com",
+      link: "mailto:info@tajwonderheritagetours.com",
     },
     {
       icon: "📍",
