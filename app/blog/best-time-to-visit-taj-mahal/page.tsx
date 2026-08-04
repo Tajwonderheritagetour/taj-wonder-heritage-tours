@@ -589,11 +589,10 @@ export default function BestTimeToVisitTajMahalPage() {
 
       </section>
 
-    </main>
-
     {/* Breadcrumb */}
 
-<section
+      <section
+
   style={{
     maxWidth: "1100px",
     margin: "30px auto 0",
@@ -616,6 +615,6 @@ export default function BestTimeToVisitTajMahalPage() {
 
   <span>Best Time to Visit Taj Mahal</span>
 </section>
-
+</main>
   );
 }
