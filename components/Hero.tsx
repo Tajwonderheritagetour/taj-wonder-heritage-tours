@@ -7,12 +7,13 @@ export default function Hero() {
     <section
       style={{
         position: "relative",
-        minHeight: "100vh",
+        minHeight: "80vh",
         backgroundImage: "url('/images/hero/taj-mahal-hero.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",
-        alignItems: "center",
+alignItems: "flex-start",
+paddingTop: "120px",
       }}
     >
       {/* Dark Overlay */}
@@ -41,30 +42,46 @@ export default function Hero() {
           }}
         >
           <span
-            style={{
-              color: "#d4af37",
-              fontWeight: 700,
-              letterSpacing: "4px",
-              textTransform: "uppercase",
-              fontSize: "14px",
-            }}
-          >
-            Luxury Private India Tours
-          </span>
-
-         <h1
   style={{
-    fontSize: "56px",
-    lineHeight: "1.2",
-    color: "#fff",
-    marginTop: "20px",
-    marginBottom: "24px",
+    color: "#d4af37",
     fontWeight: 700,
-    maxWidth: "700px",
+    letterSpacing: "4px",
+    textTransform: "uppercase",
+    fontSize: "14px",
   }}
 >
-            Private India Tours | Taj Mahal, Golden Triangle & Rajasthan Tours
-          </h1>
+  Luxury Private India Tours
+</span>
+
+<h1
+  style={{
+    fontSize: "52px",
+    lineHeight: "1.15",
+    color: "#fff",
+    marginTop: "20px",
+    marginBottom: "18px",
+    fontWeight: 800,
+    maxWidth: "650px",
+  }}
+>
+  Private India Tours | Taj Mahal, Golden Triangle & Rajasthan Tours
+</h1>
+
+<p
+   style={{
+    color: "#e5e5e5",
+    fontSize: "17px",
+    lineHeight: "32px",
+    marginBottom: "35px",
+    maxWidth: "620px",
+  }}
+>
+  Experience India's most iconic destinations with fully private luxury
+  tours. Explore the Taj Mahal, Agra, Delhi, Jaipur, Rajasthan and the
+  famous Golden Triangle with licensed local guides, professional
+  chauffeurs, luxury air-conditioned vehicles and customized itineraries
+  designed just for you.
+</p>
 
           <p
   style={{
