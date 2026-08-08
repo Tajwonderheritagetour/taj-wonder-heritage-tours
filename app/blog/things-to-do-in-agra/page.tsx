@@ -3,17 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Top 10 Things to Do in Agra Beyond the Taj Mahal (2026 Guide)",
-  description:
-    "Discover the best places to visit in Agra including the Taj Mahal, Agra Fort, Mehtab Bagh, Fatehpur Sikri, Baby Taj and more with expert travel tips.",
+  title: "10 Best Things to Do in Agra Beyond the Taj Mahal (2026 Guide)",
+ description:
+  "Discover the 10 best things to do in Agra beyond the Taj Mahal, including Agra Fort, Mehtab Bagh, Fatehpur Sikri, Baby Taj, local markets, and more.",
 
   alternates: {
-    canonical:
-      "https://www.tajwonderheritagetours.com/blog/best-places-to-visit-in-agra",
-  },
+  canonical:
+    "https://www.tajwonderheritagetours.com/blog/things-to-do-in-agra",
+},
 
   openGraph: {
-    title: "Top 10 Things to Do in Agra Beyond the Taj Mahal(2026 Travel Guide)",
+   title: "10 Best Things to Do in Agra Beyond the Taj Mahal (2026 Guide)",
     description:
       "Complete Agra Travel Guide with the city's top tourist attractions.",
     images: [
@@ -57,7 +57,7 @@ export default function BestPlacesAgra() {
               marginBottom: "20px",
             }}
           >
-            10 Best Places to Visit in Agra (2026 Guide)
+            10 Best Things to Do in Agra (2026 Guide)
           </h1>
 
           <p
