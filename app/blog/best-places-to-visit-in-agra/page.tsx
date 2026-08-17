@@ -3,22 +3,24 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "10 Best Places to Visit in Agra (2026 Travel Guide)",
-  description:
-    "Discover the best places to visit in Agra including the Taj Mahal, Agra Fort, Mehtab Bagh, Fatehpur Sikri, Baby Taj and more with expert travel tips.",
+  title: "10 Best Places to Visit in Agra (2026 Guide)",
 
+  description:
+    "Discover the 10 best places to visit in Agra, including the Taj Mahal, Agra Fort, Mehtab Bagh, Baby Taj, Fatehpur Sikri and more. Complete Agra travel guide for 2026.",
   alternates: {
     canonical:
       "https://www.tajwonderheritagetours.com/blog/best-places-to-visit-in-agra",
   },
 
   openGraph: {
-    title: "10 Best Places to Visit in Agra (2026 Travel Guide)",
+    title: "10 Best Places to Visit in Agra (2026 Guide)",
+
     description:
-      "Complete Agra Travel Guide with the city's top tourist attractions.",
+      "Discover the 10 best places to visit in Agra, including the Taj Mahal, Agra Fort, Mehtab Bagh, Baby Taj, Fatehpur Sikri and more.",
+
     images: [
       {
-        url: "/images/blog/agra-top-10-attractions.jpg",
+        url: "/images/blog/things-to-do-in-agra.jpg",
         width: 1200,
         height: 630,
       },
@@ -94,36 +96,49 @@ export default function BestPlacesAgra() {
         />
 
         <p
-          style={{
-            fontSize: "19px",
-            lineHeight: "34px",
-            color: "#555",
-          }}
-        >
-          Agra is one of India's most visited cities and home to one of the
-          world's greatest architectural masterpieces, the Taj Mahal.
-          Beyond this iconic monument, Agra offers magnificent Mughal forts,
-          peaceful gardens, colorful markets and UNESCO World Heritage Sites
-          that attract millions of travelers every year.
-        </p>
-
+  style={{
+    fontSize: "19px",
+    lineHeight: "34px",
+    color: "#555",
+  }}
+>
+  Looking for the best places to visit in Agra? The city is much more than
+  the Taj Mahal. Agra is home to magnificent Mughal monuments, historic
+  forts, beautiful gardens, colorful markets and UNESCO World Heritage Sites.
+  From the world-famous Taj Mahal and Agra Fort to Mehtab Bagh, the Baby Taj
+  and Fatehpur Sikri, there are many fascinating places to explore in and
+  around Agra.
+</p>
         <p
-          style={{
-            fontSize: "19px",
-            lineHeight: "34px",
-            color: "#555",
-          }}
-        >
-          Whether you're planning a{" "}
-          <Link href="/tours/same-day-taj-mahal-tour">
-            Same Day Taj Mahal Tour
-          </Link>{" "}
-          or a complete{" "}
-          <Link href="/tours/golden-triangle-tour">
-            Golden Triangle Tour
-          </Link>
-          , these are the places you shouldn't miss.
-        </p>
+  style={{
+    fontSize: "19px",
+    lineHeight: "34px",
+    color: "#555",
+  }}
+>
+  Whether you're planning a{" "}
+  <Link
+    href="/tours/same-day-taj-mahal-tour"
+    style={{
+      color: "#b08d1e",
+      fontWeight: 600,
+    }}
+  >
+    Same Day Taj Mahal Tour
+  </Link>{" "}
+  from Delhi or exploring Agra as part of a{" "}
+  <Link
+    href="/tours/golden-triangle-tour"
+    style={{
+      color: "#b08d1e",
+      fontWeight: 600,
+    }}
+  >
+    Golden Triangle Tour
+  </Link>
+  , this Agra travel guide will help you decide which attractions to visit
+  and how to plan your sightseeing.
+</p>
 
         <hr style={{ margin: "50px 0" }} />
 

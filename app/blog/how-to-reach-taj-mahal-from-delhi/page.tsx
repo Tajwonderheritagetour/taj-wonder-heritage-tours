@@ -565,7 +565,7 @@ export default function HowToReachTajMahalFromDelhiPage() {
             Book Your Tour →
           </Link>
         </section>
-              </section>
+        </section>,
 
     </main>
   );
