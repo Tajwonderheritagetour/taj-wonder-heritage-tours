@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  description:
   "Discover the 10 best things to do in Agra beyond the Taj Mahal, including Agra Fort, Mehtab Bagh, Fatehpur Sikri, Baby Taj, local markets, and more.",
 
-  alternates: {
+ alternates: {
   canonical:
     "https://www.tajwonderheritagetours.com/blog/things-to-do-in-agra",
 },
