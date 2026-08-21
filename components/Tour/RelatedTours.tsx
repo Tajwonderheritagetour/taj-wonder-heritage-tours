@@ -27,28 +27,44 @@ export default function RelatedTours({
       .filter((w) => w.length > 4),
   ];
 
-  const relatedTours = Object.values(tours)
-    .filter((tour) => tour.slug !== currentSlug)
-    .map((tour) => {
-      const text = (
-        tour.title +
-        " " +
-        tour.location
-      ).toLowerCase();
+  const scoredTours = Object.values(tours)
+  .filter((tour) => tour.slug !== currentSlug)
+  .map((tour) => {
+    const text = (
+      tour.title +
+      " " +
+      tour.location
+    ).toLowerCase();
 
-      let score = 0;
+    let score = 0;
 
-      keywords.forEach((k) => {
-        if (text.includes(k)) score++;
-      });
+    keywords.forEach((k) => {
+      if (text.includes(k)) score++;
+    });
 
-      return {
-        ...tour,
-        score,
-      };
-    })
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 4);
+    return {
+      ...tour,
+      score,
+    };
+  })
+  .sort((a, b) => b.score - a.score);
+
+// Always prioritize the Golden Triangle Tour with Ranthambore
+// on the 5-Day Golden Triangle Tour page.
+const prioritySlug = "golden-triangle-ranthambore-tour";
+
+const priorityTour =
+  currentSlug === "golden-triangle-5-day-tour"
+    ? scoredTours.find((tour) => tour.slug === prioritySlug)
+    : undefined;
+
+const remainingTours = scoredTours
+  .filter((tour) => tour.slug !== prioritySlug)
+  .slice(0, priorityTour ? 3 : 4);
+
+const relatedTours = priorityTour
+  ? [priorityTour, ...remainingTours]
+  : remainingTours;
 
   return (
     <section
