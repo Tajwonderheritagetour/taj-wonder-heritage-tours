@@ -82,7 +82,7 @@ export default function BestPlacesAgra() {
         }}
       >
         <Image
-         src="/images/blog/best-places-to-visit-in-agra.jpg"
+         src="/images/blog/things-to-do-in-agra.jpg"
           alt="Best Places to Visit in Agra"
           width={1200}
           height={630}
