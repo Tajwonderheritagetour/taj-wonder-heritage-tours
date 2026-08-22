@@ -1,30 +1,28 @@
 export const goldenTriangleRanthambore = {
   slug: "golden-triangle-ranthambore-tour",
 
-  title: "6-Day Golden Triangle with Ranthambore Tiger Safari",
+title: "6-Day Golden Triangle Tour with Ranthambore Tiger Safari",
 
   featured: true,
 
-  shortDescription:
-    "Explore Delhi, Agra, Ranthambore National Park and Jaipur on an unforgettable private wildlife and heritage journey.",
+ shortDescription:
+  "Experience a private 6-day Golden Triangle Tour with Ranthambore Tiger Safari, covering Delhi, Agra, Ranthambore National Park and Jaipur with a professional chauffeur and local guides.",
 
   seoTitle:
-    "Golden Triangle with Ranthambore Tiger Safari | Private India Tour",
+  "6-Day Golden Triangle Tour with Ranthambore Tiger Safari | Private India Tour",
 
-  seoDescription:
-    "Experience Delhi, Agra, Ranthambore National Park and Jaipur on a private 6-day Golden Triangle tour with a thrilling Ranthambore tiger safari.",
+ seoDescription:
+  "Explore Delhi, Agra, Ranthambore and Jaipur on a private 6-day Golden Triangle Tour with Ranthambore Tiger Safari, Taj Mahal sunrise, private chauffeur and local guides.",
 
   canonical:
-    "https://www.tajwonderheritagetour.com/tours/golden-triangle-ranthambore-tour",
+    "https://www.tajwonderheritagetours.com/tours/golden-triangle-ranthambore-tour",
 
   keywords: [
-    "Golden Triangle Tour",
-    "Golden Triangle with Ranthambore",
-    "Ranthambore Tiger Safari",
-    "Delhi Agra Jaipur Tour",
-    "Delhi Agra Jaipur Ranthambore Tour",
-    "India Wildlife Tour",
-    "Private India Tour",
+    "Golden Triangle Tour with Tiger Safari",
+"6 Day Golden Triangle Tour with Ranthambore",
+"Golden Triangle Ranthambore Tour",
+"Ranthambore Tiger Safari Tour",
+"Delhi Agra Jaipur Ranthambore Tour",
   ],
 
   image: "/images/tours/ranthambore.jpg",
