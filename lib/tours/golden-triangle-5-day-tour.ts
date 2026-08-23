@@ -3,25 +3,25 @@ import { Tour } from "./types";
 export const goldenTriangle5DayTour: Tour = {
   slug: "golden-triangle-5-day-tour",
 
-  title: "5-Day Golden Triangle Tour",
+  title: "5-Day Golden Triangle Tour from Delhi",
 
   seoTitle:
-    "5-Day Golden Triangle Tour from Delhi | Private Delhi Agra Jaipur Tour",
+    "5-Day Golden Triangle Tour from Delhi | Delhi Agra Jaipur Private Tour",
 
   seoDescription:
-    "Explore Delhi, Agra and Jaipur on a private 5-Day Golden Triangle Tour from Delhi. Visit the Taj Mahal, Agra Fort, Amber Fort and iconic heritage sites with a private chauffeur and local guides.",
+    "Book a private 5-Day Golden Triangle Tour from Delhi covering Delhi, Agra and Jaipur. Visit the Taj Mahal, Agra Fort, Amber Fort and iconic heritage sites with a private chauffeur and local guides.",
 
   canonical:
     "https://www.tajwonderheritagetours.com/tours/golden-triangle-5-day-tour",
 
   keywords: [
-    "Golden Triangle Tour",
-    "5 Day Golden Triangle Tour",
     "5-Day Golden Triangle Tour",
+    "5 Day Golden Triangle Tour from Delhi",
+    "Golden Triangle Tour from Delhi",
     "Delhi Agra Jaipur Tour",
     "Private Golden Triangle Tour",
-    "Golden Triangle Tour from Delhi",
-    "Golden Triangle India",
+    "Golden Triangle India Tour",
+    "Delhi Agra Jaipur Private Tour",
     "India Heritage Tour",
   ],
 
@@ -36,7 +36,7 @@ export const goldenTriangle5DayTour: Tour = {
   featured: true,
 
   shortDescription:
-    "Explore Delhi, Agra and Jaipur on a private 5-day Golden Triangle Tour featuring the Taj Mahal, Agra Fort, Amber Fort and India's most iconic heritage sites.",
+    "Explore Delhi, Agra and Jaipur on a private 5-day Golden Triangle Tour from Delhi featuring the Taj Mahal, Agra Fort, Amber Fort and India's most iconic heritage sites.",
 
   gallery: [
     "/images/tours/golden-triangle.jpg",
@@ -54,24 +54,26 @@ export const goldenTriangle5DayTour: Tour = {
   reviewCount: 186,
 
   overview: `
-Discover India's most famous travel circuit on this private 5-Day Golden Triangle Tour covering Delhi, Agra and Jaipur.
+Discover India's most famous travel circuit on this private 5-Day Golden Triangle Tour from Delhi, covering Delhi, Agra and Jaipur.
 
-Begin in Delhi, India's historic capital, and explore its impressive monuments and vibrant Old Delhi. Continue to Agra to experience the timeless beauty of the Taj Mahal and the magnificent Agra Fort. Your journey then continues to Jaipur, the Pink City, where you will discover Amber Fort, Hawa Mahal, City Palace and Jantar Mantar.
+Begin your journey in Delhi, India's historic capital, and explore its impressive monuments and vibrant Old Delhi. Continue to Agra to experience the timeless beauty of the Taj Mahal, the magnificent Agra Fort and panoramic views from Mehtab Bagh. Your journey then continues to Jaipur, the Pink City, where you will discover Amber Fort, Hawa Mahal, City Palace and Jantar Mantar.
 
-Travel comfortably in a private air-conditioned vehicle with an experienced chauffeur and professional local guides. The itinerary can also be customized according to your interests, travel schedule and preferred sightseeing pace.
+Travel comfortably in a private air-conditioned vehicle with an experienced chauffeur and professional local guides. This private Delhi Agra Jaipur tour can also be customized according to your interests, travel schedule and preferred sightseeing pace.
 `,
 
   highlights: [
     "Explore Delhi's historic monuments",
     "Experience an Old Delhi Rickshaw Ride",
     "Visit the magnificent Taj Mahal",
-    "Explore UNESCO-listed Agra Fort",
     "Enjoy a Taj Mahal sunrise visit",
+    "Explore UNESCO-listed Agra Fort",
+    "Visit Mehtab Bagh for Taj Mahal views",
     "Visit Amber Fort in Jaipur",
     "Photo stop at Hawa Mahal",
     "Explore City Palace and Jantar Mantar",
-    "Travel in a private air-conditioned vehicle",
-    "Professional local tour guides",
+    "Visit Jal Mahal viewpoint",
+    "Private air-conditioned vehicle",
+    "Professional English-speaking local guides",
     "Flexible hotel and airport pickup",
     "Private door-to-door transportation",
   ],
@@ -82,21 +84,25 @@ Travel comfortably in a private air-conditioned vehicle with an experienced chau
       description:
         "Meet your private chauffeur at Delhi Airport, your hotel or another preferred location. Begin your Delhi sightseeing with India Gate, Rashtrapati Bhavan, Humayun's Tomb, Lotus Temple and Qutub Minar. Explore the highlights of India's historic capital before your overnight stay in Delhi.",
     },
+
     {
       title: "Day 2 – Delhi to Agra & Agra Sightseeing",
       description:
         "After breakfast, travel from Delhi to Agra by private air-conditioned vehicle via the Yamuna Expressway. Visit the magnificent Agra Fort and explore its impressive Mughal architecture. Later, visit Mehtab Bagh for beautiful views of the Taj Mahal, especially around sunset. Overnight stay in Agra.",
     },
+
     {
       title: "Day 3 – Taj Mahal Sunrise & Agra to Jaipur",
       description:
         "Start your morning with a sunrise visit to the Taj Mahal, one of India's most iconic monuments. Return for breakfast before continuing to Jaipur, the famous Pink City. En route, stop at Fatehpur Sikri, the historic Mughal city and UNESCO World Heritage Site. Continue to Jaipur for your overnight stay.",
     },
+
     {
       title: "Day 4 – Jaipur Sightseeing",
       description:
         "Explore Jaipur with your private local guide. Visit the impressive Amber Fort, enjoy a photo stop at Hawa Mahal and discover the City Palace and Jantar Mantar. See Jal Mahal from the lakeside viewpoint and experience the architectural heritage, royal history and colorful culture of the Pink City.",
     },
+
     {
       title: "Day 5 – Jaipur to Delhi & Departure",
       description:
@@ -139,34 +145,45 @@ Travel comfortably in a private air-conditioned vehicle with an experienced chau
 
   faqs: [
     {
-      question: "What is included in the 5-Day Golden Triangle Tour?",
+      question: "What is included in the 5-Day Golden Triangle Tour from Delhi?",
       answer:
         "The tour includes private air-conditioned transportation, a professional English-speaking chauffeur, private local guides, hotel and airport pickup and drop-off, tolls, parking, fuel charges, bottled water and personal tour assistance. Accommodation, monument entrance fees and meals are not included unless specifically arranged.",
     },
+
     {
-      question: "Is the Golden Triangle Tour private?",
+      question: "Is the 5-Day Golden Triangle Tour private?",
       answer:
-        "Yes. This is a completely private Golden Triangle Tour with your own air-conditioned vehicle, professional chauffeur and private local guides.",
+        "Yes. This is a completely private Delhi Agra Jaipur tour with your own air-conditioned vehicle, professional chauffeur and private local guides.",
     },
+
     {
       question: "Can I customize the Golden Triangle itinerary?",
       answer:
         "Yes. The itinerary can be customized according to your interests, preferred sightseeing pace, hotel category, pickup location and travel schedule.",
     },
+
     {
       question: "Does the tour include the Taj Mahal?",
       answer:
         "Yes. The itinerary includes a visit to the Taj Mahal in Agra, with a sunrise visit scheduled on Day 3.",
     },
+
     {
-      question: "Is airport pickup available?",
+      question: "Is airport pickup available for the Golden Triangle Tour?",
       answer:
         "Yes. Pickup and drop-off are available from Delhi Airport, hotels or another preferred location in Delhi, as well as suitable locations along the itinerary.",
     },
+
     {
       question: "Is accommodation included?",
       answer:
         "Accommodation is not included in the standard tour price. Hotels can be arranged separately according to your preferred budget, comfort level and travel dates.",
+    },
+
+    {
+      question: "Is the Golden Triangle Tour suitable for first-time visitors to India?",
+      answer:
+        "Yes. The 5-day itinerary is designed to cover India's three most popular destinations—Delhi, Agra and Jaipur—while providing private transportation, local guides and a comfortable sightseeing pace.",
     },
   ],
 };
