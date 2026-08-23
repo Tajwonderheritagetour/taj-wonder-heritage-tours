@@ -7,23 +7,24 @@ title: "6-Day Golden Triangle Tour with Ranthambore Tiger Safari",
 
  shortDescription:
   "Experience a private 6-day Golden Triangle Tour with Ranthambore Tiger Safari, covering Delhi, Agra, Ranthambore National Park and Jaipur with a professional chauffeur and local guides.",
+seoTitle:
+  "6-Day Golden Triangle Tour with Ranthambore Tiger Safari",
 
-  seoTitle:
-  "6-Day Golden Triangle Tour with Ranthambore Tiger Safari | Private India Tour",
-
- seoDescription:
-  "Explore Delhi, Agra, Ranthambore and Jaipur on a private 6-day Golden Triangle Tour with Ranthambore Tiger Safari, Taj Mahal sunrise, private chauffeur and local guides.",
-
+seoDescription:
+  "Experience a private 6-day Golden Triangle Tour covering Delhi, Agra, Ranthambore and Jaipur, with a Taj Mahal sunrise and Ranthambore Tiger Safari.",
   canonical:
     "https://www.tajwonderheritagetours.com/tours/golden-triangle-ranthambore-tour",
 
-  keywords: [
-    "Golden Triangle Tour with Tiger Safari",
-"6 Day Golden Triangle Tour with Ranthambore",
-"Golden Triangle Ranthambore Tour",
-"Ranthambore Tiger Safari Tour",
-"Delhi Agra Jaipur Ranthambore Tour",
-  ],
+ keywords: [
+  "Golden Triangle Tour with Ranthambore",
+  "6 Day Golden Triangle Tour",
+  "Golden Triangle Tour with Tiger Safari",
+  "Ranthambore Tiger Safari Tour",
+  "Delhi Agra Jaipur Ranthambore Tour",
+  "6 Day India Tour",
+  "Private Golden Triangle Tour",
+  "Ranthambore National Park Tour",
+],
 
   image: "/images/tours/ranthambore.jpg",
 
@@ -48,63 +49,64 @@ title: "6-Day Golden Triangle Tour with Ranthambore Tiger Safari",
 
   price: "Contact for Best Price",
 
-  overview: `
-Experience the perfect combination of India's rich history and incredible wildlife on this 6-Day Golden Triangle with Ranthambore Tiger Safari Tour. Discover the bustling capital city of Delhi, witness the timeless beauty of the Taj Mahal in Agra, explore the historic city of Fatehpur Sikri, enjoy an exciting tiger safari in Ranthambore National Park, and discover the royal heritage of Jaipur.
+overview: `
+Experience the highlights of North India on a private 6-Day Golden Triangle Tour with Ranthambore Tiger Safari. Explore Delhi's historic landmarks, see the Taj Mahal at sunrise in Agra, discover Agra Fort and Fatehpur Sikri, enjoy an exciting wildlife safari in Ranthambore National Park, and explore the royal heritage of Jaipur.
 
-Travel in a private air-conditioned vehicle with an experienced chauffeur and professional local guides while enjoying a flexible itinerary designed for comfort and unforgettable memories.
+Travel comfortably in a private air-conditioned vehicle with an experienced chauffeur and professional local guides. This flexible itinerary combines India's famous Mughal monuments, colorful cities and incredible wildlife in one unforgettable private tour.
 `,
 
   highlights: [
-    "Visit the Taj Mahal at sunrise",
-    "Explore the magnificent Agra Fort",
-    "Enjoy an exciting Tiger Safari in Ranthambore National Park",
-    "Visit the UNESCO World Heritage Site of Fatehpur Sikri",
-    "Explore Amber Fort in Jaipur",
-    "Photo stop at Hawa Mahal",
-    "Explore City Palace and Jantar Mantar",
-    "Discover Delhi's historic landmarks",
-    "Private air-conditioned vehicle",
-    "Professional local guides",
-    "Flexible pickup and drop-off",
-  ],
+  "Visit the Taj Mahal at sunrise",
+  "Explore the UNESCO-listed Agra Fort",
+  "Discover historic Fatehpur Sikri",
+  "Enjoy a Ranthambore Tiger Safari",
+  "Explore Ranthambore National Park",
+  "Visit Jaipur's magnificent Amber Fort",
+  "Photo stop at the iconic Hawa Mahal",
+  "Explore Jaipur City Palace and Jantar Mantar",
+  "Discover Delhi's historic landmarks",
+  "Travel in a private air-conditioned vehicle",
+  "Enjoy professional local guides and chauffeur service",
+  "Flexible private pickup and drop-off",
+],
 
   itinerary: [
-    {
-      title: "Day 1 – Arrival and Delhi Sightseeing",
-      description:
-        "Pickup from Delhi Airport, railway station or hotel and begin your private Delhi sightseeing tour. Visit India Gate, Qutub Minar, Lotus Temple and Humayun's Tomb before returning to your hotel.",
-    },
+  {
+    title: "Day 1 – Arrival in Delhi & Delhi Sightseeing",
+    description:
+      "Meet your private chauffeur at Delhi Airport, railway station or hotel and begin your Delhi sightseeing tour. Visit India Gate, Qutub Minar, Lotus Temple and Humayun's Tomb before returning to your hotel.",
+  },
 
-    {
-      title: "Day 2 – Delhi to Agra",
-      description:
-        "Drive from Delhi to Agra in your private air-conditioned vehicle. Explore the magnificent Agra Fort and visit Mehtab Bagh for views of the Taj Mahal across the Yamuna River.",
-    },
+  {
+    title: "Day 2 – Delhi to Agra & Mughal Heritage",
+    description:
+      "Travel from Delhi to Agra in your private air-conditioned vehicle. Explore the magnificent Agra Fort and visit Mehtab Bagh for beautiful views of the Taj Mahal across the Yamuna River.",
+  },
 
-    {
-      title: "Day 3 – Taj Mahal, Fatehpur Sikri and Ranthambore",
-      description:
-        "Visit the Taj Mahal at sunrise before departing Agra for Ranthambore. Stop at the historic UNESCO World Heritage Site of Fatehpur Sikri before continuing to Ranthambore National Park.",
-    },
+  {
+    title: "Day 3 – Taj Mahal Sunrise, Fatehpur Sikri & Ranthambore",
+    description:
+      "Visit the Taj Mahal at sunrise and experience one of India's most iconic monuments in the early morning light. After breakfast, travel toward Ranthambore with a stop at historic Fatehpur Sikri before continuing to your hotel.",
+  },
 
-    {
-      title: "Day 4 – Ranthambore Tiger Safari and Jaipur",
-      description:
-        "Enjoy a morning jungle safari in Ranthambore National Park, a famous wildlife destination known for its Bengal tiger population. After the safari, continue to Jaipur, the Pink City of India.",
-    },
+  {
+    title: "Day 4 – Ranthambore Tiger Safari & Transfer to Jaipur",
+    description:
+      "Enjoy a morning wildlife safari in Ranthambore National Park, famous for its Bengal tigers and diverse wildlife. After the safari, continue by private vehicle to Jaipur, the historic Pink City of Rajasthan.",
+  },
 
-    {
-      title: "Day 5 – Jaipur Sightseeing",
-      description:
-        "Explore Jaipur's royal heritage with visits to Amber Fort, Jal Mahal, Hawa Mahal, City Palace and Jantar Mantar. Enjoy private sightseeing at a comfortable pace.",
-    },
+  {
+    title: "Day 5 – Jaipur Sightseeing & Royal Heritage",
+    description:
+      "Discover Jaipur's royal heritage with visits to Amber Fort, Jal Mahal, Hawa Mahal, City Palace and Jantar Mantar. Explore the Pink City with your private local guide at a comfortable pace.",
+  },
 
-    {
-      title: "Day 6 – Jaipur to Delhi",
-      description:
-        "After breakfast, drive back to Delhi in your private vehicle. Enjoy a convenient transfer to Delhi Airport, railway station or your preferred hotel.",
-    },
-  ],
+  {
+    title: "Day 6 – Jaipur to Delhi & Departure",
+    description:
+      "After breakfast, travel from Jaipur to Delhi in your private air-conditioned vehicle. Enjoy a convenient drop-off at Delhi Airport, railway station, hotel or another preferred location.",
+  },
+],
 
   includes: [
     "Private Air-Conditioned Vehicle",
