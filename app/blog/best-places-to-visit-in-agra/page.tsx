@@ -3,26 +3,32 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "10 Best Places to Visit in Agra (2026 Guide)",
+  title: "10 Best Places to Visit in Agra in 2026 | Top Agra Attractions",
 
   description:
-    "Discover the 10 best places to visit in Agra, including the Taj Mahal, Agra Fort, Mehtab Bagh, Baby Taj, Fatehpur Sikri and more. Complete Agra travel guide for 2026.",
+    "Discover the 10 best places to visit in Agra in 2026, from the Taj Mahal and Agra Fort to Mehtab Bagh, Baby Taj and Fatehpur Sikri.",
+
   alternates: {
     canonical:
       "https://www.tajwonderheritagetours.com/blog/best-places-to-visit-in-agra",
   },
 
   openGraph: {
-    title: "10 Best Places to Visit in Agra (2026 Guide)",
+    title: "10 Best Places to Visit in Agra in 2026 | Top Agra Attractions",
 
     description:
-      "Discover the 10 best places to visit in Agra, including the Taj Mahal, Agra Fort, Mehtab Bagh, Baby Taj, Fatehpur Sikri and more.",
+      "Discover the 10 best places to visit in Agra in 2026, from the Taj Mahal and Agra Fort to Mehtab Bagh, Baby Taj and Fatehpur Sikri.",
+
+    url: "https://www.tajwonderheritagetours.com/blog/best-places-to-visit-in-agra",
+
+    type: "article",
 
     images: [
       {
-        url: "/images/blog/things-to-do-in-agra.jpg",
+        url: "/images/blog/agra-top-10-attractions.jpg",
         width: 1200,
         height: 630,
+        alt: "10 Best Places to Visit in Agra",
       },
     ],
   },
