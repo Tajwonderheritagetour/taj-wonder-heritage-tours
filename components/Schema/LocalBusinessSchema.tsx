@@ -11,7 +11,7 @@ export default function LocalBusinessSchema() {
 
     telephone: "+91-7830716981",
 
-    email: "info@tajwonderheritagetour.com",
+    email: "info@tajwonderheritagetours.com",
 
     address: {
       "@type": "PostalAddress",

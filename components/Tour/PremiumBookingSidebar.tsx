@@ -102,7 +102,7 @@ export default function PremiumBookingSidebar() {
                 Email:
               </span>
               <br />
-              info@tajwonderheritagetour.com
+              info@tajwonderheritagetours.com
             </div>
 
           </div>

@@ -1,5 +1,7 @@
+import type { Tour } from "@/lib/tours/types";
+
 interface TourSchemaProps {
-  tour: any;
+  tour: Tour;
 }
 
 export default function TourSchema({ tour }: TourSchemaProps) {
@@ -13,13 +15,9 @@ export default function TourSchema({ tour }: TourSchemaProps) {
 
     description: tour.seoDescription,
 
-    image: [
-      `https://www.tajwonderheritagetours.com${tour.image}`,
-    ],
+    image: [`https://www.tajwonderheritagetours.com${tour.image}`],
 
     url: tour.canonical,
-
-    touristType: "International Travelers",
 
     provider: {
       "@type": "TravelAgency",
@@ -29,13 +27,12 @@ export default function TourSchema({ tour }: TourSchemaProps) {
 
     offers: {
       "@type": "Offer",
-      availability: "https://schema.org/InStock",
       url: tour.canonical,
-      priceCurrency: "USD",
       category: "Private Tour",
       seller: {
         "@type": "TravelAgency",
         name: "Taj Wonder Heritage Tours",
+        url: "https://www.tajwonderheritagetours.com",
       },
     },
   };

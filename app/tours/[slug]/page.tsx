@@ -83,6 +83,9 @@ export default async function TourPage({
 
   return (
     <>
+
+     <TourSchema tour={tour} />
+
   <Script
     id="faq-schema"
     type="application/ld+json"

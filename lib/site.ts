@@ -23,7 +23,7 @@ export const siteConfig = {
     "Taj Wonder Heritage Tour",
   ],
 
-  email: "info@tajwonderheritagetour.com",
+  email: "info@tajwonderheritagetours.com",
 
   phone: "+91 7830716981",
 
