@@ -54,6 +54,13 @@ const slides = [
       "Private sightseeing, flexible itineraries and local expertise for travelers looking for a more personal India experience.",
   },
   {
+    image: "/images/hero/guest-amber-night.jpg",
+    label: "India After Dark",
+    title: "Experience India's Magic",
+    description:
+      "Discover India's monuments, culture, food and local experiences with a private tour created especially for you.",
+  },
+  {
     image: "/images/hero/guest-restaurant.jpg",
     label: "Authentic Experiences",
     title: "Experience More Than the Monuments",
