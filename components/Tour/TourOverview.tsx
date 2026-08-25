@@ -1,6 +1,3 @@
-
-import Image from "next/image";
-
 interface TourOverviewProps {
   overview: string;
   image: string;
@@ -16,7 +13,7 @@ export default function TourOverview({
     <section
       style={{
         background: "#ffffff",
-        padding: "90px 20px",
+        padding: "70px 20px",
       }}
     >
       <div
@@ -26,7 +23,6 @@ export default function TourOverview({
         }}
       >
         {/* Small Heading */}
-
         <span
           style={{
             color: "#d4af37",
@@ -34,83 +30,101 @@ export default function TourOverview({
             letterSpacing: "3px",
             textTransform: "uppercase",
             display: "inline-block",
-            marginBottom: "18px",
+            marginBottom: "14px",
+            fontSize: "14px",
           }}
         >
           Discover Your Journey
         </span>
 
         {/* Main Heading */}
-
         <h2
           style={{
-            fontSize: "48px",
+            fontSize: "44px",
             color: "#08142d",
-            marginBottom: "25px",
-            lineHeight: "60px",
+            marginTop: 0,
+            marginBottom: "22px",
+            lineHeight: "1.15",
+            fontWeight: 800,
           }}
         >
           Tour Overview
         </h2>
 
         {/* Gold Divider */}
-
         <div
           style={{
-            width: "90px",
-            height: "5px",
+            width: "80px",
+            height: "4px",
             background: "#d4af37",
             borderRadius: "50px",
-            marginBottom: "35px",
+            marginBottom: "38px",
           }}
         />
 
-        {/* Overview Card */}
-
+        {/* Image + Overview */}
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1fr)",
-            background: "#f8f9fb",
-            borderRadius: "24px",
-            overflow: "hidden",
-            boxShadow: "0 12px 35px rgba(0,0,0,.08)",
+            display: "flex",
+            alignItems: "flex-start",
+            gap: "40px",
+            width: "100%",
           }}
         >
           {/* Tour Image */}
-
           <div
             style={{
-              position: "relative",
-              minHeight: "420px",
+              flex: "0 0 46%",
+              maxWidth: "46%",
+              borderRadius: "20px",
+              overflow: "hidden",
+              background: "#f4f4f4",
+              boxShadow: "0 10px 30px rgba(0,0,0,.10)",
             }}
           >
-            <Image
+            <img
               src={image}
               alt={title}
-              fill
-              sizes="(max-width: 900px) 100vw, 50vw"
               style={{
-                objectFit: "cover",
+                width: "100%",
+                height: "500px",
+                objectFit: "contain",
+                display: "block",
+                background: "#f4f4f4",
               }}
             />
           </div>
 
-          {/* Overview Text */}
-
+          {/* Overview Content */}
           <div
             style={{
-              padding: "45px",
-              display: "flex",
-              alignItems: "center",
+              flex: "1",
+              background: "#f8f9fb",
+              borderRadius: "20px",
+              padding: "38px",
+              boxShadow: "0 10px 30px rgba(0,0,0,.07)",
             }}
           >
+            <h3
+              style={{
+                color: "#08142d",
+                fontSize: "28px",
+                lineHeight: "1.3",
+                marginTop: 0,
+                marginBottom: "20px",
+                fontWeight: 700,
+              }}
+            >
+              About This Tour
+            </h3>
+
             <p
               style={{
-                fontSize: "19px",
-                lineHeight: "36px",
+                fontSize: "17px",
+                lineHeight: "1.85",
                 color: "#555",
                 margin: 0,
+                whiteSpace: "pre-line",
               }}
             >
               {overview}
@@ -119,14 +133,13 @@ export default function TourOverview({
         </div>
 
         {/* Bottom Features */}
-
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit,minmax(220px,1fr))",
-            gap: "20px",
-            marginTop: "45px",
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "16px",
+            marginTop: "38px",
+            width: "100%",
           }}
         >
           {[
@@ -138,13 +151,16 @@ export default function TourOverview({
             <div
               key={item}
               style={{
+                flex: "1 1 220px",
+                minWidth: "200px",
                 background: "#08142d",
-                color: "#fff",
-                padding: "22px",
+                color: "#ffffff",
+                padding: "18px 15px",
                 textAlign: "center",
-                borderRadius: "18px",
+                borderRadius: "14px",
                 fontWeight: 600,
-                fontSize: "17px",
+                fontSize: "16px",
+                boxSizing: "border-box",
               }}
             >
               {item}
@@ -152,7 +168,13 @@ export default function TourOverview({
           ))}
         </div>
       </div>
+
+      {/* Mobile Layout */}
+      <div
+        style={{
+          display: "none",
+        }}
+      />
     </section>
   );
 }
-

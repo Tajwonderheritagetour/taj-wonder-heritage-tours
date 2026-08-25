@@ -60,7 +60,6 @@ Travel comfortably in a private air-conditioned vehicle with an experienced chau
   "Explore the UNESCO-listed Agra Fort",
   "Discover historic Fatehpur Sikri",
   "Enjoy a Ranthambore Tiger Safari",
-  "Explore Ranthambore National Park",
   "Visit Jaipur's magnificent Amber Fort",
   "Photo stop at the iconic Hawa Mahal",
   "Explore Jaipur City Palace and Jantar Mantar",

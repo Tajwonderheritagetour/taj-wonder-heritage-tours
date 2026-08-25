@@ -39,18 +39,15 @@ export const goldenTriangle3: Tour = {
   "Discover the best of India's rich heritage on this carefully designed 3-Day Golden Triangle Tour. Travel through Delhi, Agra and Jaipur while exploring magnificent Mughal monuments, UNESCO World Heritage Sites, royal palaces and vibrant local culture. Visit the breathtaking Taj Mahal at sunrise or sunset, explore the historic Agra Fort, admire the grandeur of Amber Fort and experience the colorful streets of Jaipur. Travel comfortably in a private air-conditioned vehicle with a professional chauffeur and knowledgeable local guides, ensuring a seamless and memorable journey through India's most iconic destinations.",
 
 highlights: [
-  "Private 3-Day Golden Triangle Tour",
   "Visit Delhi's famous historical monuments",
   "Explore the magnificent Taj Mahal",
   "Visit UNESCO-listed Agra Fort",
-  "Enjoy a comfortable drive via Yamuna Expressway",
   "Visit the magnificent Amber Fort",
   "Photo stop at Hawa Mahal (Palace of Winds)",
   "Explore City Palace & Jantar Mantar",
   "Private Air-Conditioned Vehicle",
   "Professional Local Tour Guides",
   "Hotel / Airport Pickup & Drop",
-  "Flexible Departure Time",
 ],
 itinerary: [
   {

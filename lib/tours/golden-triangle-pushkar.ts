@@ -76,7 +76,6 @@ Travel comfortably with your private chauffeur, professional local guides and fl
     "Attend Evening Aarti",
     "Private Luxury Vehicle",
     "Professional Local Guides",
-    "Flexible Private Tour",
   ],
     itinerary: [
     {

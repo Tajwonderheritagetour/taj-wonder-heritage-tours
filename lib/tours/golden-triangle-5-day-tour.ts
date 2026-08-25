@@ -62,21 +62,16 @@ Travel comfortably in a private air-conditioned vehicle with an experienced chau
 `,
 
   highlights: [
-    "Explore Delhi's historic monuments",
-    "Experience an Old Delhi Rickshaw Ride",
-    "Visit the magnificent Taj Mahal",
-    "Enjoy a Taj Mahal sunrise visit",
-    "Explore UNESCO-listed Agra Fort",
-    "Visit Mehtab Bagh for Taj Mahal views",
-    "Visit Amber Fort in Jaipur",
-    "Photo stop at Hawa Mahal",
-    "Explore City Palace and Jantar Mantar",
-    "Visit Jal Mahal viewpoint",
-    "Private air-conditioned vehicle",
-    "Professional English-speaking local guides",
-    "Flexible hotel and airport pickup",
-    "Private door-to-door transportation",
-  ],
+  "Visit Delhi's famous historical monuments",
+  "Explore the magnificent Taj Mahal",
+  "Visit UNESCO-listed Agra Fort",
+  "Visit the magnificent Amber Fort",
+  "Photo stop at Hawa Mahal (Palace of Winds)",
+  "Explore City Palace & Jantar Mantar",
+  "Private Air-Conditioned Vehicle",
+  "Professional Local Tour Guides",
+  "Hotel / Airport Pickup & Drop",
+],
 
   itinerary: [
     {

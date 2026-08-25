@@ -56,7 +56,6 @@ export const fatehpurSikriTour: Tour = {
   highlights: [
     "Private Air-conditioned Vehicle",
     "Visit Buland Darwaza",
-    "Explore Jama Masjid",
     "Visit Panch Mahal",
     "Diwan-i-Khas & Diwan-i-Aam",
     "Professional Chauffeur",
