@@ -1,9 +1,16 @@
+
+import Image from "next/image";
+
 interface TourOverviewProps {
   overview: string;
+  image: string;
+  title: string;
 }
 
 export default function TourOverview({
   overview,
+  image,
+  title,
 }: TourOverviewProps) {
   return (
     <section
@@ -62,22 +69,53 @@ export default function TourOverview({
 
         <div
           style={{
+            display: "grid",
+            gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1fr)",
             background: "#f8f9fb",
             borderRadius: "24px",
-            padding: "45px",
+            overflow: "hidden",
             boxShadow: "0 12px 35px rgba(0,0,0,.08)",
           }}
         >
-          <p
+          {/* Tour Image */}
+
+          <div
             style={{
-              fontSize: "19px",
-              lineHeight: "36px",
-              color: "#555",
-              margin: 0,
+              position: "relative",
+              minHeight: "420px",
             }}
           >
-            {overview}
-          </p>
+            <Image
+              src={image}
+              alt={title}
+              fill
+              sizes="(max-width: 900px) 100vw, 50vw"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </div>
+
+          {/* Overview Text */}
+
+          <div
+            style={{
+              padding: "45px",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "19px",
+                lineHeight: "36px",
+                color: "#555",
+                margin: 0,
+              }}
+            >
+              {overview}
+            </p>
+          </div>
         </div>
 
         {/* Bottom Features */}
@@ -85,7 +123,8 @@ export default function TourOverview({
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
+            gridTemplateColumns:
+              "repeat(auto-fit,minmax(220px,1fr))",
             gap: "20px",
             marginTop: "45px",
           }}
@@ -116,3 +155,4 @@ export default function TourOverview({
     </section>
   );
 }
+

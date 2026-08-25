@@ -122,7 +122,11 @@ export default async function TourPage({
 
           <div className="lg:col-span-2 space-y-10">
 
-            <TourOverview overview={tour.overview} />
+           <TourOverview
+  overview={tour.overview}
+  image={tour.image}
+  title={tour.title}
+/>
 
             <TourHighlights
               highlights={tour.highlights}
