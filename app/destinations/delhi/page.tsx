@@ -239,19 +239,19 @@ export default function DelhiPage() {
           Taj Wonder Heritage Tours and our experienced local team.
         </p>
 
-        <Link
-          href="/tours/golden-triangle-tour"
-          style={{
-            background: "#d4af37",
-            color: "#08142d",
-            textDecoration: "none",
-            padding: "18px 36px",
-            borderRadius: "50px",
-            fontWeight: 700,
-          }}
-        >
-          Explore Golden Triangle Tour
-        </Link>
+      <Link
+  href="/tours/golden-triangle-5-day-tour"
+  style={{
+    background: "#d4af37",
+    color: "#08142d",
+    textDecoration: "none",
+    padding: "18px 36px",
+    borderRadius: "50px",
+    fontWeight: 700,
+  }}
+>
+  Explore Golden Triangle Tour
+</Link>
 
       </section>
 
