@@ -41,9 +41,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title: "10 Best Places to Visit in Agra in 2026 | Top Attractions",
+
     description:
       "Discover the 10 best places to visit in Agra in 2026, including the Taj Mahal, Agra Fort, Mehtab Bagh, Baby Taj and Fatehpur Sikri.",
+
     images: [
       `${canonicalUrl.replace(
         "/blog/best-places-to-visit-in-agra",
@@ -79,9 +82,11 @@ const faqs = [
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+
   mainEntity: faqs.map((faq) => ({
     "@type": "Question",
     name: faq.question,
+
     acceptedAnswer: {
       "@type": "Answer",
       text: faq.answer,
@@ -183,10 +188,10 @@ export default function BestPlacesAgra() {
               color: "#555",
             }}
           >
-            Looking for the best places to visit in Agra? The city is much more
-            than the Taj Mahal. Agra is home to magnificent Mughal monuments,
-            historic forts, beautiful gardens, colorful markets and UNESCO
-            World Heritage Sites.
+            Looking for the best places to visit in Agra? The city is much
+            more than the Taj Mahal. Agra is home to magnificent Mughal
+            monuments, historic forts, beautiful gardens, colorful markets
+            and UNESCO World Heritage Sites.
           </p>
 
           <p
@@ -312,8 +317,7 @@ export default function BestPlacesAgra() {
           </ul>
 
           <hr style={{ margin: "50px 0" }} />
-
-          {/* 5 */}
+                    {/* 5 */}
 
           <h2>5. Fatehpur Sikri</h2>
 
