@@ -17,7 +17,7 @@ export const agraOvernight: Tour = {
     "Experience the beauty of Agra with a private overnight tour including Taj Mahal Sunrise, Agra Fort, Baby Taj, Mehtab Bagh and luxury transportation.",
 
   canonical:
-    "https://www.tajwonderheritagetour.com/tours/agra-overnight-tour",
+    "https://www.tajwonderheritagetours.com/tours/agra-overnight-tour",
 
  keywords: [
   "Agra Overnight Tour",
