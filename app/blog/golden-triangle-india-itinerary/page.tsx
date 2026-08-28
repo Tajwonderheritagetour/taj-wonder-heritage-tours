@@ -114,9 +114,19 @@ export default function GoldenTriangleItineraryPage() {
           3-Day Golden Triangle Itinerary
         </h2>
 
-        <h3 style={{ marginTop: "30px", color: "#08142d" }}>
-          Day 1 – Delhi
-        </h3>
+       <h3 style={{ marginTop: "30px", color: "#08142d" }}>
+  Day 1 –{" "}
+  <Link
+    href="/destinations/delhi"
+    style={{
+      color: "#08142d",
+      textDecoration: "none",
+      borderBottom: "2px solid #d4af37",
+    }}
+  >
+    Delhi
+  </Link>
+</h3>
 
         <ul
           style={{
@@ -134,8 +144,18 @@ export default function GoldenTriangleItineraryPage() {
         </ul>
 
         <h3 style={{ marginTop: "35px", color: "#08142d" }}>
-          Day 2 – Agra
-        </h3>
+  Day 2 –{" "}
+  <Link
+    href="/destinations/agra"
+    style={{
+      color: "#08142d",
+      textDecoration: "none",
+      borderBottom: "2px solid #d4af37",
+    }}
+  >
+    Agra
+  </Link>
+</h3>
 
         <ul
           style={{
@@ -151,9 +171,19 @@ export default function GoldenTriangleItineraryPage() {
           <li>Overnight in Agra</li>
         </ul>
 
-        <h3 style={{ marginTop: "35px", color: "#08142d" }}>
-          Day 3 – Jaipur
-        </h3>
+       <h3 style={{ marginTop: "35px", color: "#08142d" }}>
+  Day 3 –{" "}
+  <Link
+    href="/destinations/jaipur"
+    style={{
+      color: "#08142d",
+      textDecoration: "none",
+      borderBottom: "2px solid #d4af37",
+    }}
+  >
+    Jaipur
+  </Link>
+</h3>
 
         <ul
           style={{
@@ -191,6 +221,30 @@ export default function GoldenTriangleItineraryPage() {
           visit local markets, enjoy cultural experiences and travel at a
           relaxed pace.
         </p>
+
+<p
+  style={{
+    fontSize: "18px",
+    lineHeight: "32px",
+    color: "#555",
+    marginTop: "20px",
+  }}
+>
+  Looking for a private trip? Explore our{" "}
+  <Link
+    href="/tours/golden-triangle-5-day-tour"
+    style={{
+      color: "#08142d",
+      fontWeight: 700,
+      textDecoration: "none",
+      borderBottom: "2px solid #d4af37",
+    }}
+  >
+    5-Day Golden Triangle Tour from Delhi
+  </Link>{" "}
+  covering Delhi, Agra and Jaipur with private transportation and local
+  guides.
+</p>
 
         <ul
           style={{
