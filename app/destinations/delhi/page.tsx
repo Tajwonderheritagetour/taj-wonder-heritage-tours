@@ -1,23 +1,125 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import Script from "next/script";
 
-export const metadata = {
-  title: "Delhi Tours | Explore India's Historic Capital",
+export const metadata: Metadata = {
+  title: "Delhi Tours & Sightseeing | Private Delhi Tour Guide",
   description:
-    "Discover Delhi with Taj Wonder Heritage Tours. Visit India Gate, Qutub Minar, Humayun's Tomb, Lotus Temple, Red Fort and Chandni Chowk with private guided tours.",
+    "Explore Delhi with private sightseeing tours from Taj Wonder Heritage Tours. Visit India Gate, Red Fort, Qutub Minar, Humayun's Tomb, Lotus Temple and Chandni Chowk with local experts.",
+  alternates: {
+    canonical: "https://www.tajwonderheritagetours.com/destinations/delhi",
+  },
+  openGraph: {
+    title: "Delhi Tours & Sightseeing | Taj Wonder Heritage Tours",
+    description:
+      "Discover the best of Delhi with private sightseeing tours, experienced local guides and comfortable transportation.",
+    url: "https://www.tajwonderheritagetours.com/destinations/delhi",
+    type: "website",
+    images: [
+      {
+        url: "/images/destinations/delhi.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Delhi sightseeing and historic monuments",
+      },
+    ],
+  },
 };
+
+const faqs = [
+  {
+    question: "What are the best places to visit in Delhi?",
+    answer:
+      "The best places to visit in Delhi include India Gate, Qutub Minar, Humayun's Tomb, Red Fort, Lotus Temple, Jama Masjid, Rashtrapati Bhavan and Chandni Chowk.",
+  },
+  {
+    question: "How many days are enough to visit Delhi?",
+    answer:
+      "One full day is enough to see many of Delhi's major attractions. Two days allow more time for Old Delhi, museums, markets and additional historical sites.",
+  },
+  {
+    question: "Can I visit Delhi as part of a Golden Triangle Tour?",
+    answer:
+      "Yes. Delhi is the traditional starting point for the Golden Triangle route connecting Delhi, Agra and Jaipur.",
+  },
+  {
+    question: "Are private Delhi sightseeing tours available?",
+    answer:
+      "Yes. Taj Wonder Heritage Tours offers private Delhi sightseeing experiences with comfortable transportation and local guides.",
+  },
+  {
+    question: "What is the best time to visit Delhi?",
+    answer:
+      "October to March is generally the most comfortable period for sightseeing in Delhi because temperatures are more pleasant than during the summer months.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
+const attractions = [
+  {
+    title: "India Gate",
+    description:
+      "One of Delhi's most recognizable landmarks and an important national war memorial.",
+  },
+  {
+    title: "Qutub Minar",
+    description:
+      "A spectacular UNESCO World Heritage Site featuring one of India's most famous historic minarets.",
+  },
+  {
+    title: "Humayun's Tomb",
+    description:
+      "A magnificent Mughal monument and an important architectural predecessor to the Taj Mahal.",
+  },
+  {
+    title: "Red Fort",
+    description:
+      "A grand Mughal-era fort in Old Delhi and a UNESCO World Heritage Site.",
+  },
+  {
+    title: "Lotus Temple",
+    description:
+      "A distinctive modern architectural landmark famous for its lotus-shaped design.",
+  },
+  {
+    title: "Chandni Chowk",
+    description:
+      "A lively historic market area where visitors can experience Old Delhi's food, shopping and culture.",
+  },
+];
 
 export default function DelhiPage() {
   return (
     <main>
-<Breadcrumb
-  items={[
-    { label: "Home", href: "/" },
-    { label: "Destinations", href: "/destinations" },
-    { label: "Delhi" },
-  ]}
-/>
+      <Script
+        id="delhi-faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
+
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Destinations", href: "/destinations" },
+          { label: "Delhi" },
+        ]}
+      />
 
       {/* Hero */}
 
@@ -32,9 +134,10 @@ export default function DelhiPage() {
       >
         <Image
           src="/images/destinations/delhi.jpg"
-          alt="Delhi"
+          alt="Delhi India Gate and historic Delhi sightseeing"
           fill
           priority
+          sizes="100vw"
           style={{
             objectFit: "cover",
           }}
@@ -44,7 +147,7 @@ export default function DelhiPage() {
           style={{
             position: "absolute",
             inset: 0,
-            background: "rgba(8,20,45,.65)",
+            background: "rgba(8,20,45,.68)",
           }}
         />
 
@@ -54,8 +157,8 @@ export default function DelhiPage() {
             zIndex: 2,
             color: "#fff",
             textAlign: "center",
-            maxWidth: "900px",
-            padding: "20px",
+            maxWidth: "950px",
+            padding: "30px 20px",
           }}
         >
           <span
@@ -66,35 +169,39 @@ export default function DelhiPage() {
               textTransform: "uppercase",
             }}
           >
-            Welcome to Delhi
+            Delhi Tours & Sightseeing
           </span>
 
           <h1
-  style={{
-    fontSize: "60px",
-    margin: "20px 0",
-    color: "#ffffff",
-    textShadow: "0 4px 18px rgba(0,0,0,.6)",
-  }}
->
-            Discover India's Historic Capital
+            style={{
+              fontSize: "60px",
+              lineHeight: "1.12",
+              margin: "20px 0",
+              color: "#fff",
+              textShadow: "0 4px 18px rgba(0,0,0,.65)",
+            }}
+          >
+            Explore Delhi, India's Historic Capital
           </h1>
 
           <p
-    style={{
-    fontSize: "20px",
-    lineHeight: "34px",
-    color: "#f2f2f2",
-    textShadow: "0 2px 10px rgba(0,0,0,.5)",
-  }}
->
-            Explore the perfect blend of ancient history and modern India with
-            private sightseeing tours and experienced local guides.
+            style={{
+              fontSize: "20px",
+              lineHeight: "34px",
+              color: "#f2f2f2",
+              maxWidth: "820px",
+              margin: "0 auto",
+              textShadow: "0 2px 10px rgba(0,0,0,.5)",
+            }}
+          >
+            Discover Delhi's magnificent monuments, Mughal heritage,
+            vibrant markets and modern landmarks with private sightseeing
+            tours and experienced local guides.
           </p>
         </div>
       </section>
 
-      {/* About */}
+      {/* Introduction */}
 
       <section
         style={{
@@ -104,49 +211,70 @@ export default function DelhiPage() {
       >
         <div
           style={{
-            maxWidth: "1200px",
+            maxWidth: "1100px",
             margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(420px,1fr))",
-            gap: "60px",
-            alignItems: "center",
           }}
         >
-          <div>
-            <h2
-              style={{
-                fontSize: "42px",
-                color: "#08142d",
-                marginBottom: "25px",
-              }}
-            >
-              Why Visit Delhi?
-            </h2>
-
-            <p
-              style={{
-                color: "#555",
-                fontSize: "18px",
-                lineHeight: "34px",
-              }}
-            >
-              Delhi is India's capital city and one of the oldest continuously
-              inhabited cities in the world. From magnificent Mughal monuments
-              to vibrant markets and modern architecture, Delhi offers an
-              unforgettable cultural experience.
-            </p>
-          </div>
-
-          <Image
-            src="/images/destinations/delhi.jpg"
-            alt="India Gate"
-            width={700}
-            height={500}
+          <h2
             style={{
-              width: "100%",
-              borderRadius: "20px",
+              fontSize: "42px",
+              color: "#08142d",
+              marginBottom: "25px",
             }}
-          />
+          >
+            Delhi Tours: Discover the Heart of India
+          </h2>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#555",
+            }}
+          >
+            Delhi is a fascinating city where centuries of history meet
+            modern India. From ancient monuments and Mughal architecture
+            to colorful markets, impressive government buildings and
+            lively neighborhoods, India's capital offers an incredible
+            variety of experiences for travelers.
+          </p>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#555",
+              marginTop: "22px",
+            }}
+          >
+            A private Delhi sightseeing tour is an excellent way to explore
+            the city's major attractions comfortably. With a private vehicle
+            and local guide, you can enjoy a flexible itinerary and learn
+            more about Delhi's history, culture and architecture.
+          </p>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#555",
+              marginTop: "22px",
+            }}
+          >
+            Delhi is also the perfect starting point for travelers continuing
+            to Agra and Jaipur on a{" "}
+            <Link
+              href="/tours/golden-triangle-5-day-tour"
+              style={{
+                color: "#b08d1e",
+                fontWeight: 700,
+                textDecoration: "none",
+              }}
+            >
+              Golden Triangle Tour
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
@@ -164,47 +292,483 @@ export default function DelhiPage() {
             margin: "0 auto",
           }}
         >
-          <h2
+          <div
             style={{
               textAlign: "center",
-              fontSize: "42px",
-              marginBottom: "50px",
+              maxWidth: "800px",
+              margin: "0 auto 55px",
             }}
           >
-            Top Attractions
+            <h2
+              style={{
+                fontSize: "42px",
+                color: "#08142d",
+                marginBottom: "20px",
+              }}
+            >
+              Top Places to Visit in Delhi
+            </h2>
+
+            <p
+              style={{
+                fontSize: "18px",
+                lineHeight: "32px",
+                color: "#666",
+              }}
+            >
+              Explore Delhi's most famous historical monuments, cultural
+              attractions and traditional markets.
+            </p>
+          </div>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
+              gap: "30px",
+            }}
+          >
+            {attractions.map((attraction) => (
+              <div
+                key={attraction.title}
+                style={{
+                  background: "#fff",
+                  padding: "35px",
+                  borderRadius: "18px",
+                  boxShadow: "0 10px 30px rgba(0,0,0,.07)",
+                }}
+              >
+                <h3
+                  style={{
+                    color: "#08142d",
+                    fontSize: "24px",
+                    marginBottom: "15px",
+                  }}
+                >
+                  {attraction.title}
+                </h3>
+
+                <p
+                  style={{
+                    color: "#666",
+                    lineHeight: "30px",
+                    margin: 0,
+                  }}
+                >
+                  {attraction.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Delhi Experience */}
+
+      <section
+        style={{
+          padding: "90px 20px",
+          background: "#fff",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1100px",
+            margin: "0 auto",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: "42px",
+              color: "#08142d",
+              marginBottom: "25px",
+            }}
+          >
+            What to Experience on a Delhi Tour
           </h2>
 
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))",
-              gap: "30px",
+              gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
+              gap: "25px",
+              marginTop: "35px",
             }}
           >
             {[
-              "🇮🇳 India Gate",
-              "🕌 Qutub Minar",
-              "🏛 Humayun's Tomb",
-              "🌸 Lotus Temple",
-              "🏰 Red Fort",
-              "🛍 Chandni Chowk",
+              "Explore magnificent Mughal monuments",
+              "Visit India's famous national landmarks",
+              "Discover the historic streets of Old Delhi",
+              "Experience Chandni Chowk and local markets",
+              "See the contrast between Old and New Delhi",
+              "Enjoy Delhi with a private vehicle and local guide",
             ].map((item) => (
               <div
                 key={item}
                 style={{
-                  background: "#fff",
-                  padding: "35px",
-                  borderRadius: "18px",
-                  textAlign: "center",
-                  boxShadow: "0 10px 30px rgba(0,0,0,.08)",
-                  fontWeight: 700,
-                  fontSize: "22px",
+                  padding: "25px",
+                  background: "#f8f9fb",
+                  borderRadius: "14px",
+                  fontSize: "18px",
+                  color: "#444",
+                  lineHeight: "28px",
                 }}
               >
+                <strong style={{ color: "#d4af37" }}>✓</strong>{" "}
                 {item}
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Private Tour */}
+
+      <section
+        style={{
+          padding: "90px 20px",
+          background: "#f8f9fb",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1100px",
+            margin: "0 auto",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: "42px",
+              color: "#08142d",
+              marginBottom: "25px",
+            }}
+          >
+            Private Delhi Sightseeing Tours
+          </h2>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#555",
+            }}
+          >
+            Traveling with a private vehicle gives you the freedom to explore
+            Delhi at your own pace. Our local team can help you plan your
+            sightseeing according to your interests, available time and
+            preferred attractions.
+          </p>
+
+          <div
+            style={{
+              background: "#fff",
+              borderRadius: "18px",
+              padding: "35px",
+              marginTop: "35px",
+              boxShadow: "0 8px 25px rgba(0,0,0,.06)",
+            }}
+          >
+            <h3
+              style={{
+                color: "#08142d",
+                fontSize: "26px",
+                marginBottom: "20px",
+              }}
+            >
+              Private Tour Benefits
+            </h3>
+
+            <ul
+              style={{
+                lineHeight: "36px",
+                color: "#555",
+                fontSize: "18px",
+                paddingLeft: "22px",
+              }}
+            >
+              <li>Private air-conditioned vehicle</li>
+              <li>Flexible sightseeing itinerary</li>
+              <li>Professional local guides</li>
+              <li>Hotel and airport pickup options</li>
+              <li>Comfortable transportation between attractions</li>
+              <li>Local recommendations and travel assistance</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Golden Triangle */}
+
+      <section
+        style={{
+          padding: "90px 20px",
+          background: "#fff",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1100px",
+            margin: "0 auto",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: "42px",
+              color: "#08142d",
+              marginBottom: "25px",
+            }}
+          >
+            Delhi as the Starting Point for the Golden Triangle
+          </h2>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#555",
+            }}
+          >
+            Delhi is traditionally the starting point for India's famous
+            Golden Triangle route. The journey connects three major
+            destinations: Delhi, Agra and Jaipur.
+          </p>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#555",
+              marginTop: "22px",
+            }}
+          >
+            Travelers can begin with Delhi sightseeing, continue to Agra to
+            see the Taj Mahal and then travel onward to Jaipur to discover
+            Rajasthan's royal heritage.
+          </p>
+
+          <div style={{ marginTop: "35px" }}>
+            <Link
+              href="/tours/golden-triangle-5-day-tour"
+              style={{
+                display: "inline-block",
+                background: "#d4af37",
+                color: "#08142d",
+                padding: "16px 32px",
+                borderRadius: "50px",
+                textDecoration: "none",
+                fontWeight: 700,
+              }}
+            >
+              Explore Golden Triangle Tour →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Best Time */}
+
+      <section
+        style={{
+          padding: "90px 20px",
+          background: "#f8f9fb",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1100px",
+            margin: "0 auto",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: "42px",
+              color: "#08142d",
+              marginBottom: "25px",
+            }}
+          >
+            Best Time to Visit Delhi
+          </h2>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#555",
+            }}
+          >
+            October to March is generally the most comfortable period for
+            Delhi sightseeing. The weather is usually more pleasant for
+            visiting outdoor monuments and exploring the city.
+          </p>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
+              gap: "25px",
+              marginTop: "35px",
+            }}
+          >
+            <div
+              style={{
+                background: "#fff",
+                padding: "30px",
+                borderRadius: "16px",
+              }}
+            >
+              <h3 style={{ color: "#08142d" }}>October – March</h3>
+              <p style={{ color: "#666", lineHeight: "28px" }}>
+                Pleasant sightseeing conditions and ideal for exploring
+                Delhi's outdoor attractions.
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: "#fff",
+                padding: "30px",
+                borderRadius: "16px",
+              }}
+            >
+              <h3 style={{ color: "#08142d" }}>April – June</h3>
+              <p style={{ color: "#666", lineHeight: "28px" }}>
+                Hot summer weather. Early morning sightseeing is recommended.
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: "#fff",
+                padding: "30px",
+                borderRadius: "16px",
+              }}
+            >
+              <h3 style={{ color: "#08142d" }}>July – September</h3>
+              <p style={{ color: "#666", lineHeight: "28px" }}>
+                Monsoon season with occasional rainfall and greener
+                surroundings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+
+      <section
+        style={{
+          padding: "90px 20px",
+          background: "#fff",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1000px",
+            margin: "0 auto",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: "42px",
+              color: "#08142d",
+              marginBottom: "40px",
+            }}
+          >
+            Frequently Asked Questions About Delhi
+          </h2>
+
+          {faqs.map((faq) => (
+            <div
+              key={faq.question}
+              style={{
+                marginBottom: "35px",
+              }}
+            >
+              <h3
+                style={{
+                  color: "#08142d",
+                  fontSize: "24px",
+                  marginBottom: "12px",
+                }}
+              >
+                {faq.question}
+              </h3>
+
+              <p
+                style={{
+                  color: "#555",
+                  fontSize: "18px",
+                  lineHeight: "32px",
+                  margin: 0,
+                }}
+              >
+                {faq.answer}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Related Guides */}
+
+      <section
+        style={{
+          padding: "70px 20px",
+          background: "#f8f9fb",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1000px",
+            margin: "0 auto",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: "38px",
+              color: "#08142d",
+              marginBottom: "25px",
+            }}
+          >
+            Related India Travel Guides
+          </h2>
+
+          <ul
+            style={{
+              lineHeight: "38px",
+              fontSize: "18px",
+            }}
+          >
+            <li>
+              <Link href="/blog/how-to-reach-taj-mahal-from-delhi">
+                How to Reach Taj Mahal from Delhi
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/blog/golden-triangle-india-itinerary">
+                Golden Triangle India Itinerary
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/blog/best-places-to-visit-in-agra">
+                Best Places to Visit in Agra
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/destinations/agra">
+                Explore Agra
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/destinations/jaipur">
+                Explore Jaipur
+              </Link>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -218,43 +782,74 @@ export default function DelhiPage() {
           textAlign: "center",
         }}
       >
-        <h2
+        <div
           style={{
-            fontSize: "46px",
-            marginBottom: "25px",
+            maxWidth: "850px",
+            margin: "0 auto",
           }}
         >
-          Explore Delhi with Private Tours
-        </h2>
+          <h2
+            style={{
+              fontSize: "44px",
+              marginBottom: "25px",
+            }}
+          >
+            Explore Delhi with Local Experts
+          </h2>
 
-        <p
-          style={{
-            maxWidth: "750px",
-            margin: "0 auto 40px",
-            fontSize: "19px",
-            lineHeight: "34px",
-          }}
-        >
-          Experience Delhi's incredible history, culture and architecture with
-          Taj Wonder Heritage Tours and our experienced local team.
-        </p>
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#ddd",
+              marginBottom: "40px",
+            }}
+          >
+            Discover Delhi's history, culture and architecture with private
+            transportation, experienced local guides and a flexible
+            sightseeing experience from Taj Wonder Heritage Tours.
+          </p>
 
-      <Link
-  href="/tours/golden-triangle-5-day-tour"
-  style={{
-    background: "#d4af37",
-    color: "#08142d",
-    textDecoration: "none",
-    padding: "18px 36px",
-    borderRadius: "50px",
-    fontWeight: 700,
-  }}
->
-  Explore Golden Triangle Tour
-</Link>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "18px",
+              flexWrap: "wrap",
+            }}
+          >
+            <Link
+              href="/tours/golden-triangle-5-day-tour"
+              style={{
+                display: "inline-block",
+                background: "#d4af37",
+                color: "#08142d",
+                padding: "17px 32px",
+                borderRadius: "50px",
+                textDecoration: "none",
+                fontWeight: 700,
+              }}
+            >
+              Explore Golden Triangle Tour
+            </Link>
 
+            <Link
+              href="/contact"
+              style={{
+                display: "inline-block",
+                background: "#fff",
+                color: "#08142d",
+                padding: "17px 32px",
+                borderRadius: "50px",
+                textDecoration: "none",
+                fontWeight: 700,
+              }}
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
       </section>
-
     </main>
   );
 }
