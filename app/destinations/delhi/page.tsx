@@ -121,7 +121,7 @@ export default function DelhiPage() {
         ]}
       />
 
-      {/* Hero */}
+      {/* ================= HERO ================= */}
 
       <section
         style={{
@@ -130,6 +130,7 @@ export default function DelhiPage() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          overflow: "hidden",
         }}
       >
         <Image
@@ -158,7 +159,7 @@ export default function DelhiPage() {
             color: "#fff",
             textAlign: "center",
             maxWidth: "950px",
-            padding: "30px 20px",
+            padding: "50px 20px",
           }}
         >
           <span
@@ -167,6 +168,7 @@ export default function DelhiPage() {
               letterSpacing: "3px",
               fontWeight: 700,
               textTransform: "uppercase",
+              fontSize: "16px",
             }}
           >
             Delhi Tours & Sightseeing
@@ -174,7 +176,7 @@ export default function DelhiPage() {
 
           <h1
             style={{
-              fontSize: "60px",
+              fontSize: "clamp(40px, 6vw, 60px)",
               lineHeight: "1.12",
               margin: "20px 0",
               color: "#fff",
@@ -201,7 +203,7 @@ export default function DelhiPage() {
         </div>
       </section>
 
-      {/* Introduction */}
+      {/* ================= INTRODUCTION WITH IMAGE ================= */}
 
       <section
         style={{
@@ -211,74 +213,117 @@ export default function DelhiPage() {
       >
         <div
           style={{
-            maxWidth: "1100px",
+            maxWidth: "1200px",
             margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(0, 1fr))",
+            gap: "60px",
+            alignItems: "center",
           }}
         >
-          <h2
-            style={{
-              fontSize: "42px",
-              color: "#08142d",
-              marginBottom: "25px",
-            }}
-          >
-            Delhi Tours: Discover the Heart of India
-          </h2>
+          {/* Text */}
 
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-            }}
-          >
-            Delhi is a fascinating city where centuries of history meet
-            modern India. From ancient monuments and Mughal architecture
-            to colorful markets, impressive government buildings and
-            lively neighborhoods, India's capital offers an incredible
-            variety of experiences for travelers.
-          </p>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-              marginTop: "22px",
-            }}
-          >
-            A private Delhi sightseeing tour is an excellent way to explore
-            the city's major attractions comfortably. With a private vehicle
-            and local guide, you can enjoy a flexible itinerary and learn
-            more about Delhi's history, culture and architecture.
-          </p>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-              marginTop: "22px",
-            }}
-          >
-            Delhi is also the perfect starting point for travelers continuing
-            to Agra and Jaipur on a{" "}
-            <Link
-              href="/tours/golden-triangle-5-day-tour"
+          <div>
+            <span
               style={{
                 color: "#b08d1e",
                 fontWeight: 700,
-                textDecoration: "none",
+                letterSpacing: "2px",
+                textTransform: "uppercase",
+                fontSize: "14px",
               }}
             >
-              Golden Triangle Tour
-            </Link>
-            .
-          </p>
+              Discover India's Capital
+            </span>
+
+            <h2
+              style={{
+                fontSize: "42px",
+                lineHeight: "1.2",
+                color: "#08142d",
+                margin: "15px 0 25px",
+              }}
+            >
+              Delhi Tours: Discover the Heart of India
+            </h2>
+
+            <p
+              style={{
+                fontSize: "19px",
+                lineHeight: "34px",
+                color: "#555",
+              }}
+            >
+              Delhi is a fascinating city where centuries of history meet
+              modern India. From ancient monuments and Mughal architecture
+              to colorful markets, impressive government buildings and
+              lively neighborhoods, India's capital offers an incredible
+              variety of experiences for travelers.
+            </p>
+
+            <p
+              style={{
+                fontSize: "19px",
+                lineHeight: "34px",
+                color: "#555",
+                marginTop: "22px",
+              }}
+            >
+              A private Delhi sightseeing tour is an excellent way to explore
+              the city's major attractions comfortably. With a private vehicle
+              and local guide, you can enjoy a flexible itinerary and learn
+              more about Delhi's history, culture and architecture.
+            </p>
+
+            <p
+              style={{
+                fontSize: "19px",
+                lineHeight: "34px",
+                color: "#555",
+                marginTop: "22px",
+              }}
+            >
+              Delhi is also the perfect starting point for travelers continuing
+              to Agra and Jaipur on a{" "}
+              <Link
+                href="/tours/golden-triangle-5-day-tour"
+                style={{
+                  color: "#b08d1e",
+                  fontWeight: 700,
+                  textDecoration: "none",
+                }}
+              >
+                Golden Triangle Tour
+              </Link>
+              .
+            </p>
+          </div>
+
+          {/* Delhi Image */}
+
+          <div
+            style={{
+              position: "relative",
+              minHeight: "450px",
+              borderRadius: "22px",
+              overflow: "hidden",
+              boxShadow: "0 18px 45px rgba(0,0,0,.12)",
+            }}
+          >
+            <Image
+              src="/images/destinations/delhi.jpg"
+              alt="Delhi India Gate and historic landmarks"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </div>
         </div>
       </section>
 
-      {/* Attractions */}
+      {/* ================= ATTRACTIONS ================= */}
 
       <section
         style={{
@@ -299,11 +344,23 @@ export default function DelhiPage() {
               margin: "0 auto 55px",
             }}
           >
+            <span
+              style={{
+                color: "#b08d1e",
+                fontWeight: 700,
+                letterSpacing: "2px",
+                textTransform: "uppercase",
+                fontSize: "14px",
+              }}
+            >
+              Delhi Sightseeing
+            </span>
+
             <h2
               style={{
                 fontSize: "42px",
                 color: "#08142d",
-                marginBottom: "20px",
+                margin: "15px 0 20px",
               }}
             >
               Top Places to Visit in Delhi
@@ -338,6 +395,24 @@ export default function DelhiPage() {
                   boxShadow: "0 10px 30px rgba(0,0,0,.07)",
                 }}
               >
+                <div
+                  style={{
+                    width: "50px",
+                    height: "50px",
+                    borderRadius: "50%",
+                    background: "#08142d",
+                    color: "#d4af37",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontWeight: 700,
+                    fontSize: "20px",
+                    marginBottom: "20px",
+                  }}
+                >
+                  ✓
+                </div>
+
                 <h3
                   style={{
                     color: "#08142d",
@@ -363,7 +438,7 @@ export default function DelhiPage() {
         </div>
       </section>
 
-      {/* Delhi Experience */}
+      {/* ================= DELHI EXPERIENCE ================= */}
 
       <section
         style={{
@@ -386,6 +461,19 @@ export default function DelhiPage() {
           >
             What to Experience on a Delhi Tour
           </h2>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#555",
+              maxWidth: "900px",
+            }}
+          >
+            A private Delhi tour allows you to experience the city's
+            historical landmarks, local culture and vibrant streets at a
+            comfortable pace.
+          </p>
 
           <div
             style={{
@@ -422,7 +510,7 @@ export default function DelhiPage() {
         </div>
       </section>
 
-      {/* Private Tour */}
+      {/* ================= PRIVATE TOUR ================= */}
 
       <section
         style={{
@@ -497,7 +585,7 @@ export default function DelhiPage() {
         </div>
       </section>
 
-      {/* Golden Triangle */}
+      {/* ================= GOLDEN TRIANGLE ================= */}
 
       <section
         style={{
@@ -565,7 +653,7 @@ export default function DelhiPage() {
         </div>
       </section>
 
-      {/* Best Time */}
+      {/* ================= BEST TIME ================= */}
 
       <section
         style={{
@@ -653,7 +741,7 @@ export default function DelhiPage() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* ================= FAQ ================= */}
 
       <section
         style={{
@@ -709,7 +797,7 @@ export default function DelhiPage() {
         </div>
       </section>
 
-      {/* Related Guides */}
+      {/* ================= RELATED GUIDES ================= */}
 
       <section
         style={{
@@ -772,7 +860,7 @@ export default function DelhiPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* ================= CTA ================= */}
 
       <section
         style={{
