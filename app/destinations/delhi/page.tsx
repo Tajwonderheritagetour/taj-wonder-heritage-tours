@@ -121,87 +121,97 @@ export default function DelhiPage() {
         ]}
       />
 
-      {/* ================= HERO ================= */}
+      {/* Hero */}
 
-      <section
+<section
+  style={{
+    position: "relative",
+    width: "100%",
+    maxWidth: "1290px",
+    height: "660px",
+    margin: "0 auto",
+    overflow: "hidden",
+  }}
+>
+  <Image
+    src="/images/destinations/delhi.jpg"
+    alt="Delhi India Gate and historic Delhi sightseeing"
+    fill
+    priority
+    sizes="(max-width: 768px) 100vw, 1290px"
+    style={{
+      objectFit: "cover",
+      objectPosition: "center",
+    }}
+  />
+
+  <div
+    style={{
+      position: "absolute",
+      inset: 0,
+      background: "rgba(8,20,45,.45)",
+    }}
+  />
+
+  <div
+    style={{
+      position: "absolute",
+      inset: 0,
+      zIndex: 2,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      textAlign: "center",
+      color: "#fff",
+      padding: "30px 20px",
+    }}
+  >
+    <div
+      style={{
+        maxWidth: "950px",
+      }}
+    >
+      <span
         style={{
-          position: "relative",
-          minHeight: "70vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          overflow: "hidden",
+          color: "#d4af37",
+          letterSpacing: "3px",
+          fontWeight: 700,
+          textTransform: "uppercase",
+          fontSize: "18px",
         }}
       >
-        <Image
-          src="/images/destinations/delhi.jpg"
-          alt="Delhi India Gate and historic Delhi sightseeing"
-          fill
-          priority
-          sizes="100vw"
-          style={{
-            objectFit: "cover",
-          }}
-        />
+        Delhi Tours & Sightseeing
+      </span>
 
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: "rgba(8,20,45,.68)",
-          }}
-        />
+      <h1
+        style={{
+          fontSize: "60px",
+          lineHeight: "1.12",
+          margin: "20px 0",
+          color: "#fff",
+          textShadow: "0 4px 18px rgba(0,0,0,.65)",
+        }}
+      >
+        Explore Delhi, India's Historic Capital
+      </h1>
 
-        <div
-          style={{
-            position: "relative",
-            zIndex: 2,
-            color: "#fff",
-            textAlign: "center",
-            maxWidth: "950px",
-            padding: "50px 20px",
-          }}
-        >
-          <span
-            style={{
-              color: "#d4af37",
-              letterSpacing: "3px",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              fontSize: "16px",
-            }}
-          >
-            Delhi Tours & Sightseeing
-          </span>
-
-          <h1
-            style={{
-              fontSize: "clamp(40px, 6vw, 60px)",
-              lineHeight: "1.12",
-              margin: "20px 0",
-              color: "#fff",
-              textShadow: "0 4px 18px rgba(0,0,0,.65)",
-            }}
-          >
-            Explore Delhi, India's Historic Capital
-          </h1>
-
-          <p
-            style={{
-              fontSize: "20px",
-              lineHeight: "34px",
-              color: "#f2f2f2",
-              maxWidth: "820px",
-              margin: "0 auto",
-              textShadow: "0 2px 10px rgba(0,0,0,.5)",
-            }}
-          >
-            Discover Delhi's magnificent monuments, Mughal heritage,
-            vibrant markets and modern landmarks with private sightseeing
-            tours and experienced local guides.
-          </p>
-        </div>
-      </section>
+      <p
+        style={{
+          fontSize: "20px",
+          lineHeight: "34px",
+          color: "#f2f2f2",
+          maxWidth: "820px",
+          margin: "0 auto",
+          textShadow: "0 2px 10px rgba(0,0,0,.5)",
+        }}
+      >
+        Discover Delhi's magnificent monuments, Mughal heritage,
+        vibrant markets and modern landmarks with private sightseeing
+        tours and experienced local guides.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* ================= INTRODUCTION WITH IMAGE ================= */}
 
