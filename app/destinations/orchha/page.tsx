@@ -203,69 +203,110 @@ export default function OrchhaPage() {
         </div>
       </section>
 
-      {/* INTRODUCTION */}
-      <section
+     {/* INTRODUCTION WITH IMAGE */}
+<section
+  style={{
+    padding: "90px 20px",
+    background: "#fff",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(0, 1fr))",
+      gap: "60px",
+      alignItems: "center",
+    }}
+  >
+    {/* Text */}
+    <div>
+      <span
         style={{
-          padding: "90px 20px",
-          background: "#fff",
+          color: "#b08d1e",
+          fontWeight: 700,
+          letterSpacing: "2px",
+          textTransform: "uppercase",
+          fontSize: "14px",
         }}
       >
-        <div
-          style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "42px",
-              color: "#08142d",
-              marginBottom: "25px",
-            }}
-          >
-            Orchha Tours: Discover a Hidden Heritage Gem
-          </h2>
+        Discover Orchha's Heritage
+      </span>
 
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-            }}
-          >
-            Orchha is a beautiful historic town in Madhya Pradesh, known for
-            its magnificent Bundela architecture, ancient temples and peaceful
-            location along the Betwa River. The town offers travelers a chance
-            to experience a quieter side of India's rich cultural heritage.
-          </p>
+      <h2
+        style={{
+          fontSize: "42px",
+          lineHeight: "1.2",
+          color: "#08142d",
+          margin: "15px 0 25px",
+        }}
+      >
+        Orchha Tours: Discover a Hidden Heritage Gem
+      </h2>
 
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-              marginTop: "22px",
-            }}
-          >
-            A private Orchha sightseeing tour allows you to explore the town's
-            most important monuments comfortably while learning about its
-            fascinating history, royal families and religious traditions from
-            a local guide.
-          </p>
+      <p
+        style={{
+          fontSize: "19px",
+          lineHeight: "34px",
+          color: "#555",
+        }}
+      >
+        Orchha is a beautiful historic town in Madhya Pradesh, known for
+        its magnificent Bundela architecture, ancient temples and peaceful
+        location along the Betwa River. The town offers travelers a chance
+        to experience a quieter side of India's rich cultural heritage.
+      </p>
 
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-              marginTop: "22px",
-            }}
-          >
-            Orchha can also be combined with other Central India destinations
-            such as Khajuraho and Varanasi for a longer heritage journey.
-          </p>
-        </div>
-      </section>
+      <p
+        style={{
+          fontSize: "19px",
+          lineHeight: "34px",
+          color: "#555",
+          marginTop: "22px",
+        }}
+      >
+        A private Orchha sightseeing tour allows you to explore the town's
+        most important monuments comfortably while learning about its
+        fascinating history, royal families and religious traditions from
+        a local guide.
+      </p>
+
+      <p
+        style={{
+          fontSize: "19px",
+          lineHeight: "34px",
+          color: "#555",
+          marginTop: "22px",
+        }}
+      >
+        Orchha can also be combined with other Central India destinations
+        such as Khajuraho and Varanasi for a longer heritage journey.
+      </p>
+    </div>
+
+    {/* Orchha Image */}
+    <div
+      style={{
+        position: "relative",
+        minHeight: "450px",
+        borderRadius: "22px",
+        overflow: "hidden",
+        boxShadow: "0 18px 45px rgba(0,0,0,.12)",
+      }}
+    >
+      <Image
+        src="/images/destinations/orchha.jpg"
+        alt="Orchha Fort and historic heritage monuments"
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        style={{
+          objectFit: "cover",
+        }}
+      />
+    </div>
+  </div>
+</section>
 
       {/* ATTRACTIONS */}
       <section

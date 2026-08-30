@@ -183,92 +183,132 @@ export default function BandhavgarhPage() {
         </div>
       </section>
 
-      {/* INTRODUCTION */}
+      {/* INTRODUCTION WITH IMAGE */}
 
-      <section
+<section
+  style={{
+    padding: "90px 20px",
+    background: "#fff",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(0, 1fr))",
+      gap: "60px",
+      alignItems: "center",
+    }}
+  >
+    {/* Text */}
+    <div>
+      <span
         style={{
-          padding: "90px 20px",
-          background: "#fff",
+          color: "#b08d1e",
+          fontWeight: 700,
+          letterSpacing: "2px",
+          textTransform: "uppercase",
+          fontSize: "14px",
         }}
       >
-        <div
+        Discover India's Tiger Country
+      </span>
+
+      <h2
+        style={{
+          fontSize: "42px",
+          lineHeight: "1.2",
+          color: "#08142d",
+          margin: "15px 0 25px",
+        }}
+      >
+        Bandhavgarh Tours: Discover India's Tiger Country
+      </h2>
+
+      <p
+        style={{
+          fontSize: "19px",
+          lineHeight: "34px",
+          color: "#555",
+        }}
+      >
+        Bandhavgarh National Park is one of India's best-known wildlife
+        destinations. Surrounded by forests, hills and grasslands, the
+        park offers travelers the opportunity to experience India's
+        incredible wildlife in a natural setting.
+      </p>
+
+      <p
+        style={{
+          fontSize: "19px",
+          lineHeight: "34px",
+          color: "#555",
+          marginTop: "22px",
+        }}
+      >
+        A private Bandhavgarh wildlife tour is an excellent choice for
+        travelers who want to combine comfortable transportation,
+        carefully planned sightseeing and exciting safari experiences.
+      </p>
+
+      <p
+        style={{
+          fontSize: "19px",
+          lineHeight: "34px",
+          color: "#555",
+          marginTop: "22px",
+        }}
+      >
+        Bandhavgarh can also be combined with other destinations in
+        Central India, including{" "}
+        <Link
+          href="/destinations/khajuraho"
           style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
+            color: "#b08d1e",
+            fontWeight: 700,
+            textDecoration: "none",
           }}
         >
-          <h2
-            style={{
-              fontSize: "42px",
-              color: "#08142d",
-              marginBottom: "25px",
-            }}
-          >
-            Bandhavgarh Tours: Discover India's Tiger Country
-          </h2>
+          Khajuraho
+        </Link>{" "}
+        and{" "}
+        <Link
+          href="/destinations/orchha"
+          style={{
+            color: "#b08d1e",
+            fontWeight: 700,
+            textDecoration: "none",
+          }}
+        >
+          Orchha
+        </Link>
+        .
+      </p>
+    </div>
 
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-            }}
-          >
-            Bandhavgarh National Park is one of India's best-known wildlife
-            destinations. Surrounded by forests, hills and grasslands, the
-            park offers travelers the opportunity to experience India's
-            incredible wildlife in a natural setting.
-          </p>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-              marginTop: "22px",
-            }}
-          >
-            A private Bandhavgarh wildlife tour is an excellent choice for
-            travelers who want to combine comfortable transportation,
-            carefully planned sightseeing and exciting safari experiences.
-          </p>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-              marginTop: "22px",
-            }}
-          >
-            Bandhavgarh can also be combined with other destinations in
-            Central India, including{" "}
-            <Link
-              href="/destinations/khajuraho"
-              style={{
-                color: "#b08d1e",
-                fontWeight: 700,
-                textDecoration: "none",
-              }}
-            >
-              Khajuraho
-            </Link>{" "}
-            and{" "}
-            <Link
-              href="/destinations/orchha"
-              style={{
-                color: "#b08d1e",
-                fontWeight: 700,
-                textDecoration: "none",
-              }}
-            >
-              Orchha
-            </Link>
-            .
-          </p>
-        </div>
-      </section>
-
+    {/* Bandhavgarh Image */}
+    <div
+      style={{
+        position: "relative",
+        minHeight: "450px",
+        borderRadius: "22px",
+        overflow: "hidden",
+        boxShadow: "0 18px 45px rgba(0,0,0,.12)",
+      }}
+    >
+      <Image
+        src="/images/destinations/bandhavgarh.jpg"
+        alt="Bandhavgarh National Park tiger safari"
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        style={{
+          objectFit: "cover",
+        }}
+      />
+    </div>
+  </div>
+</section>
       {/* TOP EXPERIENCES */}
 
       <section
