@@ -9,7 +9,8 @@ export const metadata: Metadata = {
   description:
     "Explore Orchha with Taj Wonder Heritage Tours. Discover Orchha Fort, Jahangir Mahal, Ram Raja Temple, Chaturbhuj Temple and riverside cenotaphs with private tours and local guides.",
   alternates: {
-    canonical: "https://www.tajwonderheritagetours.com/destinations/orchha",
+    canonical:
+      "https://www.tajwonderheritagetours.com/destinations/orchha",
   },
   openGraph: {
     title: "Orchha Tours & Sightseeing | Taj Wonder Heritage Tours",
@@ -105,6 +106,7 @@ const attractions = [
 export default function OrchhaPage() {
   return (
     <main>
+      {/* FAQ Schema */}
       <Script
         id="orchha-faq-schema"
         type="application/ld+json"
@@ -113,6 +115,7 @@ export default function OrchhaPage() {
         }}
       />
 
+      {/* Breadcrumb */}
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -121,8 +124,7 @@ export default function OrchhaPage() {
         ]}
       />
 
-      {/* Hero */}
-
+      {/* HERO */}
       <section
         style={{
           position: "relative",
@@ -201,8 +203,7 @@ export default function OrchhaPage() {
         </div>
       </section>
 
-      {/* Introduction */}
-
+      {/* INTRODUCTION */}
       <section
         style={{
           padding: "90px 20px",
@@ -266,8 +267,7 @@ export default function OrchhaPage() {
         </div>
       </section>
 
-      {/* Attractions */}
-
+      {/* ATTRACTIONS */}
       <section
         style={{
           padding: "90px 20px",
@@ -351,8 +351,7 @@ export default function OrchhaPage() {
         </div>
       </section>
 
-      {/* Orchha Experience */}
-
+      {/* ORCHHA EXPERIENCE */}
       <section
         style={{
           padding: "90px 20px",
@@ -402,16 +401,14 @@ export default function OrchhaPage() {
                   lineHeight: "28px",
                 }}
               >
-                <strong style={{ color: "#d4af37" }}>✓</strong>{" "}
-                {item}
+                <strong style={{ color: "#d4af37" }}>✓</strong> {item}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Private Tour */}
-
+      {/* PRIVATE TOUR */}
       <section
         style={{
           padding: "90px 20px",
@@ -482,11 +479,27 @@ export default function OrchhaPage() {
               <li>Local recommendations and travel assistance</li>
             </ul>
           </div>
+
+          <div style={{ marginTop: "35px" }}>
+            <Link
+              href="/tours"
+              style={{
+                display: "inline-block",
+                background: "#d4af37",
+                color: "#08142d",
+                padding: "16px 32px",
+                borderRadius: "50px",
+                textDecoration: "none",
+                fontWeight: 700,
+              }}
+            >
+              Explore Our Tours →
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Central India Tour */}
-
+      {/* CENTRAL INDIA TOUR */}
       <section
         style={{
           padding: "90px 20px",
@@ -524,7 +537,7 @@ export default function OrchhaPage() {
 
           <div style={{ marginTop: "35px" }}>
             <Link
-              href="/tours/orchha-khajuraho-varanasi-tour"
+              href="/tours/golden-triangle-varanasi-tour"
               style={{
                 display: "inline-block",
                 background: "#d4af37",
@@ -535,14 +548,13 @@ export default function OrchhaPage() {
                 fontWeight: 700,
               }}
             >
-              Explore Orchha, Khajuraho & Varanasi Tour →
+              Explore Varanasi Tour →
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Best Time */}
-
+      {/* BEST TIME */}
       <section
         style={{
           padding: "90px 20px",
@@ -592,7 +604,13 @@ export default function OrchhaPage() {
               }}
             >
               <h3 style={{ color: "#08142d" }}>October – March</h3>
-              <p style={{ color: "#666", lineHeight: "28px" }}>
+
+              <p
+                style={{
+                  color: "#666",
+                  lineHeight: "28px",
+                }}
+              >
                 Pleasant weather and ideal conditions for exploring Orchha's
                 outdoor monuments.
               </p>
@@ -606,7 +624,13 @@ export default function OrchhaPage() {
               }}
             >
               <h3 style={{ color: "#08142d" }}>April – June</h3>
-              <p style={{ color: "#666", lineHeight: "28px" }}>
+
+              <p
+                style={{
+                  color: "#666",
+                  lineHeight: "28px",
+                }}
+              >
                 Hot summer weather. Early morning and late afternoon
                 sightseeing is recommended.
               </p>
@@ -620,7 +644,13 @@ export default function OrchhaPage() {
               }}
             >
               <h3 style={{ color: "#08142d" }}>July – September</h3>
-              <p style={{ color: "#666", lineHeight: "28px" }}>
+
+              <p
+                style={{
+                  color: "#666",
+                  lineHeight: "28px",
+                }}
+              >
                 Monsoon season with occasional rainfall and greener
                 surroundings.
               </p>
@@ -630,7 +660,6 @@ export default function OrchhaPage() {
       </section>
 
       {/* FAQ */}
-
       <section
         style={{
           padding: "90px 20px",
@@ -685,8 +714,7 @@ export default function OrchhaPage() {
         </div>
       </section>
 
-      {/* Related Destinations */}
-
+      {/* RELATED DESTINATIONS */}
       <section
         style={{
           padding: "70px 20px",
@@ -744,12 +772,17 @@ export default function OrchhaPage() {
                 Explore Delhi
               </Link>
             </li>
+
+            <li>
+              <Link href="/destinations/rajasthan">
+                Explore Rajasthan
+              </Link>
+            </li>
           </ul>
         </div>
       </section>
 
       {/* CTA */}
-
       <section
         style={{
           padding: "90px 20px",
@@ -795,7 +828,7 @@ export default function OrchhaPage() {
             }}
           >
             <Link
-              href="/tours/orchha-khajuraho-varanasi-tour"
+              href="/tours"
               style={{
                 display: "inline-block",
                 background: "#d4af37",
@@ -806,7 +839,7 @@ export default function OrchhaPage() {
                 fontWeight: 700,
               }}
             >
-              Explore Orchha Tour
+              Explore Our Tours
             </Link>
 
             <Link
