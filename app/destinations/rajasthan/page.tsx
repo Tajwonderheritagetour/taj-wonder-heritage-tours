@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: "/images/destinations/rajasthan.jpg",
         width: 1200,
         height: 630,
-        alt: "Rajasthan forts and royal heritage",
+        alt: "Rajasthan royal heritage and historic forts",
       },
     ],
   },
@@ -38,7 +38,7 @@ const faqs = [
   {
     question: "How many days are enough for a Rajasthan tour?",
     answer:
-      "A Rajasthan tour can take anywhere from 5 to 14 days depending on the destinations you want to visit. A shorter itinerary can focus on Jaipur and nearby heritage attractions, while longer journeys can include Jodhpur, Udaipur, Jaisalmer and Ranthambore.",
+      "A Rajasthan tour can take anywhere from 5 to 14 days depending on the destinations you want to visit. Shorter itineraries can focus on Jaipur and nearby heritage attractions, while longer journeys can include Jodhpur, Udaipur, Jaisalmer and Ranthambore.",
   },
   {
     question: "Can Rajasthan be combined with the Golden Triangle?",
@@ -105,7 +105,7 @@ const attractions = [
 
 export default function RajasthanPage() {
   return (
-    <main>
+    <>
       <Script
         id="rajasthan-faq-schema"
         type="application/ld+json"
@@ -114,784 +114,785 @@ export default function RajasthanPage() {
         }}
       />
 
-      <Breadcrumb
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Destinations", href: "/destinations" },
-          { label: "Rajasthan" },
-        ]}
-      />
-
-      {/* HERO */}
-
-      <section
-        style={{
-          position: "relative",
-          minHeight: "70vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Image
-          src="/images/destinations/rajasthan.jpg"
-          alt="Rajasthan royal heritage and historic forts"
-          fill
-          priority
-          sizes="100vw"
-          style={{
-            objectFit: "cover",
-          }}
+      <main>
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Destinations", href: "/destinations" },
+            { label: "Rajasthan" },
+          ]}
         />
 
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: "rgba(8,20,45,.68)",
-          }}
-        />
-
-        <div
+        {/* HERO */}
+        <section
           style={{
             position: "relative",
-            zIndex: 2,
-            color: "#fff",
-            textAlign: "center",
-            maxWidth: "950px",
-            padding: "30px 20px",
+            minHeight: "70vh",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          <span
+          <Image
+            src="/images/destinations/rajasthan.jpg"
+            alt="Rajasthan royal heritage and historic forts"
+            fill
+            priority
+            sizes="100vw"
             style={{
-              color: "#d4af37",
-              letterSpacing: "3px",
-              fontWeight: 700,
-              textTransform: "uppercase",
+              objectFit: "cover",
             }}
-          >
-            Rajasthan Tours & Sightseeing
-          </span>
+          />
 
-          <h1
+          <div
             style={{
-              fontSize: "60px",
-              lineHeight: "1.12",
-              margin: "20px 0",
+              position: "absolute",
+              inset: 0,
+              background: "rgba(8,20,45,.68)",
+            }}
+          />
+
+          <div
+            style={{
+              position: "relative",
+              zIndex: 2,
               color: "#fff",
-              textShadow: "0 4px 18px rgba(0,0,0,.65)",
+              textAlign: "center",
+              maxWidth: "950px",
+              padding: "30px 20px",
             }}
           >
-            Discover the Royal Heritage of Rajasthan
-          </h1>
-
-          <p
-            style={{
-              fontSize: "20px",
-              lineHeight: "34px",
-              color: "#f2f2f2",
-              maxWidth: "820px",
-              margin: "0 auto",
-              textShadow: "0 2px 10px rgba(0,0,0,.5)",
-            }}
-          >
-            Explore majestic forts, magnificent palaces, colorful cities,
-            desert landscapes and rich Rajasthani culture with private tours
-            and experienced local guides.
-          </p>
-        </div>
-      </section>
-
-      {/* INTRODUCTION */}
-
-      <section
-        style={{
-          padding: "90px 20px",
-          background: "#fff",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "42px",
-              color: "#08142d",
-              marginBottom: "25px",
-            }}
-          >
-            Rajasthan Tours: Experience India's Royal State
-          </h2>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-            }}
-          >
-            Rajasthan is one of India's most fascinating travel destinations,
-            famous for its royal palaces, magnificent forts, colorful markets,
-            historic cities and timeless traditions. From the Pink City of
-            Jaipur to the blue streets of Jodhpur and the romantic lakes of
-            Udaipur, Rajasthan offers an unforgettable journey through India's
-            royal heritage.
-          </p>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-              marginTop: "22px",
-            }}
-          >
-            A private Rajasthan tour allows you to explore the region at your
-            own pace with comfortable transportation and local expertise.
-            Whether you are interested in history, architecture, culture,
-            food, shopping or wildlife, Rajasthan offers experiences for every
-            type of traveler.
-          </p>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-              marginTop: "22px",
-            }}
-          >
-            Rajasthan can also be combined with Delhi and Agra on a{" "}
-            <Link
-              href="/tours/golden-triangle-5-day-tour"
+            <span
               style={{
-                color: "#b08d1e",
+                color: "#d4af37",
+                letterSpacing: "3px",
                 fontWeight: 700,
-                textDecoration: "none",
+                textTransform: "uppercase",
               }}
             >
-              Golden Triangle Tour
-            </Link>
-            , creating a memorable journey through India's most iconic
-            heritage destinations.
-          </p>
-        </div>
-      </section>
+              Rajasthan Tours & Sightseeing
+            </span>
 
-      {/* TOP DESTINATIONS */}
+            <h1
+              style={{
+                fontSize: "60px",
+                lineHeight: "1.12",
+                margin: "20px 0",
+                color: "#fff",
+                textShadow: "0 4px 18px rgba(0,0,0,.65)",
+              }}
+            >
+              Discover the Royal Heritage of Rajasthan
+            </h1>
 
-      <section
-        style={{
-          padding: "90px 20px",
-          background: "#f8f9fb",
-        }}
-      >
-        <div
+            <p
+              style={{
+                fontSize: "20px",
+                lineHeight: "34px",
+                color: "#f2f2f2",
+                maxWidth: "820px",
+                margin: "0 auto",
+                textShadow: "0 2px 10px rgba(0,0,0,.5)",
+              }}
+            >
+              Explore majestic forts, magnificent palaces, colorful cities,
+              desert landscapes and rich Rajasthani culture with private tours
+              and experienced local guides.
+            </p>
+          </div>
+        </section>
+
+        {/* INTRODUCTION */}
+        <section
           style={{
-            maxWidth: "1200px",
-            margin: "0 auto",
+            padding: "90px 20px",
+            background: "#fff",
           }}
         >
           <div
             style={{
-              textAlign: "center",
-              maxWidth: "800px",
-              margin: "0 auto 55px",
+              maxWidth: "1100px",
+              margin: "0 auto",
             }}
           >
             <h2
               style={{
                 fontSize: "42px",
                 color: "#08142d",
-                marginBottom: "20px",
+                marginBottom: "25px",
               }}
             >
-              Top Places to Visit in Rajasthan
+              Rajasthan Tours: Experience India's Royal State
             </h2>
 
             <p
               style={{
-                fontSize: "18px",
-                lineHeight: "32px",
-                color: "#666",
+                fontSize: "19px",
+                lineHeight: "34px",
+                color: "#555",
               }}
             >
-              Discover Rajasthan's most famous heritage cities, royal
-              landmarks, spiritual destinations and wildlife experiences.
+              Rajasthan is one of India's most fascinating travel
+              destinations, famous for its royal palaces, magnificent forts,
+              colorful markets, historic cities and timeless traditions. From
+              the Pink City of Jaipur to the blue streets of Jodhpur and the
+              romantic lakes of Udaipur, Rajasthan offers an unforgettable
+              journey through India's royal heritage.
+            </p>
+
+            <p
+              style={{
+                fontSize: "19px",
+                lineHeight: "34px",
+                color: "#555",
+                marginTop: "22px",
+              }}
+            >
+              A private Rajasthan tour allows you to explore the region at
+              your own pace with comfortable transportation and local
+              expertise. Whether you are interested in history, architecture,
+              culture, food, shopping or wildlife, Rajasthan offers
+              experiences for every type of traveler.
+            </p>
+
+            <p
+              style={{
+                fontSize: "19px",
+                lineHeight: "34px",
+                color: "#555",
+                marginTop: "22px",
+              }}
+            >
+              Rajasthan can also be combined with Delhi and Agra on a{" "}
+              <Link
+                href="/tours/golden-triangle-5-day-tour"
+                style={{
+                  color: "#b08d1e",
+                  fontWeight: 700,
+                  textDecoration: "none",
+                }}
+              >
+                Golden Triangle Tour
+              </Link>
+              , creating a memorable journey through India's most iconic
+              heritage destinations.
             </p>
           </div>
+        </section>
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
-              gap: "30px",
-            }}
-          >
-            {attractions.map((attraction) => (
-              <div
-                key={attraction.title}
-                style={{
-                  background: "#fff",
-                  padding: "35px",
-                  borderRadius: "18px",
-                  boxShadow: "0 10px 30px rgba(0,0,0,.07)",
-                }}
-              >
-                <h3
-                  style={{
-                    color: "#08142d",
-                    fontSize: "25px",
-                    marginBottom: "15px",
-                  }}
-                >
-                  {attraction.title}
-                </h3>
-
-                <p
-                  style={{
-                    color: "#666",
-                    lineHeight: "30px",
-                    margin: 0,
-                  }}
-                >
-                  {attraction.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* RAJASTHAN EXPERIENCE */}
-
-      <section
-        style={{
-          padding: "90px 20px",
-          background: "#fff",
-        }}
-      >
-        <div
+        {/* TOP DESTINATIONS */}
+        <section
           style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
+            padding: "90px 20px",
+            background: "#f8f9fb",
           }}
         >
-          <h2
-            style={{
-              fontSize: "42px",
-              color: "#08142d",
-              marginBottom: "25px",
-            }}
-          >
-            What to Experience in Rajasthan
-          </h2>
-
           <div
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
-              gap: "25px",
-              marginTop: "35px",
+              maxWidth: "1200px",
+              margin: "0 auto",
             }}
           >
-            {[
-              "Explore magnificent Rajput forts and royal palaces",
-              "Discover Jaipur, Jodhpur and Udaipur",
-              "Experience colorful Rajasthani markets and handicrafts",
-              "Enjoy traditional Rajasthani cuisine",
-              "Experience desert landscapes and cultural traditions",
-              "Combine heritage sightseeing with a Ranthambore safari",
-            ].map((item) => (
-              <div
-                key={item}
+            <div
+              style={{
+                textAlign: "center",
+                maxWidth: "800px",
+                margin: "0 auto 55px",
+              }}
+            >
+              <h2
                 style={{
-                  padding: "25px",
-                  background: "#f8f9fb",
-                  borderRadius: "14px",
+                  fontSize: "42px",
+                  color: "#08142d",
+                  marginBottom: "20px",
+                }}
+              >
+                Top Places to Visit in Rajasthan
+              </h2>
+
+              <p
+                style={{
                   fontSize: "18px",
-                  color: "#444",
-                  lineHeight: "28px",
+                  lineHeight: "32px",
+                  color: "#666",
                 }}
               >
-                <strong style={{ color: "#d4af37" }}>✓</strong>{" "}
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+                Discover Rajasthan's most famous heritage cities, royal
+                landmarks, spiritual destinations and wildlife experiences.
+              </p>
+            </div>
 
-      {/* PRIVATE TOUR */}
-
-      <section
-        style={{
-          padding: "90px 20px",
-          background: "#f8f9fb",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "42px",
-              color: "#08142d",
-              marginBottom: "25px",
-            }}
-          >
-            Private Rajasthan Tours
-          </h2>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-            }}
-          >
-            Discover Rajasthan comfortably with a private vehicle,
-            experienced chauffeur and local guides. Your itinerary can be
-            customized around the destinations, attractions and experiences
-            that interest you most.
-          </p>
-
-          <div
-            style={{
-              background: "#fff",
-              borderRadius: "18px",
-              padding: "35px",
-              marginTop: "35px",
-              boxShadow: "0 8px 25px rgba(0,0,0,.06)",
-            }}
-          >
-            <h3
+            <div
               style={{
-                color: "#08142d",
-                fontSize: "26px",
-                marginBottom: "20px",
+                display: "grid",
+                gridTemplateColumns:
+                  "repeat(auto-fit,minmax(280px,1fr))",
+                gap: "30px",
               }}
             >
-              Private Tour Benefits
-            </h3>
+              {attractions.map((attraction) => (
+                <div
+                  key={attraction.title}
+                  style={{
+                    background: "#fff",
+                    padding: "35px",
+                    borderRadius: "18px",
+                    boxShadow: "0 10px 30px rgba(0,0,0,.07)",
+                  }}
+                >
+                  <h3
+                    style={{
+                      color: "#08142d",
+                      fontSize: "25px",
+                      marginBottom: "15px",
+                    }}
+                  >
+                    {attraction.title}
+                  </h3>
 
-            <ul
+                  <p
+                    style={{
+                      color: "#666",
+                      lineHeight: "30px",
+                      margin: 0,
+                    }}
+                  >
+                    {attraction.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* RAJASTHAN EXPERIENCE */}
+        <section
+          style={{
+            padding: "90px 20px",
+            background: "#fff",
+          }}
+        >
+          <div
+            style={{
+              maxWidth: "1100px",
+              margin: "0 auto",
+            }}
+          >
+            <h2
               style={{
-                lineHeight: "36px",
+                fontSize: "42px",
+                color: "#08142d",
+                marginBottom: "25px",
+              }}
+            >
+              What to Experience in Rajasthan
+            </h2>
+
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns:
+                  "repeat(auto-fit,minmax(280px,1fr))",
+                gap: "25px",
+                marginTop: "35px",
+              }}
+            >
+              {[
+                "Explore magnificent Rajput forts and royal palaces",
+                "Discover Jaipur, Jodhpur and Udaipur",
+                "Experience colorful Rajasthani markets and handicrafts",
+                "Enjoy traditional Rajasthani cuisine",
+                "Experience desert landscapes and cultural traditions",
+                "Combine heritage sightseeing with a Ranthambore safari",
+              ].map((item) => (
+                <div
+                  key={item}
+                  style={{
+                    padding: "25px",
+                    background: "#f8f9fb",
+                    borderRadius: "14px",
+                    fontSize: "18px",
+                    color: "#444",
+                    lineHeight: "28px",
+                  }}
+                >
+                  <strong style={{ color: "#d4af37" }}>✓</strong>{" "}
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* PRIVATE TOUR */}
+        <section
+          style={{
+            padding: "90px 20px",
+            background: "#f8f9fb",
+          }}
+        >
+          <div
+            style={{
+              maxWidth: "1100px",
+              margin: "0 auto",
+            }}
+          >
+            <h2
+              style={{
+                fontSize: "42px",
+                color: "#08142d",
+                marginBottom: "25px",
+              }}
+            >
+              Private Rajasthan Tours
+            </h2>
+
+            <p
+              style={{
+                fontSize: "19px",
+                lineHeight: "34px",
                 color: "#555",
-                fontSize: "18px",
-                paddingLeft: "22px",
               }}
             >
-              <li>Private air-conditioned vehicle</li>
-              <li>Flexible sightseeing itinerary</li>
-              <li>Experienced local guides</li>
-              <li>Hotel pickup and drop-off options</li>
-              <li>Comfortable transportation between destinations</li>
-              <li>Local recommendations and travel assistance</li>
-            </ul>
-          </div>
-
-          <div style={{ marginTop: "35px" }}>
-            <Link
-              href="/tours"
-              style={{
-                display: "inline-block",
-                background: "#d4af37",
-                color: "#08142d",
-                padding: "16px 32px",
-                borderRadius: "50px",
-                textDecoration: "none",
-                fontWeight: 700,
-              }}
-            >
-              Explore Rajasthan Tours →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* GOLDEN TRIANGLE */}
-
-      <section
-        style={{
-          padding: "90px 20px",
-          background: "#fff",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "42px",
-              color: "#08142d",
-              marginBottom: "25px",
-            }}
-          >
-            Rajasthan and the Golden Triangle
-          </h2>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-            }}
-          >
-            Rajasthan is an excellent extension to India's famous Golden
-            Triangle route connecting Delhi, Agra and Jaipur. Travelers can
-            begin with Delhi, visit the Taj Mahal in Agra and then continue
-            into Rajasthan to experience the royal heritage of Jaipur and
-            other historic cities.
-          </p>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-              marginTop: "22px",
-            }}
-          >
-            Combining these destinations creates a diverse Indian journey
-            covering Mughal architecture, Rajput heritage, royal palaces,
-            colorful markets and unforgettable cultural experiences.
-          </p>
-
-          <div style={{ marginTop: "35px" }}>
-            <Link
-              href="/tours/golden-triangle-5-day-tour"
-              style={{
-                display: "inline-block",
-                background: "#d4af37",
-                color: "#08142d",
-                padding: "16px 32px",
-                borderRadius: "50px",
-                textDecoration: "none",
-                fontWeight: 700,
-              }}
-            >
-              Explore Golden Triangle Tour →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* BEST TIME */}
-
-      <section
-        style={{
-          padding: "90px 20px",
-          background: "#f8f9fb",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "42px",
-              color: "#08142d",
-              marginBottom: "25px",
-            }}
-          >
-            Best Time to Visit Rajasthan
-          </h2>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#555",
-            }}
-          >
-            October to March is generally the most comfortable period for
-            exploring Rajasthan. The cooler temperatures make it easier to
-            visit forts, palaces, markets and outdoor attractions.
-          </p>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
-              gap: "25px",
-              marginTop: "35px",
-            }}
-          >
-            <div
-              style={{
-                background: "#fff",
-                padding: "30px",
-                borderRadius: "16px",
-              }}
-            >
-              <h3 style={{ color: "#08142d" }}>October – March</h3>
-
-              <p
-                style={{
-                  color: "#666",
-                  lineHeight: "28px",
-                }}
-              >
-                Pleasant weather and ideal conditions for sightseeing and
-                exploring Rajasthan's heritage attractions.
-              </p>
-            </div>
+              Discover Rajasthan comfortably with a private vehicle,
+              experienced chauffeur and local guides. Your itinerary can be
+              customized around the destinations, attractions and experiences
+              that interest you most.
+            </p>
 
             <div
               style={{
                 background: "#fff",
-                padding: "30px",
-                borderRadius: "16px",
-              }}
-            >
-              <h3 style={{ color: "#08142d" }}>April – June</h3>
-
-              <p
-                style={{
-                  color: "#666",
-                  lineHeight: "28px",
-                }}
-              >
-                Hot summer weather. Early morning and late afternoon
-                sightseeing is recommended.
-              </p>
-            </div>
-
-            <div
-              style={{
-                background: "#fff",
-                padding: "30px",
-                borderRadius: "16px",
-              }}
-            >
-              <h3 style={{ color: "#08142d" }}>July – September</h3>
-
-              <p
-                style={{
-                  color: "#666",
-                  lineHeight: "28px",
-                }}
-              >
-                Monsoon season with occasional rainfall and greener landscapes
-                across parts of Rajasthan.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-
-      <section
-        style={{
-          padding: "90px 20px",
-          background: "#fff",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1000px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "42px",
-              color: "#08142d",
-              marginBottom: "40px",
-            }}
-          >
-            Frequently Asked Questions About Rajasthan
-          </h2>
-
-          {faqs.map((faq) => (
-            <div
-              key={faq.question}
-              style={{
-                marginBottom: "35px",
+                borderRadius: "18px",
+                padding: "35px",
+                marginTop: "35px",
+                boxShadow: "0 8px 25px rgba(0,0,0,.06)",
               }}
             >
               <h3
                 style={{
                   color: "#08142d",
-                  fontSize: "24px",
-                  marginBottom: "12px",
+                  fontSize: "26px",
+                  marginBottom: "20px",
                 }}
               >
-                {faq.question}
+                Private Tour Benefits
               </h3>
 
-              <p
+              <ul
                 style={{
+                  lineHeight: "36px",
                   color: "#555",
                   fontSize: "18px",
-                  lineHeight: "32px",
-                  margin: 0,
+                  paddingLeft: "22px",
                 }}
               >
-                {faq.answer}
-              </p>
+                <li>Private air-conditioned vehicle</li>
+                <li>Flexible sightseeing itinerary</li>
+                <li>Experienced local guides</li>
+                <li>Hotel pickup and drop-off options</li>
+                <li>Comfortable transportation between destinations</li>
+                <li>Local recommendations and travel assistance</li>
+              </ul>
             </div>
-          ))}
-        </div>
-      </section>
 
-      {/* RELATED DESTINATIONS */}
+            <div style={{ marginTop: "35px" }}>
+              <Link
+                href="/tours"
+                style={{
+                  display: "inline-block",
+                  background: "#d4af37",
+                  color: "#08142d",
+                  padding: "16px 32px",
+                  borderRadius: "50px",
+                  textDecoration: "none",
+                  fontWeight: 700,
+                }}
+              >
+                Explore Rajasthan Tours →
+              </Link>
+            </div>
+          </div>
+        </section>
 
-      <section
-        style={{
-          padding: "70px 20px",
-          background: "#f8f9fb",
-        }}
-      >
-        <div
+        {/* GOLDEN TRIANGLE */}
+        <section
           style={{
-            maxWidth: "1000px",
-            margin: "0 auto",
+            padding: "90px 20px",
+            background: "#fff",
           }}
         >
-          <h2
-            style={{
-              fontSize: "38px",
-              color: "#08142d",
-              marginBottom: "25px",
-            }}
-          >
-            Explore More Destinations
-          </h2>
-
-          <ul
-            style={{
-              lineHeight: "38px",
-              fontSize: "18px",
-            }}
-          >
-            <li>
-              <Link href="/destinations/jaipur">
-                Explore Jaipur
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/destinations/ranthambore">
-                Explore Ranthambore
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/destinations/agra">
-                Explore Agra
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/destinations/delhi">
-                Explore Delhi
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/tours">
-                View All Tours
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      {/* CTA */}
-
-      <section
-        style={{
-          padding: "90px 20px",
-          background: "#08142d",
-          color: "#fff",
-          textAlign: "center",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "850px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "44px",
-              marginBottom: "25px",
-            }}
-          >
-            Explore Rajasthan with Local Experts
-          </h2>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#ddd",
-              marginBottom: "40px",
-            }}
-          >
-            Discover Rajasthan's royal heritage, magnificent architecture and
-            vibrant culture with private transportation, experienced local
-            guides and flexible sightseeing experiences from Taj Wonder
-            Heritage Tours.
-          </p>
-
           <div
             style={{
-              display: "flex",
-              justifyContent: "center",
-              gap: "18px",
-              flexWrap: "wrap",
+              maxWidth: "1100px",
+              margin: "0 auto",
             }}
           >
-            <Link
-              href="/tours"
+            <h2
               style={{
-                display: "inline-block",
-                background: "#d4af37",
+                fontSize: "42px",
                 color: "#08142d",
-                padding: "17px 32px",
-                borderRadius: "50px",
-                textDecoration: "none",
-                fontWeight: 700,
+                marginBottom: "25px",
               }}
             >
-              Explore Rajasthan Tours
-            </Link>
+              Rajasthan and the Golden Triangle
+            </h2>
 
-            <Link
-              href="/contact"
+            <p
               style={{
-                display: "inline-block",
-                background: "#fff",
-                color: "#08142d",
-                padding: "17px 32px",
-                borderRadius: "50px",
-                textDecoration: "none",
-                fontWeight: 700,
+                fontSize: "19px",
+                lineHeight: "34px",
+                color: "#555",
               }}
             >
-              Contact Us
-            </Link>
+              Rajasthan is an excellent extension to India's famous Golden
+              Triangle route connecting Delhi, Agra and Jaipur. Travelers can
+              begin with Delhi, visit the Taj Mahal in Agra and then continue
+              into Rajasthan to experience the royal heritage of Jaipur and
+              other historic cities.
+            </p>
+
+            <p
+              style={{
+                fontSize: "19px",
+                lineHeight: "34px",
+                color: "#555",
+                marginTop: "22px",
+              }}
+            >
+              Combining these destinations creates a diverse Indian journey
+              covering Mughal architecture, Rajput heritage, royal palaces,
+              colorful markets and unforgettable cultural experiences.
+            </p>
+
+            <div style={{ marginTop: "35px" }}>
+              <Link
+                href="/tours/golden-triangle-5-day-tour"
+                style={{
+                  display: "inline-block",
+                  background: "#d4af37",
+                  color: "#08142d",
+                  padding: "16px 32px",
+                  borderRadius: "50px",
+                  textDecoration: "none",
+                  fontWeight: 700,
+                }}
+              >
+                Explore Golden Triangle Tour →
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+
+        {/* BEST TIME */}
+        <section
+          style={{
+            padding: "90px 20px",
+            background: "#f8f9fb",
+          }}
+        >
+          <div
+            style={{
+              maxWidth: "1100px",
+              margin: "0 auto",
+            }}
+          >
+            <h2
+              style={{
+                fontSize: "42px",
+                color: "#08142d",
+                marginBottom: "25px",
+              }}
+            >
+              Best Time to Visit Rajasthan
+            </h2>
+
+            <p
+              style={{
+                fontSize: "19px",
+                lineHeight: "34px",
+                color: "#555",
+              }}
+            >
+              October to March is generally the most comfortable period for
+              exploring Rajasthan. The cooler temperatures make it easier to
+              visit forts, palaces, markets and outdoor attractions.
+            </p>
+
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns:
+                  "repeat(auto-fit,minmax(250px,1fr))",
+                gap: "25px",
+                marginTop: "35px",
+              }}
+            >
+              <div
+                style={{
+                  background: "#fff",
+                  padding: "30px",
+                  borderRadius: "16px",
+                }}
+              >
+                <h3 style={{ color: "#08142d" }}>
+                  October – March
+                </h3>
+
+                <p
+                  style={{
+                    color: "#666",
+                    lineHeight: "28px",
+                  }}
+                >
+                  Pleasant weather and ideal conditions for sightseeing and
+                  exploring Rajasthan's heritage attractions.
+                </p>
+              </div>
+
+              <div
+                style={{
+                  background: "#fff",
+                  padding: "30px",
+                  borderRadius: "16px",
+                }}
+              >
+                <h3 style={{ color: "#08142d" }}>
+                  April – June
+                </h3>
+
+                <p
+                  style={{
+                    color: "#666",
+                    lineHeight: "28px",
+                  }}
+                >
+                  Hot summer weather. Early morning and late afternoon
+                  sightseeing is recommended.
+                </p>
+              </div>
+
+              <div
+                style={{
+                  background: "#fff",
+                  padding: "30px",
+                  borderRadius: "16px",
+                }}
+              >
+                <h3 style={{ color: "#08142d" }}>
+                  July – September
+                </h3>
+
+                <p
+                  style={{
+                    color: "#666",
+                    lineHeight: "28px",
+                  }}
+                >
+                  Monsoon season with occasional rainfall and greener
+                  landscapes across parts of Rajasthan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section
+          style={{
+            padding: "90px 20px",
+            background: "#fff",
+          }}
+        >
+          <div
+            style={{
+              maxWidth: "1000px",
+              margin: "0 auto",
+            }}
+          >
+            <h2
+              style={{
+                fontSize: "42px",
+                color: "#08142d",
+                marginBottom: "40px",
+              }}
+            >
+              Frequently Asked Questions About Rajasthan
+            </h2>
+
+            {faqs.map((faq) => (
+              <div
+                key={faq.question}
+                style={{
+                  marginBottom: "35px",
+                }}
+              >
+                <h3
+                  style={{
+                    color: "#08142d",
+                    fontSize: "24px",
+                    marginBottom: "12px",
+                  }}
+                >
+                  {faq.question}
+                </h3>
+
+                <p
+                  style={{
+                    color: "#555",
+                    fontSize: "18px",
+                    lineHeight: "32px",
+                    margin: 0,
+                  }}
+                >
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* RELATED DESTINATIONS */}
+        <section
+          style={{
+            padding: "70px 20px",
+            background: "#f8f9fb",
+          }}
+        >
+          <div
+            style={{
+              maxWidth: "1000px",
+              margin: "0 auto",
+            }}
+          >
+            <h2
+              style={{
+                fontSize: "38px",
+                color: "#08142d",
+                marginBottom: "25px",
+              }}
+            >
+              Explore More Destinations
+            </h2>
+
+            <ul
+              style={{
+                lineHeight: "38px",
+                fontSize: "18px",
+              }}
+            >
+              <li>
+                <Link href="/destinations/jaipur">
+                  Explore Jaipur
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/destinations/ranthambore">
+                  Explore Ranthambore
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/destinations/agra">
+                  Explore Agra
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/destinations/delhi">
+                  Explore Delhi
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/tours">
+                  View All Tours
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section
+          style={{
+            padding: "90px 20px",
+            background: "#08142d",
+            color: "#fff",
+            textAlign: "center",
+          }}
+        >
+          <div
+            style={{
+              maxWidth: "850px",
+              margin: "0 auto",
+            }}
+          >
+            <h2
+              style={{
+                fontSize: "44px",
+                marginBottom: "25px",
+              }}
+            >
+              Explore Rajasthan with Local Experts
+            </h2>
+
+            <p
+              style={{
+                fontSize: "19px",
+                lineHeight: "34px",
+                color: "#ddd",
+                marginBottom: "40px",
+              }}
+            >
+              Discover Rajasthan's royal heritage, magnificent architecture
+              and vibrant culture with private transportation, experienced
+              local guides and flexible sightseeing experiences from Taj
+              Wonder Heritage Tours.
+            </p>
+
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: "18px",
+                flexWrap: "wrap",
+              }}
+            >
+              <Link
+                href="/tours"
+                style={{
+                  display: "inline-block",
+                  background: "#d4af37",
+                  color: "#08142d",
+                  padding: "17px 32px",
+                  borderRadius: "50px",
+                  textDecoration: "none",
+                  fontWeight: 700,
+                }}
+              >
+                Explore Rajasthan Tours
+              </Link>
+
+              <Link
+                href="/contact"
+                style={{
+                  display: "inline-block",
+                  background: "#fff",
+                  color: "#08142d",
+                  padding: "17px 32px",
+                  borderRadius: "50px",
+                  textDecoration: "none",
+                  fontWeight: 700,
+                }}
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
