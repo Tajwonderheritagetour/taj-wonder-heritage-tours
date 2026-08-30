@@ -11,8 +11,8 @@ export const centralIndiaHeritageTigerSafari: Tour = {
   seoDescription:
     "Discover India's rich heritage and incredible wildlife on this 12-day private journey covering Delhi, Agra, Orchha, Khajuraho, Bandhavgarh National Park, Kanha National Park and Jabalpur.",
 
-  canonical:
-    "https://www.tajwonderheritagetour.com/tours/central-india-heritage-tiger-safari-tour",
+ canonical:
+  "https://www.tajwonderheritagetours.com/tours/central-india-heritage-tiger-safari-tour",
 
   keywords: [
     "Central India Tour",

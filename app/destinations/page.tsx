@@ -19,7 +19,7 @@ const destinations = [
       "Home to the world-famous Taj Mahal, Agra Fort and the beautiful Mehtab Bagh.",
     tours: "15+ Tours",
     destinationLink: "/destinations/agra",
-    tourLink: "/tours",
+    tourLink: "/tours/agra-overnight-tour",
   },
 
   {
@@ -29,7 +29,7 @@ const destinations = [
       "Explore India's vibrant capital with Mughal monuments, bustling markets and historic landmarks.",
     tours: "12+ Tours",
     destinationLink: "/destinations/delhi",
-    tourLink: "/tours",
+    tourLink: "/tours/delhi-sightseeing",
   },
 
   {
@@ -39,7 +39,7 @@ const destinations = [
       "Visit magnificent forts, royal palaces and colorful bazaars in the Pink City.",
     tours: "18+ Tours",
     destinationLink: "/destinations/jaipur",
-    tourLink: "/tours",
+    tourLink: "/tours/jaipur-full-day-tour",
   },
 
   {
@@ -49,7 +49,7 @@ const destinations = [
       "Experience exciting tiger safaris inside India's famous national park.",
     tours: "5+ Tours",
     destinationLink: "/destinations/ranthambore",
-    tourLink: "/tours",
+    tourLink: "/tours/golden-triangle-ranthambore-tour",
   },
 
   {
@@ -59,7 +59,7 @@ const destinations = [
       "Explore the magnificent abandoned Mughal capital and UNESCO World Heritage Site.",
     tours: "6+ Tours",
     destinationLink: "/destinations/fatehpur-sikri",
-    tourLink: "/tours",
+    tourLink: "/tours/fatehpur-sikri-tour",
   },
 
   {
@@ -69,7 +69,7 @@ const destinations = [
       "Royal palaces, colorful cities, majestic forts and unforgettable cultural experiences.",
     tours: "15+ Tours",
     destinationLink: "/destinations/rajasthan",
-    tourLink: "/tours",
+    tourLink: "/tours/rajasthan-heritage-tour",
   },
 
   {
@@ -79,7 +79,7 @@ const destinations = [
       "Discover magnificent Bundela palaces, riverside cenotaphs and ancient temples in one of Madhya Pradesh's hidden heritage gems.",
     tours: "3+ Tours",
     destinationLink: "/destinations/orchha",
-    tourLink: "/tours",
+    tourLink: "/tours/orchha-khajuraho-varanasi-tour",
   },
 
   {
@@ -89,7 +89,7 @@ const destinations = [
       "Explore the UNESCO World Heritage temples renowned worldwide for their breathtaking architecture and intricate stone carvings.",
     tours: "3+ Tours",
     destinationLink: "/destinations/khajuraho",
-    tourLink: "/tours",
+    tourLink: "/tours/orchha-khajuraho-varanasi-tour",
   },
 
   {
@@ -99,7 +99,7 @@ const destinations = [
       "One of India's finest tiger reserves offering thrilling jeep safaris and exceptional wildlife photography.",
     tours: "2+ Tours",
     destinationLink: "/destinations/bandhavgarh",
-    tourLink: "/tours",
+    tourLink: "/tours/central-india-heritage-tiger-safari-tour",
   },
 
   {
@@ -109,7 +109,7 @@ const destinations = [
       "Experience lush forests, rich wildlife and one of India's most famous tiger safari destinations.",
     tours: "2+ Tours",
     destinationLink: "/destinations/kanha-national-park",
-    tourLink: "/tours",
+    tourLink: "/tours/central-india-heritage-tiger-safari-tour",
   },
 
   {

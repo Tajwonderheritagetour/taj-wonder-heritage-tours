@@ -237,135 +237,260 @@ export default function AgraPage() {
         </div>
       </section>
 
-      {/* Best Agra Tours */}
+      {/* ================= BEST AGRA TOURS ================= */}
 
-      <section
+<section
+  style={{
+    padding: "90px 20px",
+    background: "#ffffff",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      textAlign: "center",
+    }}
+  >
+    <span
+      style={{
+        color: "#d4af37",
+        fontWeight: 700,
+        letterSpacing: "3px",
+        textTransform: "uppercase",
+        fontSize: "16px",
+      }}
+    >
+      Our Agra Tours
+    </span>
+
+    <h2
+      style={{
+        fontSize: "44px",
+        color: "#08142d",
+        marginTop: "18px",
+        marginBottom: "20px",
+      }}
+    >
+      Explore Agra with Our Private Tours
+    </h2>
+
+    <p
+      style={{
+        maxWidth: "800px",
+        margin: "0 auto 50px",
+        color: "#666",
+        fontSize: "18px",
+        lineHeight: "32px",
+      }}
+    >
+      Discover the Taj Mahal, Agra Fort and Agra's rich Mughal heritage with
+      our private tours. Choose from same-day experiences, Taj Mahal sunrise
+      tours, overnight stays or a complete Golden Triangle journey.
+    </p>
+
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))",
+        gap: "30px",
+      }}
+    >
+      {/* Same Day Taj Mahal */}
+
+      <div
         style={{
-          padding: "90px 20px",
-          background: "#ffffff",
+          background: "#f8f9fb",
+          padding: "35px",
+          borderRadius: "20px",
+          boxShadow: "0 10px 30px rgba(0,0,0,.08)",
+          textAlign: "left",
         }}
       >
-        <div
+        <h3
           style={{
-            maxWidth: "1200px",
-            margin: "0 auto",
-            textAlign: "center",
+            color: "#08142d",
+            fontSize: "25px",
+            marginBottom: "15px",
           }}
         >
-          <span
-            style={{
-              color: "#d4af37",
-              fontWeight: 700,
-              letterSpacing: "3px",
-              textTransform: "uppercase",
-            }}
-          >
-            Our Tours
-          </span>
+          Same Day Taj Mahal Tour
+        </h3>
 
-          <h2
-            style={{
-              fontSize: "44px",
-              color: "#08142d",
-              marginTop: "20px",
-              marginBottom: "20px",
-            }}
-          >
-            Explore Agra with Our Private Tours
-          </h2>
+        <p
+          style={{
+            color: "#666",
+            lineHeight: "28px",
+            marginBottom: "25px",
+          }}
+        >
+          Visit the magnificent Taj Mahal and Agra Fort on a private same-day
+          tour with comfortable transportation and an experienced chauffeur.
+        </p>
 
-          <p
-            style={{
-              maxWidth: "750px",
-              margin: "0 auto 50px",
-              color: "#666",
-              fontSize: "18px",
-              lineHeight: "32px",
-            }}
-          >
-            Choose a private Agra experience designed around your schedule,
-            interests and preferred sightseeing pace.
-          </p>
+        <Link
+          href="/tours/same-day-taj-mahal-tour"
+          style={{
+            display: "inline-block",
+            background: "#08142d",
+            color: "#fff",
+            textDecoration: "none",
+            padding: "14px 25px",
+            borderRadius: "50px",
+            fontWeight: 700,
+          }}
+        >
+          View Tour →
+        </Link>
+      </div>
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
-              gap: "30px",
-            }}
-          >
-            {[
-              {
-                title: "Same Day Taj Mahal Tour",
-                description:
-                  "Visit the Taj Mahal and Agra's famous heritage sites on a convenient private day tour.",
-                link: "/tours/same-day-taj-mahal-tour",
-              },
-              {
-                title: "Agra Overnight Tour",
-                description:
-                  "Stay overnight in Agra and experience the Taj Mahal, Agra Fort and other historic attractions at a relaxed pace.",
-                link: "/tours/agra-overnight-tour",
-              },
-              {
-                title: "Golden Triangle Tour",
-                description:
-                  "Explore Delhi, Agra and Jaipur on a private journey through India's famous Golden Triangle.",
-                link: "/tours/golden-triangle-5-day-tour",
-              },
-            ].map((tour) => (
-              <div
-                key={tour.title}
-                style={{
-                  background: "#f8f9fb",
-                  padding: "35px",
-                  borderRadius: "18px",
-                  boxShadow: "0 10px 30px rgba(0,0,0,.08)",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
-              >
-                <h3
-                  style={{
-                    color: "#08142d",
-                    fontSize: "24px",
-                    marginBottom: "18px",
-                  }}
-                >
-                  {tour.title}
-                </h3>
+      {/* Taj Mahal Sunrise */}
 
-                <p
-                  style={{
-                    color: "#666",
-                    fontSize: "16px",
-                    lineHeight: "28px",
-                    marginBottom: "25px",
-                  }}
-                >
-                  {tour.description}
-                </p>
+      <div
+        style={{
+          background: "#f8f9fb",
+          padding: "35px",
+          borderRadius: "20px",
+          boxShadow: "0 10px 30px rgba(0,0,0,.08)",
+          textAlign: "left",
+        }}
+      >
+        <h3
+          style={{
+            color: "#08142d",
+            fontSize: "25px",
+            marginBottom: "15px",
+          }}
+        >
+          Taj Mahal Sunrise Tour
+        </h3>
 
-                <Link
-                  href={tour.link}
-                  style={{
-                    background: "#08142d",
-                    color: "#fff",
-                    textDecoration: "none",
-                    padding: "14px 28px",
-                    borderRadius: "50px",
-                    fontWeight: 700,
-                    display: "inline-block",
-                  }}
-                >
-                  Explore Tour →
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+        <p
+          style={{
+            color: "#666",
+            lineHeight: "28px",
+            marginBottom: "25px",
+          }}
+        >
+          Witness the breathtaking beauty of the Taj Mahal at sunrise and
+          explore Agra's most important Mughal monuments with a private guide.
+        </p>
+
+        <Link
+          href="/tours/taj-mahal-sunrise-tour"
+          style={{
+            display: "inline-block",
+            background: "#08142d",
+            color: "#fff",
+            textDecoration: "none",
+            padding: "14px 25px",
+            borderRadius: "50px",
+            fontWeight: 700,
+          }}
+        >
+          View Tour →
+        </Link>
+      </div>
+
+      {/* Agra Overnight */}
+
+      <div
+        style={{
+          background: "#f8f9fb",
+          padding: "35px",
+          borderRadius: "20px",
+          boxShadow: "0 10px 30px rgba(0,0,0,.08)",
+          textAlign: "left",
+        }}
+      >
+        <h3
+          style={{
+            color: "#08142d",
+            fontSize: "25px",
+            marginBottom: "15px",
+          }}
+        >
+          Agra Overnight Tour
+        </h3>
+
+        <p
+          style={{
+            color: "#666",
+            lineHeight: "28px",
+            marginBottom: "25px",
+          }}
+        >
+          Enjoy a relaxed overnight experience in Agra including the Taj Mahal
+          at sunrise, Agra Fort, Baby Taj and other important attractions.
+        </p>
+
+        <Link
+          href="/tours/agra-overnight-tour"
+          style={{
+            display: "inline-block",
+            background: "#08142d",
+            color: "#fff",
+            textDecoration: "none",
+            padding: "14px 25px",
+            borderRadius: "50px",
+            fontWeight: 700,
+          }}
+        >
+          View Tour →
+        </Link>
+      </div>
+
+      {/* Golden Triangle */}
+
+      <div
+        style={{
+          background: "#f8f9fb",
+          padding: "35px",
+          borderRadius: "20px",
+          boxShadow: "0 10px 30px rgba(0,0,0,.08)",
+          textAlign: "left",
+        }}
+      >
+        <h3
+          style={{
+            color: "#08142d",
+            fontSize: "25px",
+            marginBottom: "15px",
+          }}
+        >
+          5-Day Golden Triangle Tour
+        </h3>
+
+        <p
+          style={{
+            color: "#666",
+            lineHeight: "28px",
+            marginBottom: "25px",
+          }}
+        >
+          Discover Delhi, Agra and Jaipur on a private Golden Triangle journey
+          featuring the Taj Mahal, Agra Fort, Jaipur's royal heritage and
+          India's most iconic landmarks.
+        </p>
+
+        <Link
+          href="/tours/golden-triangle-5-day-tour"
+          style={{
+            display: "inline-block",
+            background: "#d4af37",
+            color: "#08142d",
+            textDecoration: "none",
+            padding: "14px 25px",
+            borderRadius: "50px",
+            fontWeight: 700,
+          }}
+        >
+          View Tour →
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
             {/* Agra Travel Guide */}
 
       <section
