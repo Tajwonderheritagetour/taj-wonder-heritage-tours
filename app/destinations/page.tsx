@@ -408,7 +408,7 @@ export default function DestinationsPage() {
         </section>
       </main>
 
-      <Footer />
+      
     </>
   );
 }
