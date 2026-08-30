@@ -57,6 +57,7 @@ const destinations = [
     description:
       "Explore the magnificent abandoned Mughal capital and UNESCO World Heritage Site.",
     tours: "6+ Tours",
+    destinationLink: "/destinations/fatehpur-sikri",
     tourLink: "/tours",
   },
 
@@ -66,6 +67,7 @@ const destinations = [
     description:
       "Royal palaces, colorful cities, majestic forts and unforgettable cultural experiences.",
     tours: "15+ Tours",
+    destinationLink: "/destinations/rajasthan",
     tourLink: "/tours",
   },
 
@@ -75,6 +77,7 @@ const destinations = [
     description:
       "Discover magnificent Bundela palaces, riverside cenotaphs and ancient temples in one of Madhya Pradesh's hidden heritage gems.",
     tours: "3+ Tours",
+    destinationLink: "/destinations/orchha",
     tourLink: "/tours/orchha-khajuraho-varanasi-tour",
   },
 
@@ -84,6 +87,7 @@ const destinations = [
     description:
       "Explore the UNESCO World Heritage temples renowned worldwide for their breathtaking architecture and intricate stone carvings.",
     tours: "3+ Tours",
+    destinationLink: "/destinations/khajuraho",
     tourLink: "/tours/orchha-khajuraho-varanasi-tour",
   },
 
@@ -93,6 +97,7 @@ const destinations = [
     description:
       "One of India's finest tiger reserves offering thrilling jeep safaris and exceptional wildlife photography.",
     tours: "2+ Tours",
+    destinationLink: "/destinations/bandhavgarh",
     tourLink: "/tours/central-india-heritage-tiger-safari",
   },
 
@@ -102,6 +107,7 @@ const destinations = [
     description:
       "Experience lush forests, rich wildlife and one of India's most famous tiger safari destinations.",
     tours: "2+ Tours",
+    destinationLink: "/destinations/kanha-national-park",
     tourLink: "/tours/central-india-heritage-tiger-safari",
   },
 
@@ -111,6 +117,7 @@ const destinations = [
     description:
       "India's oldest living city, famous for sacred ghats, Ganga Aarti and unforgettable spiritual experiences.",
     tours: "5+ Tours",
+    destinationLink: "/destinations/varanasi",
     tourLink: "/tours/golden-triangle-varanasi-tour",
   },
 
@@ -120,6 +127,7 @@ const destinations = [
     description:
       "The Yoga Capital of the World, offering peaceful ghats, Himalayan scenery, yoga and spiritual retreats.",
     tours: "5+ Tours",
+    destinationLink: "/destinations/rishikesh",
     tourLink: "/tours/golden-triangle-rishikesh-tour",
   },
 ];
