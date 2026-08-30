@@ -5,7 +5,8 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata = {
-  title: "India Destinations | Agra, Delhi, Jaipur & More | Taj Wonder Heritage Tours",
+  title:
+    "India Destinations | Agra, Delhi, Jaipur & More | Taj Wonder Heritage Tours",
   description:
     "Explore India's most iconic destinations with Taj Wonder Heritage Tours. Discover Agra, Delhi, Jaipur, Ranthambore and more with private tours and local experts.",
 };
@@ -78,7 +79,7 @@ const destinations = [
       "Discover magnificent Bundela palaces, riverside cenotaphs and ancient temples in one of Madhya Pradesh's hidden heritage gems.",
     tours: "3+ Tours",
     destinationLink: "/destinations/orchha",
-    tourLink: "/tours/orchha-khajuraho-varanasi-tour",
+    tourLink: "/tours",
   },
 
   {
@@ -88,7 +89,7 @@ const destinations = [
       "Explore the UNESCO World Heritage temples renowned worldwide for their breathtaking architecture and intricate stone carvings.",
     tours: "3+ Tours",
     destinationLink: "/destinations/khajuraho",
-    tourLink: "/tours/orchha-khajuraho-varanasi-tour",
+    tourLink: "/tours",
   },
 
   {
@@ -98,7 +99,7 @@ const destinations = [
       "One of India's finest tiger reserves offering thrilling jeep safaris and exceptional wildlife photography.",
     tours: "2+ Tours",
     destinationLink: "/destinations/bandhavgarh",
-    tourLink: "/tours/central-india-heritage-tiger-safari",
+    tourLink: "/tours",
   },
 
   {
@@ -108,7 +109,7 @@ const destinations = [
       "Experience lush forests, rich wildlife and one of India's most famous tiger safari destinations.",
     tours: "2+ Tours",
     destinationLink: "/destinations/kanha-national-park",
-    tourLink: "/tours/central-india-heritage-tiger-safari",
+    tourLink: "/tours",
   },
 
   {
@@ -366,23 +367,21 @@ export default function DestinationsPage() {
                   >
                     {/* Explore Destination */}
 
-                    {place.destinationLink && (
-                      <Link
-                        href={place.destinationLink}
-                        aria-label={`Explore ${place.name} destination`}
-                        style={{
-                          display: "inline-block",
-                          background: "#08142d",
-                          color: "#fff",
-                          textDecoration: "none",
-                          padding: "15px 24px",
-                          borderRadius: "50px",
-                          fontWeight: 700,
-                        }}
-                      >
-                        Explore {place.name} →
-                      </Link>
-                    )}
+                    <Link
+                      href={place.destinationLink}
+                      aria-label={`Explore ${place.name} destination`}
+                      style={{
+                        display: "inline-block",
+                        background: "#08142d",
+                        color: "#fff",
+                        textDecoration: "none",
+                        padding: "15px 24px",
+                        borderRadius: "50px",
+                        fontWeight: 700,
+                      }}
+                    >
+                      Explore {place.name} →
+                    </Link>
 
                     {/* View Tours */}
 
