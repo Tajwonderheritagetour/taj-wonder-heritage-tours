@@ -8,28 +8,47 @@ const tours = [
     title: "Same Day Taj Mahal Tour",
     image: "/images/tours/same-day-taj.jpg",
     duration: "Full Day",
+    destination: "📍 Agra",
+    rating: "★★★★★ 4.9",
     badge: "⭐ Best Seller",
+    description:
+      "Visit the magnificent Taj Mahal, Agra Fort and local heritage sites with a private chauffeur and licensed local guide.",
     href: "/tours/same-day-taj-mahal-tour",
   },
+
   {
     title: "Agra Overnight Tour",
     image: "/images/tours/agra-overnight.jpg",
     duration: "2 Days",
+    destination: "📍 Agra • Fatehpur Sikri",
+    rating: "★★★★★ 4.9",
     badge: "🚗 Private Tour",
+    description:
+      "Enjoy a relaxed overnight experience including sunrise at the Taj Mahal, Agra Fort and Fatehpur Sikri.",
     href: "/tours/agra-overnight-tour",
   },
+
   {
     title: "Golden Triangle Tour",
     image: "/images/tours/golden-triangle.jpg",
     duration: "5 Days",
+    destination: "📍 Delhi • Agra • Jaipur",
+    rating: "★★★★★ 5.0",
     badge: "🏆 Most Popular",
-    href: "/tours/golden-triangle-tour",
+    description:
+      "Discover India's famous Golden Triangle with private transportation, expert guides and luxury experiences.",
+    href: "/tours/golden-triangle-5-day-tour",
   },
+
   {
     title: "Golden Triangle & Ranthambore",
     image: "/images/tours/ranthambore.jpg",
     duration: "4 Days",
+    destination: "📍 Delhi • Agra • Ranthambore • Jaipur",
+    rating: "★★★★★ 4.9",
     badge: "🐅 Wildlife Tour",
+    description:
+      "Combine India's heritage with an unforgettable tiger safari in Ranthambore National Park.",
     href: "/tours/golden-triangle-ranthambore-tour",
   },
 ];
@@ -48,8 +67,6 @@ export default function FeaturedTours() {
           margin: "0 auto",
         }}
       >
-        {/* Heading */}
-
         <div
           style={{
             textAlign: "center",
@@ -64,7 +81,7 @@ export default function FeaturedTours() {
               textTransform: "uppercase",
             }}
           >
-            Our Best Tours
+            Luxury Private Tours
           </span>
 
           <h2
@@ -75,158 +92,238 @@ export default function FeaturedTours() {
               marginBottom: "20px",
             }}
           >
-            Featured Private Tours
+            Explore India's Most Popular Private Tours
           </h2>
 
           <p
             style={{
-              maxWidth: "760px",
+              maxWidth: "820px",
               margin: "0 auto",
               color: "#666",
               fontSize: "18px",
               lineHeight: "32px",
             }}
           >
-            Discover India's most iconic destinations with carefully designed
-            private tours, experienced local guides and unforgettable travel
-            experiences.
+            Carefully crafted private journeys across India's most iconic
+            destinations including the Taj Mahal, Delhi, Jaipur, Rajasthan,
+            Ranthambore and many more unforgettable experiences.
           </p>
         </div>
 
         {/* Tour Cards */}
+        <div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))",
+    gap: "35px",
+  }}
+>
+  {tours.map((tour) => (
+    <div
+      key={tour.title}
+      style={{
+        background: "#fff",
+        borderRadius: "24px",
+        overflow: "hidden",
+        boxShadow: "0 20px 45px rgba(0,0,0,.08)",
+        transition: "0.3s",
+      }}
+    >
+      <Image
+        src={tour.image}
+        alt={tour.title}
+        width={700}
+        height={500}
+        style={{
+          width: "100%",
+          height: "240px",
+          objectFit: "cover",
+        }}
+      />
+
+      <div
+        style={{
+          padding: "30px",
+        }}
+      >
+        {/* Rating */}
+
+        <p
+          style={{
+            color: "#d4af37",
+            fontWeight: 700,
+            marginBottom: "10px",
+            fontSize: "15px",
+          }}
+        >
+          {tour.rating}
+        </p>
+
+        {/* Duration + Badge */}
 
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(290px,1fr))",
-            gap: "35px",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: "15px",
+            flexWrap: "wrap",
+            gap: "10px",
           }}
         >
-          {tours.map((tour) => (
-            <div
-              key={tour.title}
-              style={{
-                background: "#fff",
-                borderRadius: "24px",
-                overflow: "hidden",
-                boxShadow: "0 20px 45px rgba(0,0,0,.08)",
-                transition: "0.3s",
-              }}
-            >
-              <Image
-                src={tour.image}
-                alt={tour.title}
-                width={700}
-                height={500}
-                style={{
-                  width: "100%",
-                  height: "240px",
-                  objectFit: "cover",
-                }}
-              />
+          <span
+            style={{
+              color: "#666",
+              fontWeight: 600,
+            }}
+          >
+            🕒 {tour.duration}
+          </span>
 
-              <div
-                style={{
-                  padding: "28px",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "18px",
-                  }}
-                >
-                  <span
-                    style={{
-                      color: "#666",
-                      fontWeight: 600,
-                    }}
-                  >
-                    🕒 {tour.duration}
-                  </span>
-
-                  <span
-                    style={{
-                      background: "#d4af37",
-                      color: "#08142d",
-                      padding: "6px 14px",
-                      borderRadius: "30px",
-                      fontWeight: 700,
-                      fontSize: "13px",
-                    }}
-                  >
-                    {tour.badge}
-                  </span>
-                </div>
-
-                <h3
-                  style={{
-                    color: "#08142d",
-                    fontSize: "28px",
-                    marginBottom: "18px",
-                    lineHeight: "36px",
-                  }}
-                >
-                  {tour.title}
-                </h3>
-
-                <p
-                  style={{
-                    color: "#666",
-                    lineHeight: "30px",
-                    marginBottom: "28px",
-                  }}
-                >
-                  Explore India's heritage with professional chauffeurs,
-                  licensed local guides and personalized private experiences
-                  designed for international travelers.
-                </p>
-
-                <Link
-                  href={tour.href}
-                  style={{
-                    display: "inline-block",
-                    background: "#08142d",
-                    color: "#fff",
-                    textDecoration: "none",
-                    padding: "15px 28px",
-                    borderRadius: "50px",
-                    fontWeight: 700,
-                    transition: "0.3s",
-                  }}
-                >
-                  Explore Tour →
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Bottom Button */}
-
-        <div
-          style={{
-            textAlign: "center",
-            marginTop: "70px",
-          }}
-        >
-          <Link
-            href="/tours"
+          <span
             style={{
               background: "#d4af37",
               color: "#08142d",
-              textDecoration: "none",
-              padding: "18px 40px",
-              borderRadius: "50px",
+              padding: "6px 14px",
+              borderRadius: "30px",
               fontWeight: 700,
-              fontSize: "17px",
+              fontSize: "13px",
             }}
           >
-            View All Tours
+            {tour.badge}
+          </span>
+        </div>
+
+        {/* Destination */}
+
+        <p
+          style={{
+            color: "#666",
+            fontWeight: 600,
+            marginBottom: "14px",
+          }}
+        >
+          {tour.destination}
+        </p>
+
+        {/* Title */}
+
+        <h3
+          style={{
+            color: "#08142d",
+            fontSize: "28px",
+            marginBottom: "18px",
+            lineHeight: "36px",
+          }}
+        >
+          {tour.title}
+        </h3>
+
+        {/* Description */}
+
+        <p
+          style={{
+            color: "#666",
+            lineHeight: "30px",
+            marginBottom: "30px",
+          }}
+        >
+          {tour.description}
+        </p>
+
+        {/* Buttons */}
+
+        <div
+          style={{
+            display: "flex",
+            gap: "12px",
+            flexWrap: "wrap",
+          }}
+        >
+          <Link
+            href={tour.href}
+            style={{
+              flex: 1,
+              textAlign: "center",
+              background: "#08142d",
+              color: "#fff",
+              textDecoration: "none",
+              padding: "15px 22px",
+              borderRadius: "50px",
+              fontWeight: 700,
+            }}
+          >
+            View Tour Details
+          </Link>
+
+          <Link
+            href="/contact"
+            style={{
+              flex: 1,
+              textAlign: "center",
+              background: "#d4af37",
+              color: "#08142d",
+              textDecoration: "none",
+              padding: "15px 22px",
+              borderRadius: "50px",
+              fontWeight: 700,
+            }}
+          >
+            Enquire Now
           </Link>
         </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+{/* Bottom CTA */}
+
+<div
+  style={{
+    textAlign: "center",
+    marginTop: "80px",
+  }}
+>
+  <h3
+    style={{
+      color: "#08142d",
+      fontSize: "34px",
+      marginBottom: "18px",
+    }}
+  >
+    Looking for a Customized India Tour?
+  </h3>
+
+  <p
+    style={{
+      color: "#666",
+      fontSize: "18px",
+      lineHeight: "30px",
+      maxWidth: "720px",
+      margin: "0 auto 35px",
+    }}
+  >
+    Every traveler is different. We create personalized private itineraries
+    according to your interests, travel style and schedule.
+  </p>
+
+  <Link
+    href="/tours"
+    style={{
+      background: "#d4af37",
+      color: "#08142d",
+      textDecoration: "none",
+      padding: "18px 42px",
+      borderRadius: "50px",
+      fontWeight: 700,
+      fontSize: "17px",
+    }}
+  >
+    Explore All Tours
+  </Link>
+</div>
+
       </div>
     </section>
   );

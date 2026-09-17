@@ -18,7 +18,7 @@ const tours = [
     image: "/images/tours/golden-triangle.jpg",
     duration: "5 Days",
     badge: "Most Popular",
-    href: "/tours/golden-triangle-tour",
+    href: "/tours/golden-triangle-5-day-tour",
   },
   {
     title: "Golden Triangle & Ranthambore",

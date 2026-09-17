@@ -86,7 +86,7 @@ export default function Home() {
 
             Explore our{" "}
             <Link
-              href="/tours/golden-triangle-tour"
+              href="/tours/golden-triangle-5-day-tour"
               style={{
                 color: "#d4af37",
                 fontWeight: 700,

@@ -119,7 +119,7 @@ export default function BestPlacesAgra() {
             Same Day Taj Mahal Tour
           </Link>{" "}
           or a complete{" "}
-          <Link href="/tours/golden-triangle-tour">
+          <Link href="/tours/golden-triangle-5-day-tour">
             Golden Triangle Tour
           </Link>
           , these are the places you shouldn't miss.

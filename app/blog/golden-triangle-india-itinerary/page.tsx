@@ -428,7 +428,7 @@ export default function GoldenTriangleItineraryPage() {
           </li>
 
           <li>
-            <Link href="/tours/golden-triangle-tour">
+            <Link href="/tours/golden-triangle-5-day-tour">
               Golden Triangle Tour
             </Link>
           </li>

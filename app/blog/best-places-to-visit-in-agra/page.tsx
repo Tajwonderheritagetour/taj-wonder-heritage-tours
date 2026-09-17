@@ -225,7 +225,7 @@ export default function BestPlacesAgra() {
             </Link>{" "}
             from Delhi or exploring Agra as part of a{" "}
             <Link
-              href="/tours/golden-triangle-tour"
+              href="/tours/golden-triangle-5-day-tour"
               style={{
                 color: "#b08d1e",
                 fontWeight: 600,
