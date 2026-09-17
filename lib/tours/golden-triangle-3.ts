@@ -5,7 +5,8 @@ export const goldenTriangle3: Tour = {
 
   title: "3-Day Golden Triangle Tour",
 
-  shortDescription: "Private 3-Day Golden Triangle Tour.",
+ shortDescription:
+  "Explore Delhi, Agra and Jaipur on a private 3-day Golden Triangle tour with the Taj Mahal, Agra Fort, Amber Fort and expert local guides.",
 
   featured: true,
 
