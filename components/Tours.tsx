@@ -6,13 +6,13 @@ import { tours } from "@/lib/tours";
 
 export default function Tours() {
   const homepageTours = [
-  tours.sameDayTajMahal,
-  tours.tajMahalSunrise,
-  tours.agraOvernight,
-  tours.goldenTriangle3,
-  tours.goldenTriangle5DayTour,
-  tours.goldenTriangleRanthambore,
-];
+    tours.sameDayTajMahal,
+    tours.tajMahalSunrise,
+    tours.agraOvernight,
+    tours.goldenTriangle3,
+    tours.goldenTriangle5DayTour,
+    tours.goldenTriangleRanthambore,
+  ];
 
   return (
     <section
@@ -82,11 +82,12 @@ export default function Tours() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(390px,1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(390px, 1fr))",
             gap: "40px",
+            alignItems: "stretch",
           }}
         >
-         {homepageTours.map((tour) => (
+          {homepageTours.map((tour) => (
             <div
               key={tour.slug}
               style={{
@@ -95,6 +96,10 @@ export default function Tours() {
                 overflow: "hidden",
                 boxShadow: "0 18px 45px rgba(0,0,0,.08)",
                 transition: ".35s",
+                display: "flex",
+                flexDirection: "column",
+                height: "100%",
+                minHeight: "700px",
               }}
             >
               {/* Image */}
@@ -102,13 +107,15 @@ export default function Tours() {
               <div
                 style={{
                   position: "relative",
-                  height: "330px",
+                  height: "300px",
+                  flexShrink: 0,
                 }}
               >
                 <Image
                   src={tour.image}
                   alt={tour.title}
                   fill
+                  sizes="(max-width: 900px) 100vw, 33vw"
                   style={{
                     objectFit: "cover",
                   }}
@@ -166,52 +173,67 @@ export default function Tours() {
 
               <div
                 style={{
-                  padding: "34px",
+                  padding: "30px",
+                  display: "flex",
+                  flexDirection: "column",
+                  flex: 1,
                 }}
               >
+                {/* Title */}
+
                 <h3
                   style={{
-                    fontSize: "30px",
+                    fontSize: "27px",
                     color: "#08142d",
-                    marginBottom: "18px",
-                    lineHeight: "40px",
+                    margin: "0 0 18px",
+                    lineHeight: "36px",
+                    minHeight: "72px",
                   }}
                 >
                   {tour.title}
                 </h3>
 
+                {/* Description */}
+
                 <p
                   style={{
                     color: "#666",
-                    lineHeight: "32px",
+                    lineHeight: "30px",
                     fontSize: "17px",
-                    marginBottom: "28px",
+                    margin: "0 0 25px",
+                    minHeight: "90px",
                   }}
                 >
                   {tour.shortDescription}
                 </p>
-                                {/* Tour Info */}
+
+                {/* Tour Info */}
 
                 <div
                   style={{
                     display: "flex",
                     justifyContent: "space-between",
+                    alignItems: "flex-start",
                     gap: "16px",
                     marginBottom: "30px",
-                    flexWrap: "wrap",
+                    minHeight: "78px",
                   }}
                 >
+                  {/* Location + Duration */}
+
                   <div
                     style={{
                       display: "flex",
                       flexDirection: "column",
                       gap: "10px",
+                      flex: 1,
                     }}
                   >
                     <span
                       style={{
                         color: "#555",
                         fontWeight: 600,
+                        lineHeight: "24px",
                       }}
                     >
                       📍 {tour.location}
@@ -221,42 +243,52 @@ export default function Tours() {
                       style={{
                         color: "#555",
                         fontWeight: 600,
+                        lineHeight: "24px",
                       }}
                     >
                       ⏰ {tour.duration}
                     </span>
                   </div>
 
+                  {/* Tour Type */}
+
                   <div
-  style={{
-    textAlign: "right",
-  }}
->
-  <span
-    style={{
-      background: "#d4af37",
-      color: "#08142d",
-      padding: "8px 18px",
-      borderRadius: "30px",
-      fontWeight: 700,
-      fontSize: "14px",
-    }}
-  >
-    Private Tour
-  </span>
-</div>
+                    style={{
+                      textAlign: "right",
+                      flexShrink: 0,
+                    }}
+                  >
+                    <span
+                      style={{
+                        display: "inline-block",
+                        background: "#d4af37",
+                        color: "#08142d",
+                        padding: "8px 18px",
+                        borderRadius: "30px",
+                        fontWeight: 700,
+                        fontSize: "14px",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      Private Tour
+                    </span>
+                  </div>
                 </div>
+
+                {/* View Tour Button */}
 
                 <Link
                   href={`/tours/${tour.slug}`}
                   style={{
                     display: "block",
                     width: "100%",
+                    boxSizing: "border-box",
+                    marginTop: "auto",
                     textAlign: "center",
                     background: "#08142d",
                     color: "#fff",
                     textDecoration: "none",
-                    padding: "18px",
+                    padding: "17px",
                     borderRadius: "50px",
                     fontWeight: 700,
                     fontSize: "17px",

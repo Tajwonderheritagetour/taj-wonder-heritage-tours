@@ -67,6 +67,8 @@ export default function FeaturedTours() {
           margin: "0 auto",
         }}
       >
+        {/* Section Header */}
+
         <div
           style={{
             textAlign: "center",
@@ -111,219 +113,250 @@ export default function FeaturedTours() {
         </div>
 
         {/* Tour Cards */}
-        <div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))",
-    gap: "35px",
-  }}
->
-  {tours.map((tour) => (
-    <div
-      key={tour.title}
-      style={{
-        background: "#fff",
-        borderRadius: "24px",
-        overflow: "hidden",
-        boxShadow: "0 20px 45px rgba(0,0,0,.08)",
-        transition: "0.3s",
-      }}
-    >
-      <Image
-        src={tour.image}
-        alt={tour.title}
-        width={700}
-        height={500}
-        style={{
-          width: "100%",
-          height: "240px",
-          objectFit: "cover",
-        }}
-      />
-
-      <div
-        style={{
-          padding: "30px",
-        }}
-      >
-        {/* Rating */}
-
-        <p
-          style={{
-            color: "#d4af37",
-            fontWeight: 700,
-            marginBottom: "10px",
-            fontSize: "15px",
-          }}
-        >
-          {tour.rating}
-        </p>
-
-        {/* Duration + Badge */}
 
         <div
           style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginBottom: "15px",
-            flexWrap: "wrap",
-            gap: "10px",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gap: "35px",
+            alignItems: "stretch",
           }}
         >
-          <span
+          {tours.map((tour) => (
+            <div
+              key={tour.title}
+              style={{
+                background: "#fff",
+                borderRadius: "24px",
+                overflow: "hidden",
+                boxShadow: "0 20px 45px rgba(0,0,0,.08)",
+                transition: "0.3s",
+                display: "flex",
+                flexDirection: "column",
+                height: "100%",
+              }}
+            >
+              {/* Tour Image */}
+
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  height: "240px",
+                  flexShrink: 0,
+                }}
+              >
+                <Image
+                  src={tour.image}
+                  alt={tour.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+
+              {/* Tour Content */}
+
+              <div
+                style={{
+                  padding: "30px",
+                  display: "flex",
+                  flexDirection: "column",
+                  flex: 1,
+                  minHeight: "500px",
+                  boxSizing: "border-box",
+                }}
+              >
+                {/* Rating */}
+
+                <p
+                  style={{
+                    color: "#d4af37",
+                    fontWeight: 700,
+                    margin: "0 0 10px",
+                    fontSize: "15px",
+                    minHeight: "22px",
+                  }}
+                >
+                  {tour.rating}
+                </p>
+
+                {/* Duration + Badge */}
+
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    marginBottom: "15px",
+                    flexWrap: "wrap",
+                    gap: "10px",
+                    minHeight: "38px",
+                  }}
+                >
+                  <span
+                    style={{
+                      color: "#666",
+                      fontWeight: 600,
+                    }}
+                  >
+                    🕒 {tour.duration}
+                  </span>
+
+                  <span
+                    style={{
+                      background: "#d4af37",
+                      color: "#08142d",
+                      padding: "6px 14px",
+                      borderRadius: "30px",
+                      fontWeight: 700,
+                      fontSize: "13px",
+                    }}
+                  >
+                    {tour.badge}
+                  </span>
+                </div>
+
+                {/* Destination */}
+
+                <p
+                  style={{
+                    color: "#666",
+                    fontWeight: 600,
+                    margin: "0 0 14px",
+                    minHeight: "24px",
+                  }}
+                >
+                  {tour.destination}
+                </p>
+
+                {/* Title */}
+
+                <h3
+                  style={{
+                    color: "#08142d",
+                    fontSize: "26px",
+                    margin: "0 0 18px",
+                    lineHeight: "34px",
+                    minHeight: "68px",
+                  }}
+                >
+                  {tour.title}
+                </h3>
+
+                {/* Description */}
+
+                <p
+                  style={{
+                    color: "#666",
+                    lineHeight: "30px",
+                    margin: "0",
+                    minHeight: "120px",
+                  }}
+                >
+                  {tour.description}
+                </p>
+
+                {/* Buttons */}
+
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "12px",
+                    flexWrap: "wrap",
+                    marginTop: "auto",
+                    paddingTop: "30px",
+                  }}
+                >
+                  <Link
+                    href={tour.href}
+                    style={{
+                      flex: 1,
+                      textAlign: "center",
+                      background: "#08142d",
+                      color: "#fff",
+                      textDecoration: "none",
+                      padding: "15px 22px",
+                      borderRadius: "50px",
+                      fontWeight: 700,
+                      minWidth: "140px",
+                      boxSizing: "border-box",
+                    }}
+                  >
+                    View Tour Details
+                  </Link>
+
+                  <Link
+                    href="/contact"
+                    style={{
+                      flex: 1,
+                      textAlign: "center",
+                      background: "#d4af37",
+                      color: "#08142d",
+                      textDecoration: "none",
+                      padding: "15px 22px",
+                      borderRadius: "50px",
+                      fontWeight: 700,
+                      minWidth: "140px",
+                      boxSizing: "border-box",
+                    }}
+                  >
+                    Enquire Now
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom CTA */}
+
+        <div
+          style={{
+            textAlign: "center",
+            marginTop: "80px",
+          }}
+        >
+          <h3
+            style={{
+              color: "#08142d",
+              fontSize: "34px",
+              marginBottom: "18px",
+            }}
+          >
+            Looking for a Customized India Tour?
+          </h3>
+
+          <p
             style={{
               color: "#666",
-              fontWeight: 600,
+              fontSize: "18px",
+              lineHeight: "30px",
+              maxWidth: "720px",
+              margin: "0 auto 35px",
             }}
           >
-            🕒 {tour.duration}
-          </span>
+            Every traveler is different. We create personalized private
+            itineraries according to your interests, travel style and schedule.
+          </p>
 
-          <span
+          <Link
+            href="/tours"
             style={{
               background: "#d4af37",
               color: "#08142d",
-              padding: "6px 14px",
-              borderRadius: "30px",
-              fontWeight: 700,
-              fontSize: "13px",
-            }}
-          >
-            {tour.badge}
-          </span>
-        </div>
-
-        {/* Destination */}
-
-        <p
-          style={{
-            color: "#666",
-            fontWeight: 600,
-            marginBottom: "14px",
-          }}
-        >
-          {tour.destination}
-        </p>
-
-        {/* Title */}
-
-        <h3
-          style={{
-            color: "#08142d",
-            fontSize: "28px",
-            marginBottom: "18px",
-            lineHeight: "36px",
-          }}
-        >
-          {tour.title}
-        </h3>
-
-        {/* Description */}
-
-        <p
-          style={{
-            color: "#666",
-            lineHeight: "30px",
-            marginBottom: "30px",
-          }}
-        >
-          {tour.description}
-        </p>
-
-        {/* Buttons */}
-
-        <div
-          style={{
-            display: "flex",
-            gap: "12px",
-            flexWrap: "wrap",
-          }}
-        >
-          <Link
-            href={tour.href}
-            style={{
-              flex: 1,
-              textAlign: "center",
-              background: "#08142d",
-              color: "#fff",
               textDecoration: "none",
-              padding: "15px 22px",
+              padding: "18px 42px",
               borderRadius: "50px",
               fontWeight: 700,
+              fontSize: "17px",
             }}
           >
-            View Tour Details
-          </Link>
-
-          <Link
-            href="/contact"
-            style={{
-              flex: 1,
-              textAlign: "center",
-              background: "#d4af37",
-              color: "#08142d",
-              textDecoration: "none",
-              padding: "15px 22px",
-              borderRadius: "50px",
-              fontWeight: 700,
-            }}
-          >
-            Enquire Now
+            Explore All Tours
           </Link>
         </div>
-      </div>
-    </div>
-  ))}
-</div>
-
-{/* Bottom CTA */}
-
-<div
-  style={{
-    textAlign: "center",
-    marginTop: "80px",
-  }}
->
-  <h3
-    style={{
-      color: "#08142d",
-      fontSize: "34px",
-      marginBottom: "18px",
-    }}
-  >
-    Looking for a Customized India Tour?
-  </h3>
-
-  <p
-    style={{
-      color: "#666",
-      fontSize: "18px",
-      lineHeight: "30px",
-      maxWidth: "720px",
-      margin: "0 auto 35px",
-    }}
-  >
-    Every traveler is different. We create personalized private itineraries
-    according to your interests, travel style and schedule.
-  </p>
-
-  <Link
-    href="/tours"
-    style={{
-      background: "#d4af37",
-      color: "#08142d",
-      textDecoration: "none",
-      padding: "18px 42px",
-      borderRadius: "50px",
-      fontWeight: 700,
-      fontSize: "17px",
-    }}
-  >
-    Explore All Tours
-  </Link>
-</div>
-
       </div>
     </section>
   );
