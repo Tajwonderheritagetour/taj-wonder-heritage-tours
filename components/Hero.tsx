@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -82,6 +83,8 @@ export default function Hero() {
 
   const slide = slides[currentSlide];
 
+  const nextSlide = (currentSlide + 1) % slides.length;
+
   return (
     <section
       style={{
@@ -92,23 +95,51 @@ export default function Hero() {
         overflow: "hidden",
       }}
     >
-      {/* Background Images */}
+      {/* Current Hero Image */}
 
-      {slides.map((item, index) => (
-        <div
-          key={item.image}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          zIndex: 0,
+        }}
+      >
+        <Image
+          src={slide.image}
+          alt={slide.title}
+          fill
+          priority={currentSlide === 0}
+          sizes="100vw"
+          quality={75}
           style={{
-            position: "absolute",
-            inset: 0,
-            backgroundImage: `url("${item.image}")`,
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-            opacity: index === currentSlide ? 1 : 0,
-            transition: "opacity 1.2s ease-in-out",
-            zIndex: 0,
+            objectFit: "cover",
+            objectPosition: "center center",
           }}
         />
-      ))}
+      </div>
+
+      {/* Preload Only The Next Slide */}
+
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          width: "1px",
+          height: "1px",
+          overflow: "hidden",
+          opacity: 0,
+          pointerEvents: "none",
+        }}
+      >
+        <Image
+          src={slides[nextSlide].image}
+          alt=""
+          width={20}
+          height={20}
+          sizes="20px"
+          quality={60}
+        />
+      </div>
 
       {/* Dark Overlay */}
 
