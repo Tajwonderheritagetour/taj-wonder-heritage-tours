@@ -20,14 +20,14 @@ const slides = [
       "Discover magnificent forts, royal palaces and colorful cities with a private Rajasthan journey designed around your interests.",
   },
   {
-    image: "/images/hero/hawa-mahal.jpg",
+    image: "/images/hero/hawa-mahal.webp",
     label: "Golden Triangle Tours",
     title: "Delhi • Agra • Jaipur",
     description:
       "Experience India's famous Golden Triangle with private transportation, professional local guides and carefully planned sightseeing.",
   },
   {
-    image: "/images/hero/ranthambore.jpg",
+    image: "/images/hero/guest-restaurant.webp",
     label: "Wildlife & Adventure",
     title: "Discover the Wild Side of India",
     description:
@@ -62,7 +62,7 @@ const slides = [
       "Discover India's monuments, culture, food and local experiences with a private tour created especially for you.",
   },
   {
-    image: "/images/hero/guest-restaurant.jpg",
+    image: "/images/hero/guest-restaurant.webp",
     label: "Authentic Experiences",
     title: "Experience More Than the Monuments",
     description:
