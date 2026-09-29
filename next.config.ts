@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    return [
+      {
+        source: "/tours/golden-triangle-tour",
+        destination: "/tours/golden-triangle-5-day-tour",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
