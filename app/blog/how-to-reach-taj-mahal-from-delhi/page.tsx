@@ -3,64 +3,64 @@ import Image from "next/image";
 import Link from "next/link";
 
 const canonicalUrl =
-  "https://www.tajwonderheritagetours.com/blog/best-time-to-visit-taj-mahal";
+  "https://www.tajwonderheritagetours.com/blog/how-to-reach-taj-mahal-from-delhi";
 
 export const metadata: Metadata = {
-  title: "Best Time to Visit Taj Mahal (2026 Complete Guide)",
+  title: "How to Reach Taj Mahal from Delhi (2026 Guide)",
   description:
-    "Discover the best time to visit the Taj Mahal in 2026. Learn about sunrise, sunset, weather, seasons, photography tips, crowd levels and travel advice from local experts.",
+    "Complete guide to travelling from Delhi to the Taj Mahal by private car, train, bus and other options. Learn travel times, routes, tips and the easiest ways to visit Agra.",
   alternates: {
     canonical: canonicalUrl,
   },
   openGraph: {
-    title: "Best Time to Visit Taj Mahal (2026 Guide)",
+    title: "How to Reach Taj Mahal from Delhi (2026 Guide)",
     description:
-      "Everything you need to know before visiting the Taj Mahal including weather, sunrise, sunset and seasonal travel tips.",
+      "Complete guide to travelling from Delhi to the Taj Mahal by private car, train, bus and other options.",
     url: canonicalUrl,
     type: "article",
     images: [
       {
-        url: "/images/blog/best-time-to-visit-taj-mahal.jpg",
+        url: "/images/blog/how-to-reach-taj-mahal-from-delhi.jpg",
         width: 1200,
         height: 630,
-        alt: "Best Time to Visit Taj Mahal",
+        alt: "How to Reach Taj Mahal from Delhi",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Time to Visit Taj Mahal (2026 Guide)",
+    title: "How to Reach Taj Mahal from Delhi (2026 Guide)",
     description:
-      "Everything you need to know before visiting the Taj Mahal including weather, sunrise, sunset and seasonal travel tips.",
-    images: ["/images/blog/best-time-to-visit-taj-mahal.jpg"],
+      "Complete guide to travelling from Delhi to the Taj Mahal by car, train and bus.",
+    images: ["/images/blog/how-to-reach-taj-mahal-from-delhi.jpg"],
   },
 };
 
 const faqs = [
   {
-    question: "What is the best month to visit the Taj Mahal?",
+    question: "How far is the Taj Mahal from Delhi?",
     answer:
-      "October to March generally offers the most comfortable weather for visiting the Taj Mahal. February and March are especially pleasant for sightseeing.",
+      "The Taj Mahal is approximately 230 kilometres from central Delhi by road. The journey time depends on traffic, route and transportation method.",
   },
   {
-    question: "Is sunrise worth visiting?",
+    question: "What is the fastest way to reach the Taj Mahal from Delhi?",
     answer:
-      "Absolutely. Sunrise offers cooler temperatures, softer light for photography and a peaceful atmosphere compared with the busiest parts of the day.",
+      "A fast train can provide a convenient connection between Delhi and Agra, while a private car offers door-to-door travel and greater flexibility for sightseeing.",
   },
   {
-    question: "Which day should I avoid?",
+    question: "Can I visit the Taj Mahal from Delhi in one day?",
     answer:
-      "The Taj Mahal is closed to regular visitors on Fridays. It is also a good idea to avoid major public holidays if you prefer smaller crowds.",
+      "Yes. A same-day Delhi to Agra tour is possible. Many travellers leave Delhi early, visit the Taj Mahal and Agra Fort, and return to Delhi the same evening.",
   },
   {
-    question: "How much time should I spend at the Taj Mahal?",
+    question: "Is it better to travel from Delhi to Agra by car or train?",
     answer:
-      "Most visitors spend around two to three hours exploring the monument, gardens and surrounding areas.",
+      "Both options can work well. A private car provides flexibility and door-to-door service, while a train can be convenient for travellers who prefer rail transport.",
   },
   {
-    question: "Can I visit the Taj Mahal in summer?",
+    question: "What is the best time to leave Delhi for the Taj Mahal?",
     answer:
-      "Yes. Summer visits are possible, but temperatures can become very hot. Early morning is strongly recommended during April, May and June.",
+      "For a same-day visit, leaving Delhi early in the morning allows more time for sightseeing in Agra and can help you avoid some daytime traffic.",
   },
 ];
 
@@ -77,7 +77,7 @@ const faqSchema = {
   })),
 };
 
-export default function BestTimeToVisitTajMahalPage() {
+export default function HowToReachTajMahalFromDelhiPage() {
   return (
     <main>
       {/* Hero */}
@@ -103,7 +103,7 @@ export default function BestTimeToVisitTajMahalPage() {
               textTransform: "uppercase",
             }}
           >
-            Taj Mahal Travel Guide
+            Delhi to Agra Travel Guide
           </span>
 
           <h1
@@ -114,7 +114,7 @@ export default function BestTimeToVisitTajMahalPage() {
               marginBottom: "20px",
             }}
           >
-            Best Time to Visit Taj Mahal (2026 Guide)
+            How to Reach Taj Mahal from Delhi (2026 Guide)
           </h1>
 
           <p
@@ -124,9 +124,9 @@ export default function BestTimeToVisitTajMahalPage() {
               color: "#eee",
             }}
           >
-            Planning your Taj Mahal trip? Discover the best season, weather,
-            sunrise timings, crowd levels and expert travel tips before
-            visiting India&apos;s most famous monument.
+            Planning a trip from Delhi to the Taj Mahal? Discover the easiest
+            ways to travel to Agra by private car, train and bus, along with
+            travel times and practical tips.
           </p>
         </div>
       </section>
@@ -165,7 +165,7 @@ export default function BestTimeToVisitTajMahalPage() {
 
         {" > "}
 
-        <span>Best Time to Visit Taj Mahal</span>
+        <span>How to Reach Taj Mahal from Delhi</span>
       </section>
 
       {/* Article */}
@@ -177,8 +177,8 @@ export default function BestTimeToVisitTajMahalPage() {
         }}
       >
         <Image
-          src="/images/blog/best-time-to-visit-taj-mahal.jpg"
-          alt="Best Time to Visit Taj Mahal"
+          src="/images/blog/how-to-reach-taj-mahal-from-delhi.jpg"
+          alt="How to Reach Taj Mahal from Delhi"
           width={1536}
           height={1024}
           priority
@@ -227,19 +227,22 @@ export default function BestTimeToVisitTajMahalPage() {
             }}
           >
             <li>
-              <a href="#best-season">Best Season to Visit</a>
+              <a href="#distance">Distance from Delhi to Taj Mahal</a>
             </li>
             <li>
-              <a href="#sunrise-sunset">Sunrise vs Sunset</a>
+              <a href="#car">Delhi to Agra by Private Car</a>
             </li>
             <li>
-              <a href="#month-guide">Month-by-Month Guide</a>
+              <a href="#train">Delhi to Agra by Train</a>
             </li>
             <li>
-              <a href="#photography">Photography Tips</a>
+              <a href="#bus">Delhi to Agra by Bus</a>
             </li>
             <li>
-              <a href="#crowds">Crowd & Entry Tips</a>
+              <a href="#same-day">Can You Visit the Taj Mahal in One Day?</a>
+            </li>
+            <li>
+              <a href="#tips">Travel Tips</a>
             </li>
             <li>
               <a href="#faq">Frequently Asked Questions</a>
@@ -258,11 +261,10 @@ export default function BestTimeToVisitTajMahalPage() {
             color: "#444",
           }}
         >
-          The Taj Mahal is one of the world&apos;s most famous monuments and
-          attracts visitors from around the globe throughout the year.
-          Choosing the right time to visit can make a major difference to your
-          experience, especially when it comes to weather, crowds and
-          photography.
+          The Taj Mahal in Agra is one of the most popular attractions for
+          travellers visiting Delhi. Because Agra is well connected with the
+          capital, it is possible to visit the Taj Mahal as a day trip or stay
+          overnight in Agra.
         </p>
 
         <p
@@ -273,13 +275,13 @@ export default function BestTimeToVisitTajMahalPage() {
             marginTop: "25px",
           }}
         >
-          Whether you are visiting India for the first time or returning to
-          experience the monument again, this guide explains the best months,
-          seasons and times of day to help you plan your Taj Mahal visit.
+          The best way to travel depends on your schedule, budget and whether
+          you want the convenience of door-to-door transportation or prefer
+          travelling by public transport.
         </p>
 
-        {/* Best Season */}
-        <section id="best-season">
+        {/* Distance */}
+        <section id="distance">
           <h2
             style={{
               marginTop: "65px",
@@ -287,7 +289,7 @@ export default function BestTimeToVisitTajMahalPage() {
               color: "#08142d",
             }}
           >
-            Best Season to Visit Taj Mahal
+            How Far Is the Taj Mahal from Delhi?
           </h2>
 
           <p
@@ -298,9 +300,9 @@ export default function BestTimeToVisitTajMahalPage() {
               marginTop: "25px",
             }}
           >
-            The ideal season to visit the Taj Mahal is generally from{" "}
-            <strong>October to March</strong>. During these months, Agra
-            usually has more comfortable temperatures for sightseeing.
+            The Taj Mahal is approximately 230 kilometres from central Delhi
+            by road. The actual travel time can vary depending on traffic,
+            departure point and transportation method.
           </p>
 
           <table
@@ -319,43 +321,47 @@ export default function BestTimeToVisitTajMahalPage() {
                 }}
               >
                 <th style={{ padding: "16px", textAlign: "left" }}>
-                  Season
+                  Transport
                 </th>
                 <th style={{ padding: "16px", textAlign: "left" }}>
-                  Weather
+                  Approx. Journey
                 </th>
                 <th style={{ padding: "16px", textAlign: "left" }}>
-                  Recommendation
+                  Main Advantage
                 </th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
-                <td style={{ padding: "16px" }}>October – March</td>
-                <td style={{ padding: "16px" }}>Cool & Pleasant</td>
-                <td style={{ padding: "16px" }}>★★★★★ Best Time</td>
+                <td style={{ padding: "16px" }}>Private Car</td>
+                <td style={{ padding: "16px" }}>Around 3–4 hours</td>
+                <td style={{ padding: "16px" }}>
+                  Door-to-door convenience
+                </td>
               </tr>
 
               <tr style={{ background: "#f7f7f7" }}>
-                <td style={{ padding: "16px" }}>April – June</td>
-                <td style={{ padding: "16px" }}>Very Hot</td>
-                <td style={{ padding: "16px" }}>Visit Early Morning</td>
+                <td style={{ padding: "16px" }}>Train</td>
+                <td style={{ padding: "16px" }}>Varies by service</td>
+                <td style={{ padding: "16px" }}>
+                  Fast rail connection
+                </td>
               </tr>
 
               <tr>
-                <td style={{ padding: "16px" }}>July – September</td>
-                <td style={{ padding: "16px" }}>Monsoon</td>
+                <td style={{ padding: "16px" }}>Bus</td>
+                <td style={{ padding: "16px" }}>Usually longer</td>
                 <td style={{ padding: "16px" }}>
-                  Good for Green Landscapes
+                  Multiple departure options
                 </td>
               </tr>
             </tbody>
           </table>
         </section>
 
-        {/* Sunrise vs Sunset */}
-        <section id="sunrise-sunset">
+        {/* Car */}
+        <section id="car">
           <h2
             style={{
               marginTop: "65px",
@@ -363,7 +369,7 @@ export default function BestTimeToVisitTajMahalPage() {
               color: "#08142d",
             }}
           >
-            Sunrise or Sunset – Which is Better?
+            Delhi to Taj Mahal by Private Car
           </h2>
 
           <p
@@ -374,248 +380,23 @@ export default function BestTimeToVisitTajMahalPage() {
               marginTop: "25px",
             }}
           >
-            The Taj Mahal looks beautiful throughout the day, but sunrise and
-            sunset offer different experiences. Sunrise is especially popular
-            for its cooler temperatures, peaceful atmosphere and soft morning
-            light. Sunset provides warmer tones and a beautiful evening
-            atmosphere.
+            Travelling by private car is a convenient option for visitors who
+            want a flexible Delhi to Agra journey. You can be picked up from
+            your hotel, airport or another location in Delhi and travel
+            directly to Agra.
           </p>
-
-          <table
-            style={{
-              width: "100%",
-              borderCollapse: "collapse",
-              marginTop: "35px",
-              marginBottom: "45px",
-            }}
-          >
-            <thead>
-              <tr
-                style={{
-                  background: "#08142d",
-                  color: "#fff",
-                }}
-              >
-                <th style={{ padding: "16px", textAlign: "left" }}>
-                  Feature
-                </th>
-                <th style={{ padding: "16px", textAlign: "left" }}>
-                  Sunrise
-                </th>
-                <th style={{ padding: "16px", textAlign: "left" }}>
-                  Sunset
-                </th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td style={{ padding: "16px" }}>Crowds</td>
-                <td style={{ padding: "16px" }}>Usually Lower</td>
-                <td style={{ padding: "16px" }}>Usually Moderate</td>
-              </tr>
-
-              <tr style={{ background: "#f7f7f7" }}>
-                <td style={{ padding: "16px" }}>Photography</td>
-                <td style={{ padding: "16px" }}>★★★★★</td>
-                <td style={{ padding: "16px" }}>★★★★☆</td>
-              </tr>
-
-              <tr>
-                <td style={{ padding: "16px" }}>Temperature</td>
-                <td style={{ padding: "16px" }}>Cooler</td>
-                <td style={{ padding: "16px" }}>Warmer</td>
-              </tr>
-
-              <tr style={{ background: "#f7f7f7" }}>
-                <td style={{ padding: "16px" }}>Best For</td>
-                <td style={{ padding: "16px" }}>
-                  First-time visitors & photographers
-                </td>
-                <td style={{ padding: "16px" }}>
-                  Evening visitors & photographers
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        {/* Month Guide */}
-        <section id="month-guide">
-          <h2
-            style={{
-              marginTop: "65px",
-              fontSize: "40px",
-              color: "#08142d",
-            }}
-          >
-            Month-by-Month Guide
-          </h2>
-
-          <h3
-            style={{
-              marginTop: "35px",
-              color: "#08142d",
-            }}
-          >
-            October – November
-          </h3>
 
           <p
             style={{
-              lineHeight: "34px",
-              color: "#444",
-            }}
-          >
-            These months are generally comfortable for sightseeing, with
-            pleasant daytime conditions. They are excellent months for exploring
-            Agra and photographing the Taj Mahal.
-          </p>
-
-          <h3
-            style={{
-              marginTop: "35px",
-              color: "#08142d",
-            }}
-          >
-            December – January
-          </h3>
-
-          <p
-            style={{
-              lineHeight: "34px",
-              color: "#444",
-            }}
-          >
-            Winter mornings can sometimes be foggy, which may affect visibility
-            around sunrise. Afternoons are often more comfortable. Carry warm
-            clothing for early mornings.
-          </p>
-
-          <h3
-            style={{
-              marginTop: "35px",
-              color: "#08142d",
-            }}
-          >
-            February – March
-          </h3>
-
-          <p
-            style={{
-              lineHeight: "34px",
-              color: "#444",
-            }}
-          >
-            February and March are among the most pleasant months for visiting
-            Agra. Temperatures are generally comfortable and sightseeing
-            conditions are favorable.
-          </p>
-
-          <h3
-            style={{
-              marginTop: "35px",
-              color: "#08142d",
-            }}
-          >
-            April – June
-          </h3>
-
-          <p
-            style={{
-              lineHeight: "34px",
-              color: "#444",
-            }}
-          >
-            Summer can be extremely hot, particularly during the middle of the
-            day. If you travel during these months, plan your Taj Mahal visit
-            as early as possible and carry water and sun protection.
-          </p>
-
-          <h3
-            style={{
-              marginTop: "35px",
-              color: "#08142d",
-            }}
-          >
-            July – September
-          </h3>
-
-          <p
-            style={{
-              lineHeight: "34px",
-              color: "#444",
-            }}
-          >
-            Monsoon brings occasional rain and higher humidity. The gardens and
-            surrounding landscape can look lush and green, while visitor
-            numbers may be lower on some days.
-          </p>
-        </section>
-
-        {/* Photography */}
-        <section id="photography">
-          <h2
-            style={{
-              marginTop: "70px",
-              fontSize: "40px",
-              color: "#08142d",
-            }}
-          >
-            Taj Mahal Photography Tips
-          </h2>
-
-          <ul
-            style={{
-              lineHeight: "36px",
-              fontSize: "18px",
-              color: "#444",
-              marginTop: "25px",
-            }}
-          >
-            <li>📸 Arrive early for softer morning light.</li>
-            <li>
-              📸 Capture the Taj Mahal and its reflection from the central
-              water channel.
-            </li>
-            <li>
-              📸 Weekdays can be preferable if you want a quieter experience.
-            </li>
-            <li>
-              📸 Wear comfortable clothing and shoes for walking around the
-              complex.
-            </li>
-            <li>📸 Keep your camera or phone lens clean.</li>
-            <li>
-              📸 Take both wide-angle photographs and closer architectural
-              details.
-            </li>
-          </ul>
-        </section>
-
-        {/* Crowd Tips */}
-        <section id="crowds">
-          <h2
-            style={{
-              marginTop: "70px",
-              fontSize: "40px",
-              color: "#08142d",
-            }}
-          >
-            Crowd & Entry Tips
-          </h2>
-
-          <p
-            style={{
+              fontSize: "19px",
               lineHeight: "34px",
               color: "#444",
               marginTop: "25px",
             }}
           >
-            The Taj Mahal is closed to regular visitors on Fridays. Weekdays
-            can provide a more comfortable sightseeing experience than busy
-            weekends and public holidays. Check official ticket information
-            before your visit and plan to arrive early.
+            A private vehicle also makes it easier to combine the Taj Mahal
+            with other Agra attractions such as Agra Fort, Mehtab Bagh and
+            Itmad-ud-Daulah.
           </p>
 
           <div
@@ -627,10 +408,169 @@ export default function BestTimeToVisitTajMahalPage() {
               marginTop: "30px",
             }}
           >
-            <strong>Local Tip:</strong> If you want to see the Taj Mahal at
-            sunrise, plan your transportation and entry arrangements in
-            advance so you can reach the monument early.
+            <strong>Local Tip:</strong> If you are planning a same-day trip,
+            leaving Delhi early gives you more time for sightseeing in Agra.
           </div>
+        </section>
+
+        {/* Train */}
+        <section id="train">
+          <h2
+            style={{
+              marginTop: "70px",
+              fontSize: "40px",
+              color: "#08142d",
+            }}
+          >
+            Delhi to Agra by Train
+          </h2>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#444",
+              marginTop: "25px",
+            }}
+          >
+            Train travel is another popular way to reach Agra from Delhi.
+            Several rail services connect Delhi with Agra, and journey times
+            vary depending on the train and schedule.
+          </p>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#444",
+              marginTop: "25px",
+            }}
+          >
+            If you choose the train, check the current timetable and ticket
+            availability before travelling because schedules can change.
+          </p>
+        </section>
+
+        {/* Bus */}
+        <section id="bus">
+          <h2
+            style={{
+              marginTop: "70px",
+              fontSize: "40px",
+              color: "#08142d",
+            }}
+          >
+            Delhi to Agra by Bus
+          </h2>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#444",
+              marginTop: "25px",
+            }}
+          >
+            Buses also connect Delhi and Agra. This can be an option for
+            travellers who prefer road transport and want to use public
+            transportation.
+          </p>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#444",
+              marginTop: "25px",
+            }}
+          >
+            Journey times depend on traffic, the type of bus and the departure
+            point. Check the current operator schedule before booking.
+          </p>
+        </section>
+
+        {/* Same Day */}
+        <section id="same-day">
+          <h2
+            style={{
+              marginTop: "70px",
+              fontSize: "40px",
+              color: "#08142d",
+            }}
+          >
+            Can You Visit the Taj Mahal from Delhi in One Day?
+          </h2>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#444",
+              marginTop: "25px",
+            }}
+          >
+            Yes. A Delhi to Agra same-day trip is possible and is a popular
+            choice for travellers with limited time in India.
+          </p>
+
+          <p
+            style={{
+              fontSize: "19px",
+              lineHeight: "34px",
+              color: "#444",
+              marginTop: "25px",
+            }}
+          >
+            A typical private day trip can include the Taj Mahal, Agra Fort
+            and another Agra attraction before returning to Delhi in the
+            evening.
+          </p>
+
+          <ul
+            style={{
+              lineHeight: "36px",
+              fontSize: "18px",
+              color: "#444",
+              marginTop: "25px",
+            }}
+          >
+            <li>Early morning pickup from Delhi</li>
+            <li>Travel to Agra</li>
+            <li>Visit the Taj Mahal</li>
+            <li>Explore Agra Fort</li>
+            <li>Optional visit to another Agra attraction</li>
+            <li>Return to Delhi</li>
+          </ul>
+        </section>
+
+        {/* Travel Tips */}
+        <section id="tips">
+          <h2
+            style={{
+              marginTop: "70px",
+              fontSize: "40px",
+              color: "#08142d",
+            }}
+          >
+            Delhi to Taj Mahal Travel Tips
+          </h2>
+
+          <ul
+            style={{
+              lineHeight: "36px",
+              fontSize: "18px",
+              color: "#444",
+              marginTop: "25px",
+            }}
+          >
+            <li>Start early if you are planning a same-day visit.</li>
+            <li>Check the current Taj Mahal opening information before travelling.</li>
+            <li>Check train or bus schedules before your departure.</li>
+            <li>Keep your travel documents and tickets easily accessible.</li>
+            <li>Wear comfortable shoes because sightseeing involves walking.</li>
+            <li>Allow extra time for traffic when returning to Delhi.</li>
+            <li>Consider staying overnight in Agra if you want a more relaxed trip.</li>
+          </ul>
         </section>
 
         {/* FAQ */}
@@ -691,6 +631,12 @@ export default function BestTimeToVisitTajMahalPage() {
             }}
           >
             <li>
+              <Link href="/blog/best-time-to-visit-taj-mahal">
+                Best Time to Visit Taj Mahal
+              </Link>
+            </li>
+
+            <li>
               <Link href="/blog/best-places-to-visit-in-agra">
                 10 Best Places to Visit in Agra
               </Link>
@@ -719,12 +665,6 @@ export default function BestTimeToVisitTajMahalPage() {
                 Same Day Taj Mahal Tour
               </Link>
             </li>
-
-            <li>
-              <Link href="/tours/golden-triangle-tour">
-                Golden Triangle Tour
-              </Link>
-            </li>
           </ul>
         </section>
 
@@ -745,7 +685,7 @@ export default function BestTimeToVisitTajMahalPage() {
               marginBottom: "20px",
             }}
           >
-            Plan Your Taj Mahal Tour With Local Experts
+            Plan Your Taj Mahal Trip From Delhi
           </h2>
 
           <p
@@ -757,9 +697,9 @@ export default function BestTimeToVisitTajMahalPage() {
               color: "#ddd",
             }}
           >
-            Taj Wonder Heritage Tours offers private Taj Mahal tours,
-            professional local guides and comfortable transportation to make
-            your Agra experience unforgettable.
+            Taj Wonder Heritage Tours offers private Delhi to Agra tours,
+            professional local guides and comfortable transportation for your
+            Taj Mahal visit.
           </p>
 
           <div
