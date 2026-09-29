@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/destinations/jaipur.jpg",
+        url: "/images/destinations/jaipur.webp",
         width: 1200,
         height: 630,
         alt: "Jaipur Pink City sightseeing and historic monuments",
@@ -133,7 +133,7 @@ export default function JaipurPage() {
         }}
       >
         <Image
-          src="/images/destinations/jaipur.jpg"
+          src="/images/destinations/jaipur.webp"
           alt="Jaipur Pink City and historic Rajasthan architecture"
           fill
           priority
@@ -291,7 +291,7 @@ export default function JaipurPage() {
           }}
         >
           <Image
-            src="/images/destinations/jaipur.jpg"
+            src="/images/destinations/jaipur.webp"
             alt="Jaipur heritage architecture and Pink City sightseeing"
             width={1200}
             height={700}

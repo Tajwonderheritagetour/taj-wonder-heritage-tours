@@ -42,7 +42,7 @@ export const goldenTrianglePushkar: Tour = {
     "/images/tours/golden-triangle-pushkar.jpg",
     "/images/destinations/delhi.jpg",
     "/images/destinations/agra.jpg",
-    "/images/destinations/jaipur.jpg",
+    "/images/destinations/jaipur.webp",
     "/images/destinations/pushkar.jpg",
   ],
 

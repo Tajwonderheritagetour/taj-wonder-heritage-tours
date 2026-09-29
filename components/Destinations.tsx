@@ -9,7 +9,7 @@ const destinations = [
   },
   {
     name: "Jaipur",
-    image: "/images/destinations/jaipur.jpg",
+    image: "/images/destinations/jaipur.webp",
     description: "Discover forts, palaces and the Pink City.",
     link: "/destinations/jaipur",
   },
@@ -21,7 +21,7 @@ const destinations = [
   },
   {
     name: "Ranthambore",
-    image: "/images/destinations/ranthambore.jpg",
+    image: "/images/destinations/ranthambore.webp",
     description: "Enjoy exciting tiger safaris in the national park.",
     link: "/destinations/ranthambore",
   },

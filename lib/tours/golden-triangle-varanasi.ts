@@ -42,7 +42,7 @@ export const goldenTriangleVaranasi: Tour = {
     "/images/tours/golden-triangle-varanasi.jpg",
     "/images/destinations/delhi.jpg",
     "/images/destinations/agra.jpg",
-    "/images/destinations/jaipur.jpg",
+    "/images/destinations/jaipur.webp",
     "/images/destinations/varanasi.jpg",
   ],
 

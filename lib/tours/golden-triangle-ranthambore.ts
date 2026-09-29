@@ -31,7 +31,7 @@ seoDescription:
   gallery: [
     "/images/tours/ranthambore.jpg",
     "/images/destinations/agra.jpg",
-    "/images/destinations/jaipur.jpg",
+    "/images/destinations/jaipur.webp",
     "/images/destinations/delhi.jpg",
   ],
 

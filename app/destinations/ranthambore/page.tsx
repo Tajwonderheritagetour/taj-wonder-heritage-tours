@@ -31,7 +31,7 @@ export default function RanthamborePage() {
         }}
       >
         <Image
-          src="/images/destinations/ranthambore.jpg"
+          src="/images/destinations/ranthambore.webp"
           alt="Ranthambore National Park"
           fill
           priority
@@ -136,7 +136,7 @@ export default function RanthamborePage() {
           </div>
 
           <Image
-            src="/images/destinations/ranthambore.jpg"
+            src="/images/destinations/ranthambore.webp"
             alt="Tiger Safari"
             width={700}
             height={500}

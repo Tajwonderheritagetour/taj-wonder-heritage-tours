@@ -43,7 +43,7 @@ export const jaipurOvernightTourFromDelhi: Tour = {
     "/images/destinations/amber-fort.jpg",
     "/images/destinations/hawa-mahal.jpg",
     "/images/destinations/city-palace.jpg",
-    "/images/destinations/jaipur.jpg",
+    "/images/destinations/jaipur.webp",
   ],
 
   language: "English",

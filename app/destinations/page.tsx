@@ -34,7 +34,7 @@ const destinations = [
 
   {
     name: "Jaipur",
-    image: "/images/destinations/jaipur.jpg",
+    image: "/images/destinations/jaipur.webp",
     description:
       "Visit magnificent forts, royal palaces and colorful bazaars in the Pink City.",
     tours: "18+ Tours",
@@ -44,7 +44,7 @@ const destinations = [
 
   {
     name: "Ranthambore",
-    image: "/images/destinations/ranthambore.jpg",
+    image: "/images/destinations/ranthambore.webp",
     description:
       "Experience exciting tiger safaris inside India's famous national park.",
     tours: "5+ Tours",

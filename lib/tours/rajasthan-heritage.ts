@@ -28,7 +28,7 @@ export const rajasthanHeritage = {
 
   gallery: [
     "/images/tours/rajasthan.jpg",
-    "/images/destinations/jaipur.jpg",
+    "/images/destinations/jaipur.webp",
   ],
 
   duration: "8 Days",

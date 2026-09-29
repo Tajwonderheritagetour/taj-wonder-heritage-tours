@@ -25,11 +25,11 @@ export const jaipurTour = {
     "Private Jaipur Tour",
   ],
 
-  image: "/images/tours/jaipur.jpg",
+  image: "/images/tours/jaipur.webp",
 
   gallery: [
-    "/images/tours/jaipur.jpg",
-    "/images/destinations/jaipur.jpg",
+    "/images/tours/jaipur.webp",
+    "/images/destinations/jaipur.webp",
   ],
 
   duration: "1 Day",

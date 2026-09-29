@@ -42,7 +42,7 @@ export const goldenTriangleRishikesh: Tour = {
     "/images/tours/golden-triangle-rishikesh.jpg",
     "/images/destinations/delhi.jpg",
     "/images/destinations/agra.jpg",
-    "/images/destinations/jaipur.jpg",
+    "/images/destinations/jaipur.webp",
     "/images/destinations/rishikesh.jpg",
   ],
 

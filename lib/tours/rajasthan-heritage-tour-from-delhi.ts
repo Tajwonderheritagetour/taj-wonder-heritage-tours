@@ -26,7 +26,7 @@ export const rajasthanHeritageFromDelhi: Tour = {
     "Delhi to Rajasthan Tour",
   ],
 
-  image: "/images/tours/rajasthan-heritage-tour.jpg",
+  image: "/images/tours/rajasthan-heritage-tour.webp",
 
   duration: "13 Days",
 
@@ -41,8 +41,8 @@ export const rajasthanHeritageFromDelhi: Tour = {
     "Experience the ultimate 13-day private Rajasthan journey from Delhi exploring magnificent forts, painted havelis, golden deserts, blue cities, Jain temples and romantic lakes.",
 
   gallery: [
-    "/images/tours/rajasthan-heritage-tour.jpg",
-    "/images/destinations/jaipur.jpg",
+    "/images/tours/rajasthan-heritage-tour.webp",
+    "/images/destinations/jaipur.webp",
     "/images/destinations/jodhpur.jpg",
     "/images/destinations/udaipur.jpg",
     "/images/destinations/jaisalmer.jpg",

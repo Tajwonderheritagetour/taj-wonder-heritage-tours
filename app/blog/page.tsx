@@ -23,7 +23,7 @@ const posts = [
     title: "10 Best Places to Visit in Agra",
     description:
       "Explore Agra's most famous attractions including the Taj Mahal, Agra Fort, Fatehpur Sikri and more.",
-    image: "/images/blog/best-places-to-visit-in-agra.jpg",
+    image: "/images/blog/best-places-to-visit-in-agra.webp",
     date: "July 2026",
     category: "Agra",
     readTime: "8 min read",

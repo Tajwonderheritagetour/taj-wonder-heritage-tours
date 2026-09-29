@@ -10,7 +10,7 @@ const blogs = [
   {
     title: "10 Best Places to Visit in Agra",
     slug: "best-places-to-visit-in-agra",
-    image: "/images/blog/best-places-to-visit-in-agra.jpg",
+    image: "/images/blog/best-places-to-visit-in-agra.webp",
     category: "Agra",
   },
   {

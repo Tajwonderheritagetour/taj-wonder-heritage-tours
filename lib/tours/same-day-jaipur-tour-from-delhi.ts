@@ -40,7 +40,7 @@ export const sameDayJaipurTourFromDelhi: Tour = {
 
   gallery: [
     "/images/tours/same-day-jaipur-tour-from-delhi.jpg",
-    "/images/destinations/jaipur.jpg",
+    "/images/destinations/jaipur.webp",
     "/images/destinations/amber-fort.jpg",
     "/images/destinations/hawa-mahal.jpg",
     "/images/destinations/city-palace.jpg",

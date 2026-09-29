@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         url: `${canonicalUrl.replace(
           "/blog/best-places-to-visit-in-agra",
           ""
-        )}/images/blog/best-places-to-visit-in-agra.jpg`,
+        )}/images/blog/best-places-to-visit-in-agra.webp`,
         width: 1200,
         height: 630,
         alt: "10 Best Places to Visit in Agra",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       `${canonicalUrl.replace(
         "/blog/best-places-to-visit-in-agra",
         ""
-      )}/images/blog/best-places-to-visit-in-agra.jpg`,
+      )}/images/blog/best-places-to-visit-in-agra.webp`,
     ],
   },
 };
@@ -168,7 +168,7 @@ export default function BestPlacesAgra() {
           }}
         >
           <Image
-            src="/images/blog/best-places-to-visit-in-agra.jpg"
+            src="/images/blog/best-places-to-visit-in-agra.webp"
             alt="10 Best Places to Visit in Agra"
             width={1200}
             height={630}

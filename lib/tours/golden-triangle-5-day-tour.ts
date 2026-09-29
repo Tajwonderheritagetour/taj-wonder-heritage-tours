@@ -42,7 +42,7 @@ export const goldenTriangle5DayTour: Tour = {
     "/images/tours/golden-triangle.jpg",
     "/images/destinations/delhi.jpg",
     "/images/destinations/agra.jpg",
-    "/images/destinations/jaipur.jpg",
+    "/images/destinations/jaipur.webp",
   ],
 
   language: "English",
