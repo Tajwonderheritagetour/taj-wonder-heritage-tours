@@ -104,11 +104,13 @@ export default function Hero() {
           zIndex: 0,
         }}
       >
-       <Image
+     
+<Image
   src={slide.image}
   alt={slide.title}
   fill
   priority={currentSlide === 0}
+  loading={currentSlide === 0 ? "eager" : "lazy"}
   fetchPriority={currentSlide === 0 ? "high" : "auto"}
   sizes="100vw"
   quality={75}
@@ -117,6 +119,7 @@ export default function Hero() {
     objectPosition: "center center",
   }}
 />
+
       </div>
 
       {/* Preload Only The Next Slide */}
