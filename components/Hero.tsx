@@ -104,18 +104,19 @@ export default function Hero() {
           zIndex: 0,
         }}
       >
-        <Image
-          src={slide.image}
-          alt={slide.title}
-          fill
-          priority={currentSlide === 0}
-          sizes="100vw"
-          quality={75}
-          style={{
-            objectFit: "cover",
-            objectPosition: "center center",
-          }}
-        />
+       <Image
+  src={slide.image}
+  alt={slide.title}
+  fill
+  priority={currentSlide === 0}
+  fetchPriority={currentSlide === 0 ? "high" : "auto"}
+  sizes="100vw"
+  quality={75}
+  style={{
+    objectFit: "cover",
+    objectPosition: "center center",
+  }}
+/>
       </div>
 
       {/* Preload Only The Next Slide */}
