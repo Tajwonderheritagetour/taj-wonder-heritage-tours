@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,19 +6,21 @@ import Link from "next/link";
 const canonicalUrl =
   "https://www.tajwonderheritagetours.com/blog/best-time-to-visit-taj-mahal";
 
-export const metadata: Metadata = {
-  title: "Best Time to Visit Taj Mahal (2026 Complete Guide)",
-  description:
-    "Discover the best time to visit the Taj Mahal in 2026, including the best season, sunrise and sunset, weather, crowds, photography tips and travel advice.",
+const title =
+  "Best Time to Visit the Taj Mahal: Months, Weather & Tips";
 
+const description =
+  "Find the best time to visit the Taj Mahal in Agra. Compare seasons, monthly weather, sunrise and sunset, crowds, photography tips and visitor advice.";
+
+export const metadata: Metadata = {
+  title,
+  description,
   alternates: {
     canonical: canonicalUrl,
   },
-
   openGraph: {
-    title: "Best Time to Visit Taj Mahal (2026 Complete Guide)",
-    description:
-      "Discover the best season, weather, sunrise, sunset, crowd levels and photography tips for visiting the Taj Mahal.",
+    title,
+    description,
     url: canonicalUrl,
     type: "article",
     images: [
@@ -25,16 +28,14 @@ export const metadata: Metadata = {
         url: "/images/blog/best-time-to-visit-taj-mahal.jpg",
         width: 1200,
         height: 630,
-        alt: "Best Time to Visit Taj Mahal",
+        alt: "The Taj Mahal in Agra, India",
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Best Time to Visit Taj Mahal (2026 Guide)",
-    description:
-      "Everything you need to know about the best time to visit the Taj Mahal, including weather, sunrise, sunset and seasonal travel tips.",
+    title,
+    description,
     images: ["/images/blog/best-time-to-visit-taj-mahal.jpg"],
   },
 };
@@ -43,22 +44,42 @@ const faqs = [
   {
     question: "What is the best month to visit the Taj Mahal?",
     answer:
-      "October to March generally offers the most comfortable weather for visiting the Taj Mahal. December and January can have foggy mornings, while February and March are often pleasant for sightseeing.",
+      "October, November, February and March are often comfortable months for sightseeing in Agra. December and January can bring cold, foggy mornings, while April to June is usually very hot. Conditions vary each year.",
   },
   {
-    question: "Is sunrise worth visiting at the Taj Mahal?",
+    question: "What is the best time of day to visit the Taj Mahal?",
     answer:
-      "Yes. Sunrise is one of the best times to visit the Taj Mahal because temperatures are cooler, the light is soft and the atmosphere can be more peaceful than later in the day.",
+      "Early morning is a popular choice because temperatures are generally cooler and the light is softer. Arriving early can also help you enjoy the monument before the busiest part of the day.",
   },
   {
-    question: "Which day should I avoid when visiting the Taj Mahal?",
+    question: "Is sunrise or sunset better at the Taj Mahal?",
     answer:
-      "The Taj Mahal is closed to regular visitors every Friday. Check the official ticketing information and your travel schedule before planning your visit.",
+      "Sunrise is ideal for early-morning light and cooler temperatures. Sunset can provide warm colours for photography. Your best option depends on the weather, visibility, crowd levels and your travel schedule.",
   },
   {
-    question: "How much time should I spend at the Taj Mahal?",
+    question: "Is the Taj Mahal open every day?",
     answer:
-      "Most visitors spend around two to three hours exploring the Taj Mahal complex, gardens and surrounding areas, although photography and sightseeing preferences can make the visit longer.",
+      "The Taj Mahal is closed to regular visitors on Fridays. Check official visitor information and ticket availability before finalising your travel plans.",
+  },
+  {
+    question: "How many hours do I need at the Taj Mahal?",
+    answer:
+      "Allow around two to three hours for a typical visit to explore the monument and gardens at a comfortable pace. You may need more time if you enjoy photography or want a relaxed visit.",
+  },
+  {
+    question: "Is summer a good time to visit the Taj Mahal?",
+    answer:
+      "Summer visits are possible, but Agra can become extremely hot from April to June. Choose an early visit, carry drinking water, wear comfortable clothing and follow the site's current entry rules.",
+  },
+  {
+    question: "Can I visit the Taj Mahal during the monsoon?",
+    answer:
+      "Yes. Visits are possible during the monsoon season, generally July to September. Expect possible rain, humidity and cloudy skies, and allow flexibility in your schedule.",
+  },
+  {
+    question: "Can I visit the Taj Mahal on a same-day trip from Delhi?",
+    answer:
+      "Yes. A same-day trip from Delhi to Agra is possible with an early departure and careful planning. Travel time depends on your pickup location, traffic and transport arrangements.",
   },
 ];
 
@@ -75,802 +96,537 @@ const faqSchema = {
   })),
 };
 
+const sectionStyle = {
+  marginTop: "54px",
+  scrollMarginTop: "30px",
+};
+
+const headingStyle = {
+  color: "#08142d",
+  lineHeight: 1.25,
+};
+
+const paragraphStyle = {
+  fontSize: "18px",
+  lineHeight: 1.85,
+  color: "#444",
+  marginTop: "18px",
+};
+
+const tableStyle = {
+  width: "100%",
+  minWidth: "540px",
+  borderCollapse: "collapse" as const,
+  fontSize: "16px",
+};
+
+const cellStyle = {
+  padding: "14px",
+  textAlign: "left" as const,
+  borderBottom: "1px solid #e5e7eb",
+  verticalAlign: "top" as const,
+};
+
+const tocLinks = [
+  ["#quick-answer", "Quick answer: when should you visit?"],
+  ["#best-season", "Best season to visit"],
+  ["#sunrise-sunset", "Sunrise vs sunset"],
+  ["#month-guide", "Month-by-month guide"],
+  ["#crowds", "Crowds, opening days and entry tips"],
+  ["#photography", "Photography tips"],
+  ["#planning", "How to plan your Agra visit"],
+  ["#faq", "Frequently asked questions"],
+];
+
 export default function BestTimeToVisitTajMahalPage() {
   return (
     <main>
-      {/* Hero */}
-
-      <section
+      <header
         style={{
           background: "#08142d",
           color: "#fff",
-          padding: "90px 20px",
+          padding: "76px 20px",
           textAlign: "center",
         }}
       >
-        <div
-          style={{
-            maxWidth: "900px",
-            margin: "0 auto",
-          }}
-        >
-          <span
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+          <p
             style={{
               color: "#d4af37",
-              letterSpacing: "3px",
+              letterSpacing: "2px",
               fontWeight: 700,
               textTransform: "uppercase",
-              fontSize: "14px",
+              fontSize: "13px",
             }}
           >
             Taj Mahal Travel Guide
-          </span>
+          </p>
 
           <h1
             style={{
-              fontSize: "clamp(36px, 6vw, 54px)",
-              lineHeight: "1.15",
-              marginTop: "20px",
-              marginBottom: "20px",
+              fontSize: "clamp(34px, 5vw, 52px)",
+              lineHeight: 1.18,
+              margin: "18px 0",
             }}
           >
-            Best Time to Visit Taj Mahal (2026 Guide)
+            Best Time to Visit the Taj Mahal
           </h1>
 
           <p
             style={{
-              fontSize: "20px",
-              lineHeight: "34px",
-              color: "#eee",
-              margin: 0,
+              maxWidth: "760px",
+              margin: "0 auto",
+              color: "#e5e7eb",
+              fontSize: "19px",
+              lineHeight: 1.8,
             }}
           >
-            Planning your Taj Mahal trip? Discover the best season,
-            weather, sunrise timings, crowd levels and expert travel
-            tips before visiting India&apos;s most famous monument.
+            Find the best season, month and time of day for your
+            visit, with practical advice on Agra&apos;s weather,
+            photography, crowds and travel planning.
           </p>
         </div>
-      </section>
+      </header>
 
-      {/* Article */}
-
-      <section
+      <article
         style={{
-          maxWidth: "1000px",
-          margin: "70px auto",
+          maxWidth: "960px",
+          margin: "48px auto",
           padding: "0 20px",
+          color: "#333",
         }}
       >
         <Image
           src="/images/blog/best-time-to-visit-taj-mahal.jpg"
-          alt="Best Time to Visit Taj Mahal"
+          alt="The white marble Taj Mahal in Agra, India"
           width={1200}
           height={630}
           priority
+          sizes="(max-width: 768px) 100vw, 920px"
           style={{
             width: "100%",
             height: "auto",
-            borderRadius: "18px",
-            marginBottom: "40px",
+            borderRadius: "16px",
           }}
         />
 
-        <p
-          style={{
-            color: "#777",
-            fontSize: "16px",
-            marginBottom: "35px",
-          }}
-        >
-          Published: July 2026 • Taj Wonder Heritage Tours
+        <p style={{ color: "#666", fontSize: "14px", marginTop: "14px" }}>
+          Travel guide by Taj Wonder Heritage Tours
         </p>
 
-        {/* Table of Contents */}
+        <section id="quick-answer" style={sectionStyle}>
+          <h2 style={{ ...headingStyle, fontSize: "30px" }}>
+            Quick Answer: When Should You Visit?
+          </h2>
+
+          <p style={paragraphStyle}>
+            For many travellers, <strong>October to March</strong> is
+            a comfortable period to visit the Taj Mahal in Agra.
+            October and November often bring more comfortable
+            sightseeing weather, while February and March can also
+            be pleasant. Winter mornings may be cold or foggy,
+            particularly in December and January.
+          </p>
+
+          <p style={paragraphStyle}>
+            If you want cooler temperatures and soft morning light,
+            consider an early visit. If you are travelling in summer,
+            plan around the heat. There is no single perfect time for
+            everyone: weather, visibility, crowd levels and your
+            itinerary all matter.
+          </p>
+
+          <div
+            style={{
+              background: "#f8f9fb",
+              borderLeft: "4px solid #d4af37",
+              padding: "20px",
+              borderRadius: "8px",
+              marginTop: "24px",
+            }}
+          >
+            <strong style={{ color: "#08142d" }}>
+              Planning tip
+            </strong>
+            <p style={{ ...paragraphStyle, marginBottom: 0 }}>
+              The Taj Mahal is closed to regular visitors on Fridays.
+              Check official opening information and ticket availability
+              before choosing your date.
+            </p>
+          </div>
+        </section>
 
         <nav
           aria-label="Table of contents"
           style={{
             background: "#f8f9fb",
-            padding: "25px",
+            padding: "24px",
             borderRadius: "12px",
-            marginBottom: "45px",
+            marginTop: "36px",
           }}
         >
-          <h2
-            style={{
-              marginTop: 0,
-              marginBottom: "15px",
-              color: "#08142d",
-              fontSize: "24px",
-            }}
-          >
-            Table of Contents
+          <h2 style={{ ...headingStyle, fontSize: "23px", marginTop: 0 }}>
+            In This Guide
           </h2>
 
-          <ul
-            style={{
-              lineHeight: "32px",
-              margin: 0,
-              paddingLeft: "22px",
-            }}
-          >
-            <li>
-              <a href="#best-season">Best Season to Visit</a>
-            </li>
-            <li>
-              <a href="#sunrise-sunset">Sunrise vs Sunset</a>
-            </li>
-            <li>
-              <a href="#month-guide">Month-by-Month Guide</a>
-            </li>
-            <li>
-              <a href="#photography">Photography Tips</a>
-            </li>
-            <li>
-              <a href="#crowds">Crowd &amp; Entry Tips</a>
-            </li>
-            <li>
-              <a href="#faq">Frequently Asked Questions</a>
-            </li>
+          <ul style={{ lineHeight: 2, paddingLeft: "22px", marginBottom: 0 }}>
+            {tocLinks.map(([href, label]) => (
+              <li key={href}>
+                <a href={href} style={{ color: "#173c78" }}>
+                  {label}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
 
-        <p
-          style={{
-            fontSize: "19px",
-            lineHeight: "34px",
-            color: "#444",
-          }}
-        >
-          The Taj Mahal is one of the world&apos;s most famous monuments
-          and attracts visitors from around the globe. Choosing the right
-          time to visit can make a major difference to your experience,
-          especially when it comes to weather, crowds and photography.
-        </p>
-
-        <p
-          style={{
-            fontSize: "19px",
-            lineHeight: "34px",
-            color: "#444",
-            marginTop: "25px",
-          }}
-        >
-          Whether you are visiting India for the first time or returning
-          to Agra, this guide explains the best seasons, months and times
-          of day for planning your Taj Mahal visit.
-        </p>
-
-        {/* Best Season */}
-
-        <section id="best-season">
-          <h2
-            style={{
-              marginTop: "65px",
-              fontSize: "40px",
-              color: "#08142d",
-            }}
-          >
-            Best Season to Visit Taj Mahal
+        <section id="best-season" style={sectionStyle}>
+          <h2 style={{ ...headingStyle, fontSize: "32px" }}>
+            Best Season to Visit the Taj Mahal
           </h2>
 
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#444",
-              marginTop: "25px",
-            }}
-          >
-            The most comfortable season to visit the Taj Mahal is
-            generally from <strong>October to March</strong>. During
-            these months, temperatures are usually more pleasant for
-            sightseeing than during the peak summer months.
+          <p style={paragraphStyle}>
+            Agra experiences hot summers, a monsoon season and cooler
+            winters. Your experience at the Taj Mahal can change
+            considerably with the season, so consider both comfort
+            and the type of photographs you hope to take.
           </p>
 
-          <table
-            style={{
-              width: "100%",
-              borderCollapse: "collapse",
-              marginTop: "35px",
-              marginBottom: "45px",
-            }}
-          >
-            <thead>
-              <tr
-                style={{
-                  background: "#08142d",
-                  color: "#fff",
-                }}
-              >
-                <th
-                  style={{
-                    padding: "16px",
-                    textAlign: "left",
-                  }}
-                >
-                  Season
-                </th>
+          <div style={{ overflowX: "auto", marginTop: "24px" }}>
+            <table style={tableStyle}>
+              <thead>
+                <tr style={{ background: "#08142d", color: "#fff" }}>
+                  <th style={cellStyle}>Period</th>
+                  <th style={cellStyle}>Typical conditions</th>
+                  <th style={cellStyle}>Planning advice</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style={cellStyle}>October–November</td>
+                  <td style={cellStyle}>Generally more comfortable</td>
+                  <td style={cellStyle}>A good period for sightseeing</td>
+                </tr>
+                <tr style={{ background: "#f8f9fb" }}>
+                  <td style={cellStyle}>December–January</td>
+                  <td style={cellStyle}>Cool mornings; possible fog</td>
+                  <td style={cellStyle}>Carry warm clothing and allow flexibility</td>
+                </tr>
+                <tr>
+                  <td style={cellStyle}>February–March</td>
+                  <td style={cellStyle}>Often pleasant for outdoor visits</td>
+                  <td style={cellStyle}>Good months to explore Agra</td>
+                </tr>
+                <tr style={{ background: "#f8f9fb" }}>
+                  <td style={cellStyle}>April–June</td>
+                  <td style={cellStyle}>Very hot weather</td>
+                  <td style={cellStyle}>Prefer early sightseeing and take breaks</td>
+                </tr>
+                <tr>
+                  <td style={cellStyle}>July–September</td>
+                  <td style={cellStyle}>Rain and humidity are possible</td>
+                  <td style={cellStyle}>Bring rain protection and keep plans flexible</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-                <th
-                  style={{
-                    padding: "16px",
-                    textAlign: "left",
-                  }}
-                >
-                  Weather
-                </th>
-
-                <th
-                  style={{
-                    padding: "16px",
-                    textAlign: "left",
-                  }}
-                >
-                  Recommendation
-                </th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td style={{ padding: "16px" }}>
-                  October – March
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  Cool &amp; Pleasant
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  ⭐ Best Time
-                </td>
-              </tr>
-
-              <tr
-                style={{
-                  background: "#f7f7f7",
-                }}
-              >
-                <td style={{ padding: "16px" }}>
-                  April – June
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  Very Hot
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  Visit Early Morning
-                </td>
-              </tr>
-
-              <tr>
-                <td style={{ padding: "16px" }}>
-                  July – September
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  Monsoon
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  Good for Green Landscapes
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        {/* Sunrise vs Sunset */}
-
-        <section id="sunrise-sunset">
-          <h2
-            style={{
-              marginTop: "60px",
-              fontSize: "40px",
-              color: "#08142d",
-            }}
-          >
-            Sunrise or Sunset – Which is Better?
-          </h2>
-
-          <p
-            style={{
-              fontSize: "19px",
-              lineHeight: "34px",
-              color: "#444",
-              marginTop: "25px",
-            }}
-          >
-            The Taj Mahal looks beautiful throughout the day, but sunrise
-            and sunset provide different experiences. Sunrise is popular
-            for cooler temperatures, softer light and a peaceful
-            atmosphere. Sunset offers warmer tones and can be particularly
-            attractive for photography.
-          </p>
-
-          <table
-            style={{
-              width: "100%",
-              borderCollapse: "collapse",
-              marginTop: "35px",
-              marginBottom: "45px",
-            }}
-          >
-            <thead>
-              <tr
-                style={{
-                  background: "#08142d",
-                  color: "#fff",
-                }}
-              >
-                <th
-                  style={{
-                    padding: "16px",
-                    textAlign: "left",
-                  }}
-                >
-                  Feature
-                </th>
-
-                <th
-                  style={{
-                    padding: "16px",
-                    textAlign: "left",
-                  }}
-                >
-                  Sunrise
-                </th>
-
-                <th
-                  style={{
-                    padding: "16px",
-                    textAlign: "left",
-                  }}
-                >
-                  Sunset
-                </th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td style={{ padding: "16px" }}>
-                  Crowds
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  Usually Lower
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  Moderate
-                </td>
-              </tr>
-
-              <tr
-                style={{
-                  background: "#f7f7f7",
-                }}
-              >
-                <td style={{ padding: "16px" }}>
-                  Photography
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  Excellent
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  Excellent
-                </td>
-              </tr>
-
-              <tr>
-                <td style={{ padding: "16px" }}>
-                  Temperature
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  Cooler
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  Pleasant
-                </td>
-              </tr>
-
-              <tr
-                style={{
-                  background: "#f7f7f7",
-                }}
-              >
-                <td style={{ padding: "16px" }}>
-                  Best For
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  First-time visitors &amp; photographers
-                </td>
-
-                <td style={{ padding: "16px" }}>
-                  Evening travellers &amp; photographers
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        {/* Month Guide */}
-
-        <section id="month-guide">
-          <h2
-            style={{
-              marginTop: "60px",
-              fontSize: "40px",
-              color: "#08142d",
-            }}
-          >
-            Month-by-Month Guide
-          </h2>
-
-          <h3
-            style={{
-              marginTop: "35px",
-              color: "#08142d",
-            }}
-          >
-            October – November
-          </h3>
-
-          <p
-            style={{
-              lineHeight: "34px",
-              color: "#444",
-            }}
-          >
-            October and November are generally excellent months for
-            sightseeing, with more comfortable temperatures than the
-            summer season.
-          </p>
-
-          <h3
-            style={{
-              marginTop: "35px",
-              color: "#08142d",
-            }}
-          >
-            December – January
-          </h3>
-
-          <p
-            style={{
-              lineHeight: "34px",
-              color: "#444",
-            }}
-          >
-            Winter mornings can sometimes be foggy, particularly in
-            December and January. Afternoons can be comfortable for
-            sightseeing. Carry a warm layer for early morning visits.
-          </p>
-
-          <h3
-            style={{
-              marginTop: "35px",
-              color: "#08142d",
-            }}
-          >
-            February – March
-          </h3>
-
-          <p
-            style={{
-              lineHeight: "34px",
-              color: "#444",
-            }}
-          >
-            February and March are popular months for exploring Agra,
-            with generally pleasant conditions for visiting outdoor
-            monuments.
-          </p>
-
-          <h3
-            style={{
-              marginTop: "35px",
-              color: "#08142d",
-            }}
-          >
-            April – June
-          </h3>
-
-          <p
-            style={{
-              lineHeight: "34px",
-              color: "#444",
-            }}
-          >
-            Summer can be extremely hot in Agra. If you travel during
-            these months, early morning sightseeing is recommended to
-            avoid the strongest afternoon heat.
-          </p>
-
-          <h3
-            style={{
-              marginTop: "35px",
-              color: "#08142d",
-            }}
-          >
-            July – September
-          </h3>
-
-          <p
-            style={{
-              lineHeight: "34px",
-              color: "#444",
-            }}
-          >
-            The monsoon season can bring rain and humidity, but the
-            surrounding landscapes can become greener. Visitor numbers
-            may also be lower at some times.
+          <p style={paragraphStyle}>
+            These are general seasonal patterns, not a daily forecast.
+            Check the weather close to your travel date, particularly
+            during winter fog or periods of heavy rain.
           </p>
         </section>
 
-        {/* Photography */}
+        <section id="sunrise-sunset" style={sectionStyle}>
+          <h2 style={{ ...headingStyle, fontSize: "32px" }}>
+            Taj Mahal at Sunrise or Sunset: Which Is Better?
+          </h2>
 
-        <section id="photography">
-          <h2
-            style={{
-              marginTop: "70px",
-              fontSize: "42px",
-              color: "#08142d",
-            }}
-          >
+          <p style={paragraphStyle}>
+            Sunrise is popular for cooler temperatures and soft light.
+            Sunset can create warmer tones across the marble. Both can
+            be beautiful, but haze, cloud cover and the number of
+            visitors affect the experience.
+          </p>
+
+          <div style={{ overflowX: "auto", marginTop: "24px" }}>
+            <table style={tableStyle}>
+              <thead>
+                <tr style={{ background: "#08142d", color: "#fff" }}>
+                  <th style={cellStyle}>What matters</th>
+                  <th style={cellStyle}>Sunrise</th>
+                  <th style={cellStyle}>Sunset</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style={cellStyle}>Temperature</td>
+                  <td style={cellStyle}>Usually cooler</td>
+                  <td style={cellStyle}>Depends on the season</td>
+                </tr>
+                <tr style={{ background: "#f8f9fb" }}>
+                  <td style={cellStyle}>Light</td>
+                  <td style={cellStyle}>Soft early-morning light</td>
+                  <td style={cellStyle}>Potentially warm evening tones</td>
+                </tr>
+                <tr>
+                  <td style={cellStyle}>Photography</td>
+                  <td style={cellStyle}>Good for morning scenes</td>
+                  <td style={cellStyle}>Good for warm-colour scenes</td>
+                </tr>
+                <tr style={{ background: "#f8f9fb" }}>
+                  <td style={cellStyle}>Best suited to</td>
+                  <td style={cellStyle}>Early risers and morning itineraries</td>
+                  <td style={cellStyle}>Travellers with afternoon flexibility</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p style={paragraphStyle}>
+            Remember that a sunset viewpoint outside the main complex
+            is not the same as entering the Taj Mahal at sunset. Check
+            the current official visiting hours and access rules for
+            the experience you want.
+          </p>
+        </section>
+
+        <section id="month-guide" style={sectionStyle}>
+          <h2 style={{ ...headingStyle, fontSize: "32px" }}>
+            Month-by-Month Guide to Visiting Agra
+          </h2>
+
+          <h3 style={{ ...headingStyle, fontSize: "23px", marginTop: "28px" }}>
+            October and November
+          </h3>
+          <p style={paragraphStyle}>
+            These months are often suitable for exploring the Taj
+            Mahal, Agra Fort and other outdoor attractions. Conditions
+            can vary, so check the forecast before travelling.
+          </p>
+
+          <h3 style={{ ...headingStyle, fontSize: "23px", marginTop: "28px" }}>
+            December and January
+          </h3>
+          <p style={paragraphStyle}>
+            Winter mornings can be cold and foggy. Reduced visibility
+            may affect distant views and photographs. Keep some
+            flexibility in your schedule and bring a warm layer.
+          </p>
+
+          <h3 style={{ ...headingStyle, fontSize: "23px", marginTop: "28px" }}>
+            February and March
+          </h3>
+          <p style={paragraphStyle}>
+            These months are often comfortable for sightseeing before
+            the stronger summer heat arrives. They can work well for
+            combining the Taj Mahal with other Agra monuments.
+          </p>
+
+          <h3 style={{ ...headingStyle, fontSize: "23px", marginTop: "28px" }}>
+            April, May and June
+          </h3>
+          <p style={paragraphStyle}>
+            Temperatures can become very high. If you visit during
+            summer, plan outdoor activities early, wear suitable
+            clothing, drink water and take breaks in the shade.
+          </p>
+
+          <h3 style={{ ...headingStyle, fontSize: "23px", marginTop: "28px" }}>
+            July, August and September
+          </h3>
+          <p style={paragraphStyle}>
+            Monsoon weather can bring rain and humidity. The landscape
+            may look greener, but showers can affect travel plans.
+            Carry rain protection and leave time between activities.
+          </p>
+        </section>
+
+        <section id="crowds" style={sectionStyle}>
+          <h2 style={{ ...headingStyle, fontSize: "32px" }}>
+            Crowds, Opening Days and Entry Tips
+          </h2>
+
+          <p style={paragraphStyle}>
+            Weekdays can sometimes feel less busy than weekends or
+            public holidays, although visitor numbers vary throughout
+            the year. Arriving early can help you make the most of
+            your visit, but it does not guarantee an empty monument.
+          </p>
+
+          <ul style={{ ...paragraphStyle, paddingLeft: "24px" }}>
+            <li>Check official opening information before departure.</li>
+            <li>Remember that regular visits are closed on Fridays.</li>
+            <li>Buy tickets through the official booking channel where available.</li>
+            <li>Allow time for security checks and entry procedures.</li>
+            <li>Check current rules about permitted items and photography.</li>
+            <li>Keep your ticket and identification details accessible as required.</li>
+          </ul>
+
+          <p style={paragraphStyle}>
+            For current ticket prices, entry conditions and visiting
+            hours, consult the official
+            {" "}
+            <a
+              href="https://www.tajmahal.gov.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Taj Mahal website
+            </a>
+            {" "}before your visit.
+          </p>
+        </section>
+
+        <section id="photography" style={sectionStyle}>
+          <h2 style={{ ...headingStyle, fontSize: "32px" }}>
             Taj Mahal Photography Tips
           </h2>
 
-          <ul
-            style={{
-              lineHeight: "36px",
-              fontSize: "18px",
-              color: "#444",
-              marginTop: "25px",
-            }}
-          >
-            <li>
-              Arrive early for softer morning light.
-            </li>
-
-            <li>
-              Use the central water channel for classic reflection
-              photographs.
-            </li>
-
-            <li>
-              Weekdays can be preferable if you want a quieter experience.
-            </li>
-
-            <li>
-              Wear comfortable clothing suitable for walking.
-            </li>
-
-            <li>
-              Keep your camera or phone lens clean for clearer photographs.
-            </li>
-
-            <li>
-              Explore different viewpoints instead of taking only the
-              standard front-facing photograph.
-            </li>
+          <ul style={{ ...paragraphStyle, paddingLeft: "24px" }}>
+            <li>Arrive early if you want softer morning light.</li>
+            <li>Use the central water channel for a classic symmetrical view.</li>
+            <li>Explore different viewpoints instead of taking only one front-facing photo.</li>
+            <li>Keep your phone or camera lens clean.</li>
+            <li>Be patient when other visitors are in your frame.</li>
+            <li>Check the current photography rules before bringing equipment.</li>
           </ul>
+
+          <p style={paragraphStyle}>
+            Fog can soften the monument&apos;s outline in winter, while
+            clear conditions may reveal more detail. Neither effect is
+            guaranteed, so plan your visit around the overall experience
+            rather than expecting one perfect photograph.
+          </p>
         </section>
 
-        {/* Crowd Tips */}
-
-        <section id="crowds">
-          <h2
-            style={{
-              marginTop: "70px",
-              fontSize: "42px",
-              color: "#08142d",
-            }}
-          >
-            Crowd &amp; Entry Tips
+        <section id="planning" style={sectionStyle}>
+          <h2 style={{ ...headingStyle, fontSize: "32px" }}>
+            How to Plan Your Taj Mahal Visit
           </h2>
 
-          <p
-            style={{
-              lineHeight: "34px",
-              color: "#444",
-              marginTop: "25px",
-            }}
-          >
-            The Taj Mahal is closed to regular visitors every Friday.
-            Weekdays can generally provide a more relaxed sightseeing
-            experience than weekends and major holidays.
+          <p style={paragraphStyle}>
+            If you are staying in Agra, plan enough time for the Taj
+            Mahal and consider visiting Agra Fort as well. If you are
+            travelling from Delhi, an early start is useful because
+            road conditions and journey times can vary.
           </p>
 
-          <p
-            style={{
-              lineHeight: "34px",
-              color: "#444",
-              marginTop: "20px",
-            }}
-          >
-            Before travelling, check the latest official ticketing and
-            visitor information because opening arrangements, entry rules
-            and visiting conditions can change.
+          <p style={paragraphStyle}>
+            A private tour may be convenient if you prefer transport
+            arranged around your schedule. Compare the itinerary,
+            vehicle, guide arrangements, inclusions and total cost
+            before booking.
+          </p>
+
+          <p style={paragraphStyle}>
+            Explore our{" "}
+            <Link href="/tours/same-day-taj-mahal-tour">
+              Same Day Taj Mahal Tour from Delhi
+            </Link>{" "}
+            if you want to visit Agra and return to Delhi on the same day.
+          </p>
+
+          <p style={paragraphStyle}>
+            You can also read our guides to{" "}
+            <Link href="/blog/best-places-to-visit-in-agra">
+              the best places to visit in Agra
+            </Link>
+            {" "}and{" "}
+            <Link href="/blog/taj-mahal-sunrise-vs-sunset">
+              Taj Mahal sunrise versus sunset
+            </Link>
+            {" "}to plan the rest of your visit.
           </p>
         </section>
 
-        {/* FAQ */}
-
-        <section id="faq">
-          <h2
-            style={{
-              marginTop: "70px",
-              fontSize: "42px",
-              color: "#08142d",
-            }}
-          >
+        <section id="faq" style={sectionStyle}>
+          <h2 style={{ ...headingStyle, fontSize: "32px" }}>
             Frequently Asked Questions
           </h2>
 
-          <div
-            style={{
-              marginTop: "35px",
-            }}
-          >
+          <div style={{ marginTop: "26px" }}>
             {faqs.map((faq) => (
-              <div
+              <section
                 key={faq.question}
                 style={{
-                  marginBottom: "30px",
+                  borderBottom: "1px solid #e5e7eb",
+                  padding: "20px 0",
                 }}
               >
                 <h3
                   style={{
-                    color: "#08142d",
-                    marginBottom: "10px",
+                    ...headingStyle,
+                    fontSize: "20px",
+                    margin: 0,
                   }}
                 >
                   {faq.question}
                 </h3>
-
-                <p
-                  style={{
-                    lineHeight: "32px",
-                    color: "#555",
-                    margin: 0,
-                  }}
-                >
+                <p style={{ ...paragraphStyle, marginBottom: 0 }}>
                   {faq.answer}
                 </p>
-              </div>
+              </section>
             ))}
           </div>
         </section>
 
-        {/* Related Guides */}
-
-        <section id="related-guides">
-          <h2
-            style={{
-              marginTop: "70px",
-              fontSize: "42px",
-              color: "#08142d",
-            }}
-          >
-            Related Travel Guides
-          </h2>
-
-          <ul
-            style={{
-              marginTop: "25px",
-              lineHeight: "34px",
-              fontSize: "18px",
-            }}
-          >
-            <li>
-              <Link href="/blog/best-places-to-visit-in-agra">
-                10 Best Places to Visit in Agra
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/blog/things-to-do-in-agra">
-                Top Things to Do in Agra
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/blog/taj-mahal-sunrise-vs-sunset">
-                Taj Mahal Sunrise vs Sunset
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/tours/same-day-taj-mahal-tour">
-                Same Day Taj Mahal Tour
-              </Link>
-            </li>
-
-            <li>
-              <Link href="/tours/golden-triangle-5-day-tour">
-                5-Day Golden Triangle Tour
-              </Link>
-            </li>
-          </ul>
-        </section>
-
-        {/* CTA */}
-
         <section
           style={{
-            marginTop: "80px",
+            marginTop: "64px",
             background: "#08142d",
-            padding: "50px 30px",
-            borderRadius: "18px",
+            padding: "40px 24px",
+            borderRadius: "16px",
             textAlign: "center",
             color: "#fff",
-            marginBottom: "60px",
           }}
         >
-          <h2
-            style={{
-              fontSize: "36px",
-              marginBottom: "20px",
-              color: "#fff",
-            }}
-          >
-            Plan Your Taj Mahal Tour With Local Experts
+          <h2 style={{ fontSize: "30px", lineHeight: 1.3, marginTop: 0 }}>
+            Planning a Taj Mahal Trip?
           </h2>
 
           <p
             style={{
-              maxWidth: "760px",
-              margin: "0 auto 35px",
-              lineHeight: "32px",
-              fontSize: "18px",
-              color: "#ddd",
+              maxWidth: "680px",
+              margin: "16px auto 26px",
+              lineHeight: 1.8,
+              color: "#e5e7eb",
             }}
           >
-            Explore the Taj Mahal with Taj Wonder Heritage Tours.
-            Enjoy private transportation, professional local guides and
-            personalized sightseeing experiences in Agra.
+            Explore Agra with Taj Wonder Heritage Tours. Review our
+            tour details and contact us to discuss your travel plans.
           </p>
 
           <div
             style={{
               display: "flex",
               justifyContent: "center",
-              gap: "20px",
+              gap: "14px",
               flexWrap: "wrap",
             }}
           >
             <Link
               href="/tours/same-day-taj-mahal-tour"
               style={{
-                display: "inline-block",
                 background: "#d4af37",
                 color: "#08142d",
-                padding: "15px 30px",
-                borderRadius: "40px",
+                padding: "14px 22px",
+                borderRadius: "30px",
                 textDecoration: "none",
                 fontWeight: 700,
               }}
             >
-              Same Day Taj Mahal Tour
+              View Same-Day Tour
             </Link>
 
             <Link
               href="/contact"
               style={{
-                display: "inline-block",
                 background: "#fff",
                 color: "#08142d",
-                padding: "15px 30px",
-                borderRadius: "40px",
+                padding: "14px 22px",
+                borderRadius: "30px",
                 textDecoration: "none",
                 fontWeight: 700,
               }}
@@ -879,52 +635,33 @@ export default function BestTimeToVisitTajMahalPage() {
             </Link>
           </div>
         </section>
-      </section>
+      </article>
 
-      {/* Breadcrumb */}
-
-      <section
+      <nav
+        aria-label="Breadcrumb"
         style={{
-          maxWidth: "1100px",
+          maxWidth: "960px",
           margin: "0 auto 40px",
           padding: "0 20px",
-          fontSize: "15px",
-          color: "#777",
+          fontSize: "14px",
+          color: "#666",
         }}
       >
-        <Link
-          href="/"
-          style={{
-            color: "#08142d",
-            textDecoration: "none",
-          }}
-        >
+        <Link href="/" style={{ color: "#173c78" }}>
           Home
         </Link>
-
-        {" > "}
-
-        <Link
-          href="/blog"
-          style={{
-            color: "#08142d",
-            textDecoration: "none",
-          }}
-        >
+        {" / "}
+        <Link href="/blog" style={{ color: "#173c78" }}>
           Blog
         </Link>
-
-        {" > "}
-
-        <span>Best Time to Visit Taj Mahal</span>
-      </section>
-
-      {/* FAQ Structured Data */}
+        {" / "}
+        <span aria-current="page">Best Time to Visit the Taj Mahal</span>
+      </nav>
 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema),
+          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
         }}
       />
     </main>
