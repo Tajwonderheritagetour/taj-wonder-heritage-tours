@@ -145,29 +145,39 @@ export default function BestTimeToVisitTajMahalPage() {
         style={{
           background: "#08142d",
           color: "#fff",
-          padding: "76px 20px",
+          padding: "120px 20px 76px",
           textAlign: "center",
         }}
       >
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <p
-            style={{
-              color: "#d4af37",
-              letterSpacing: "2px",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              fontSize: "13px",
-            }}
-          >
-            Taj Mahal Travel Guide
-          </p>
+        
+<p
+  style={{
+    color: "#d4af37",
+    letterSpacing: "2px",
+    fontWeight: 700,
+    textTransform: "uppercase",
+    fontSize: "15px",
+    lineHeight: 1.5,
+    margin: "0 0 12px",
+    display: "block",
+    width: "100%",
+    textAlign: "center",
+  }}
+>
+  TAJ MAHAL TRAVEL GUIDE
+</p>
+
 
           <h1
-            style={{
-              fontSize: "clamp(34px, 5vw, 52px)",
-              lineHeight: 1.18,
-              margin: "18px 0",
-            }}
+           style={{
+  fontSize: "clamp(34px, 5vw, 52px)",
+  lineHeight: 1.2,
+  margin: "18px 0",
+  width: "100%",
+  textAlign: "center",
+  overflowWrap: "break-word",
+}}
           >
             Best Time to Visit the Taj Mahal
           </h1>
