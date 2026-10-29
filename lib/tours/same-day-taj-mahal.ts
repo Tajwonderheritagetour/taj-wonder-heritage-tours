@@ -6,15 +6,15 @@ export const sameDayTajMahal: Tour = {
   title: "Same Day Taj Mahal Tour from Delhi",
 
   shortDescription:
-    "Experience the Taj Mahal on a private same-day tour from Delhi to Agra. Visit the Taj Mahal and Agra Fort with a professional chauffeur, private air-conditioned vehicle and flexible pickup.",
+    "Discover the Taj Mahal and Agra Fort on a private same-day trip from Delhi. Enjoy convenient pickup, a private air-conditioned vehicle, an experienced chauffeur and a flexible itinerary.",
 
   featured: true,
 
   seoTitle:
-    "Same Day Taj Mahal Tour from Delhi | Private Agra Tour",
+    "Same Day Taj Mahal Tour from Delhi | Private Agra Trip",
 
   seoDescription:
-    "Book a private Same Day Taj Mahal Tour from Delhi to Agra. Visit the Taj Mahal and Agra Fort with private AC transport, a professional chauffeur, flexible pickup and a comfortable return to Delhi.",
+    "Explore the Taj Mahal and Agra Fort on a private same-day tour from Delhi. Includes AC transport, chauffeur, pickup and drop-off. Enquire about your Agra trip.",
 
   canonical:
     "https://www.tajwonderheritagetours.com/tours/same-day-taj-mahal-tour",
@@ -26,7 +26,7 @@ export const sameDayTajMahal: Tour = {
     "Delhi to Agra Same Day Tour",
     "Same Day Agra Tour from Delhi",
     "Private Taj Mahal Tour",
-    "Private Agra Tour",
+    "Private Agra Day Trip",
     "Agra Day Trip from Delhi",
     "Agra Sightseeing Tour",
     "Taj Wonder Heritage Tours"
@@ -54,66 +54,68 @@ export const sameDayTajMahal: Tour = {
   reviewCount: 41,
 
   overview:
-    "Experience the Taj Mahal on a private same-day tour from Delhi to Agra. Begin with convenient pickup from your hotel, airport or preferred location in Delhi, Noida or Gurugram and travel to Agra in a comfortable private air-conditioned vehicle. Visit the magnificent Taj Mahal, explore the UNESCO World Heritage-listed Agra Fort and then return to Delhi the same day. This private Agra day trip is designed for travelers who want a comfortable, flexible and hassle-free way to experience Agra from Delhi.",
+    "Discover Agra on a private same-day tour from Delhi with Taj Wonder Heritage Tours. Enjoy pickup from your hotel, airport or preferred location in Delhi, Noida or Gurugram, followed by a comfortable drive to Agra in a private air-conditioned vehicle. Visit the world-famous Taj Mahal and explore the historic Agra Fort, both UNESCO World Heritage Sites. After sightseeing, relax on your return journey to Delhi. Your tour includes a private vehicle and professional chauffeur, with flexible pickup arrangements. Monument entrance tickets, a tour guide and meals are not included, allowing you to plan these separately according to your preferences.",
 
   highlights: [
-    "Private Same Day Tour from Delhi",
-    "Visit the Taj Mahal",
-    "Explore Agra Fort",
-    "Private Air-conditioned Vehicle",
-    "Pickup & Drop from Delhi",
+    "Private Same-Day Agra Tour from Delhi",
+    "Visit the World-Famous Taj Mahal",
+    "Explore Historic Agra Fort",
+    "Private Air-Conditioned Vehicle",
+    "Hotel or Airport Pickup and Drop-off",
     "Professional Chauffeur",
-    "Flexible Departure Time",
+    "Flexible Pickup Time",
     "Mineral Water Included"
   ],
 
   itinerary: [
     {
-      title: "Morning Pickup from Delhi",
+      title: "Pickup in Delhi and Drive to Agra",
       description:
-        "Pickup from your hotel, airport or preferred location in Delhi, Noida or Gurugram. Travel to Agra via the Yamuna Expressway in a comfortable private air-conditioned vehicle."
+        "Meet your chauffeur at your hotel, airport or another agreed pickup location in Delhi, Noida or Gurugram. Travel to Agra via the Yamuna Expressway in a private air-conditioned vehicle. The departure time can be arranged according to your plans."
     },
     {
-      title: "Visit the Taj Mahal",
+      title: "Explore the Taj Mahal",
       description:
-        "Explore the breathtaking Taj Mahal, one of India's most famous monuments and a UNESCO World Heritage Site. Enjoy time for sightseeing, photography and learning about its fascinating history."
+        "Visit the magnificent Taj Mahal, renowned for its white marble architecture and Mughal history. Enjoy time for sightseeing and photography. Monument entrance tickets and a licensed local guide are not included in the standard package."
     },
     {
-      title: "Explore Agra Fort",
+      title: "Discover Agra Fort",
       description:
-        "Visit the magnificent Agra Fort, a UNESCO World Heritage Site featuring impressive Mughal architecture, royal courtyards and historic palaces."
+        "Explore Agra Fort, a UNESCO World Heritage Site known for its impressive red sandstone architecture, royal courtyards and historic palaces. Entrance tickets and guide services are additional."
     },
     {
-      title: "Return to Delhi",
+      title: "Return Journey to Delhi",
       description:
-        "After exploring Agra, relax during your private drive back to Delhi. Drop-off is available at your hotel, airport or preferred location."
+        "After your sightseeing in Agra, meet your chauffeur for the return drive to Delhi. Drop-off is available at your hotel, airport or another agreed location."
     }
   ],
 
   includes: [
-    "Private Air-conditioned Vehicle",
+    "Private Air-Conditioned Vehicle",
     "Professional Chauffeur",
-    "Hotel Pickup & Drop",
+    "Hotel or Agreed Location Pickup and Drop-off",
     "Fuel Charges",
-    "Parking",
-    "Toll Tax",
+    "Parking Charges",
+    "Toll Taxes",
     "Mineral Water"
   ],
 
   excludes: [
-    "Monument Entrance Tickets",
-    "Tour Guide",
-    "Lunch or Meals",
+    "Taj Mahal and Agra Fort Entrance Tickets",
+    "Licensed Tour Guide",
+    "Lunch and Other Meals",
     "Personal Expenses",
-    "Tips & Gratuities"
+    "Tips and Gratuities"
   ],
 
   knowBefore: [
-    "Carry a valid photo ID.",
-    "The Taj Mahal remains closed every Friday.",
-    "Wear comfortable walking shoes.",
-    "Large bags and restricted items are not permitted inside the Taj Mahal.",
-    "Pickup time can be customized according to your preference."
+    "Carry a valid photo ID for monument entry.",
+    "The Taj Mahal is closed to visitors every Friday.",
+    "Wear comfortable walking shoes for monument visits.",
+    "Security restrictions apply to bags and other items at the Taj Mahal.",
+    "Pickup time can be arranged in advance according to your travel plans.",
+    "The total duration is approximately 12 hours and may vary with traffic, pickup location and sightseeing time.",
+    "Monument tickets, guide services and meals are excluded from the standard tour price."
   ],
 
   price: "",
@@ -122,27 +124,42 @@ export const sameDayTajMahal: Tour = {
     {
       question: "Is this a private Taj Mahal tour from Delhi?",
       answer:
-        "Yes. This is a completely private same-day tour from Delhi to Agra with your own air-conditioned vehicle and professional chauffeur."
+        "Yes. This is a private same-day trip from Delhi to Agra with your own air-conditioned vehicle and professional chauffeur. It is not a shared group tour."
     },
     {
-      question: "How long does the Delhi to Agra same-day tour take?",
+      question: "How long does the same-day Taj Mahal tour take?",
       answer:
-        "The complete tour is approximately 12 hours, including travel between Delhi and Agra and sightseeing at the Taj Mahal and Agra Fort."
+        "The tour is planned for approximately 12 hours, including the drive between Delhi and Agra and visits to the Taj Mahal and Agra Fort. The actual duration depends on traffic, pickup location and sightseeing time."
     },
     {
-      question: "Can I customize the pickup time?",
+      question: "What is included in the tour?",
       answer:
-        "Yes. Pickup time can be customized according to your travel plans. We can pick you up from your hotel, airport or preferred location in Delhi, Noida or Gurugram."
+        "The standard package includes a private air-conditioned vehicle, professional chauffeur, agreed pickup and drop-off, fuel, parking, toll taxes and mineral water. Please confirm the final package details when booking."
+    },
+    {
+      question: "Are monument tickets and a tour guide included?",
+      answer:
+        "No. Taj Mahal and Agra Fort entrance tickets and licensed guide services are excluded from the standard package. Please enquire if you would like help arranging these services."
+    },
+    {
+      question: "Can I customize my pickup time?",
+      answer:
+        "Yes. Pickup time can be arranged in advance according to your travel plans. Pickup is available from an agreed location in Delhi, Noida or Gurugram."
     },
     {
       question: "Can I visit the Taj Mahal and Agra Fort in one day?",
       answer:
-        "Yes. This itinerary is designed to allow you to visit both the Taj Mahal and Agra Fort during a comfortable same-day trip from Delhi."
+        "Yes. The itinerary is designed to cover both monuments on a same-day trip from Delhi, subject to opening days, traffic and the time available for sightseeing."
     },
     {
-      question: "Do you provide airport pickup and drop-off?",
+      question: "Is airport pickup and drop-off available?",
       answer:
-        "Yes. Airport pickup and drop-off are available in Delhi, Noida and Gurugram."
+        "Airport pickup and drop-off in Delhi can be arranged in advance. Please provide your flight details and confirm the pickup location when enquiring."
+    },
+    {
+      question: "Is the Taj Mahal open every day?",
+      answer:
+        "The Taj Mahal is closed every Friday for general visitors. Please check the official monument information before finalizing your travel date."
     }
   ]
 };
