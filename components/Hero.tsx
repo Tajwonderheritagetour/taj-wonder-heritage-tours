@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -74,16 +75,14 @@ export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    const timer = setInterval(() => {
+    const timer = window.setInterval(() => {
       setCurrentSlide((previous) => (previous + 1) % slides.length);
-    }, 3000);
+    }, 5000);
 
-    return () => clearInterval(timer);
+    return () => window.clearInterval(timer);
   }, []);
 
   const slide = slides[currentSlide];
-
-  const nextSlide = (currentSlide + 1) % slides.length;
 
   return (
     <section
@@ -93,9 +92,10 @@ export default function Hero() {
         minHeight: "720px",
         width: "100%",
         overflow: "hidden",
+        background: "#08142d",
       }}
     >
-      {/* Current Hero Image */}
+      {/* Hero background image */}
 
       <div
         style={{
@@ -104,60 +104,37 @@ export default function Hero() {
           zIndex: 0,
         }}
       >
-     
-<Image
-  src={slide.image}
-  alt={slide.title}
-  fill
-  priority={currentSlide === 0}
-  loading={currentSlide === 0 ? "eager" : "lazy"}
-  fetchPriority={currentSlide === 0 ? "high" : "auto"}
-  sizes="100vw"
-  quality={75}
-  style={{
-    objectFit: "cover",
-    objectPosition: "center center",
-  }}
-/>
-
-      </div>
-
-      {/* Preload Only The Next Slide */}
-
-      <div
-        aria-hidden="true"
-        style={{
-          position: "absolute",
-          width: "1px",
-          height: "1px",
-          overflow: "hidden",
-          opacity: 0,
-          pointerEvents: "none",
-        }}
-      >
         <Image
-          src={slides[nextSlide].image}
-          alt=""
-          width={20}
-          height={20}
-          sizes="20px"
-          quality={60}
+          src={slide.image}
+          alt={slide.title}
+          fill
+          priority
+          loading="eager"
+          fetchPriority={currentSlide === 0 ? "high" : "auto"}
+          sizes="100vw"
+          quality={currentSlide === 0 ? 65 : 70}
+          style={{
+            objectFit: "cover",
+            objectPosition: "center center",
+          }}
         />
       </div>
 
-      {/* Dark Overlay */}
+      {/* Dark overlay */}
 
       <div
+        aria-hidden="true"
         style={{
           position: "absolute",
           inset: 0,
           background:
             "linear-gradient(90deg, rgba(8,20,45,0.82) 0%, rgba(8,20,45,0.62) 45%, rgba(8,20,45,0.30) 100%)",
           zIndex: 1,
+          pointerEvents: "none",
         }}
       />
 
-      {/* Hero Content */}
+      {/* Hero content */}
 
       <div
         style={{
@@ -168,17 +145,12 @@ export default function Hero() {
           maxWidth: "1200px",
           margin: "0 auto",
           padding: "0 20px",
+          boxSizing: "border-box",
           display: "flex",
           alignItems: "center",
         }}
       >
-        <div
-          style={{
-            maxWidth: "760px",
-          }}
-        >
-          {/* Label */}
-
+        <div style={{ maxWidth: "760px" }}>
           <span
             style={{
               color: "#d4af37",
@@ -191,12 +163,10 @@ export default function Hero() {
             {slide.label}
           </span>
 
-          {/* H1 */}
-
           <h1
             style={{
-              fontSize: "52px",
-              lineHeight: "1.12",
+              fontSize: "clamp(32px, 4vw, 52px)",
+              lineHeight: 1.12,
               color: "#fff",
               marginTop: "20px",
               marginBottom: "22px",
@@ -206,8 +176,6 @@ export default function Hero() {
           >
             {slide.title}
           </h1>
-
-          {/* Description */}
 
           <p
             style={{
@@ -261,7 +229,7 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Trust Line */}
+          {/* Trust line */}
 
           <div
             style={{
@@ -281,7 +249,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Slide Indicators */}
+      {/* Slide indicators */}
 
       <div
         style={{
@@ -294,11 +262,12 @@ export default function Hero() {
           gap: "8px",
         }}
       >
-        {slides.map((_, index) => (
+        {slides.map((item, index) => (
           <button
-            key={index}
+            key={item.image + index}
             onClick={() => setCurrentSlide(index)}
-            aria-label={`Go to slide ${index + 1}`}
+            aria-label={`Go to slide ${index + 1}: ${item.title}`}
+            aria-current={index === currentSlide ? "true" : undefined}
             style={{
               width: index === currentSlide ? "30px" : "9px",
               height: "9px",
