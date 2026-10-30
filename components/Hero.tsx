@@ -108,11 +108,11 @@ export default function Hero() {
           src={slide.image}
           alt={slide.title}
           fill
- priority={currentSlide === 0}
-loading={currentSlide === 0 ? "eager" : "lazy"}
-fetchPriority={currentSlide === 0 ? "high" : "auto"}
+priority
+loading="eager"
+fetchPriority="high"
           sizes="100vw"
-          quality={currentSlide === 0 ? 65 : 70}
+         quality={currentSlide === 0 ? 65 : 70}
           style={{
             objectFit: "cover",
             objectPosition: "center center",
