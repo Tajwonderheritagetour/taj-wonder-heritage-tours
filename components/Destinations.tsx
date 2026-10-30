@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const destinations = [
@@ -93,15 +94,24 @@ export default function Destinations() {
                 boxShadow: "0 10px 30px rgba(0,0,0,.08)",
               }}
             >
-              <img
-                src={place.image}
-                alt={place.name}
+              <div
                 style={{
+                  position: "relative",
                   width: "100%",
                   height: "240px",
-                  objectFit: "cover",
                 }}
-              />
+              >
+                <Image
+                  src={place.image}
+                  alt={place.name}
+                  fill
+                  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 300px"
+                  quality={65}
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
 
               <div style={{ padding: "25px" }}>
                 <h3

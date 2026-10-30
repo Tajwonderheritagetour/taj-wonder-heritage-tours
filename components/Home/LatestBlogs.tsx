@@ -1,3 +1,5 @@
+
+import Image from "next/image";
 import Link from "next/link";
 
 const blogs = [
@@ -93,15 +95,22 @@ export default function LatestBlogs() {
                 boxShadow: "0 10px 30px rgba(0,0,0,.08)",
               }}
             >
-              <img
-                src={blog.image}
-                alt={blog.title}
+              <div
                 style={{
+                  position: "relative",
                   width: "100%",
                   aspectRatio: "16/9",
-                  objectFit: "cover",
                 }}
-              />
+              >
+                <Image
+                  src={blog.image}
+                  alt={blog.title}
+                  fill
+                  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 380px"
+                  quality={65}
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
 
               <div style={{ padding: "25px" }}>
                 <span

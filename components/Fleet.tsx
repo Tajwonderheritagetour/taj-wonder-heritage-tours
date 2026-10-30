@@ -1,3 +1,5 @@
+
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Fleet() {
@@ -120,15 +122,24 @@ export default function Fleet() {
                 boxShadow: "0 12px 30px rgba(0,0,0,.08)",
               }}
             >
-              <img
-                src={vehicle.image}
-                alt={vehicle.name}
+              <div
                 style={{
+                  position: "relative",
                   width: "100%",
                   height: "230px",
-                  objectFit: "cover",
                 }}
-              />
+              >
+                <Image
+                  src={vehicle.image}
+                  alt={vehicle.name}
+                  fill
+                  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                  quality={65}
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
 
               <div style={{ padding: "28px" }}>
                 <span
