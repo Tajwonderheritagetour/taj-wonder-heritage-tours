@@ -131,6 +131,7 @@ const tocLinks = [
   ["#best-season", "Best season to visit"],
   ["#sunrise-sunset", "Sunrise vs sunset"],
   ["#month-guide", "Month-by-month guide"],
+  ["#september-december", "September vs December: Which Month Is Best?"],
   ["#crowds", "Crowds, opening days and entry tips"],
   ["#photography", "Photography tips"],
   ["#planning", "How to plan your Agra visit"],
@@ -451,6 +452,95 @@ export default function BestTimeToVisitTajMahalPage() {
             Carry rain protection and leave time between activities.
           </p>
         </section>
+
+<section id="september-december" style={sectionStyle}>
+  <h2 style={{ ...headingStyle, fontSize: "32px" }}>
+    Best Time to Visit the Taj Mahal in September and December
+  </h2>
+
+  <h3 style={{ ...headingStyle, fontSize: "23px", marginTop: "28px" }}>
+    Visiting the Taj Mahal in September
+  </h3>
+
+  <p style={paragraphStyle}>
+    September falls towards the end of the monsoon season in Agra.
+    The weather can be humid, with occasional rain and cloudy skies.
+    The gardens around the Taj Mahal may look greener after rainfall,
+    making this month interesting for travellers who enjoy seasonal
+    scenery.
+  </p>
+
+  <p style={paragraphStyle}>
+    If you visit the Taj Mahal in September, check the local weather
+    forecast before your trip. Carry an umbrella or light raincoat,
+    wear comfortable footwear and allow extra time for possible
+    rain-related travel delays. Early morning visits can be pleasant,
+    although weather conditions vary.
+  </p>
+
+  <h3 style={{ ...headingStyle, fontSize: "23px", marginTop: "28px" }}>
+    Visiting the Taj Mahal in December
+  </h3>
+
+  <p style={paragraphStyle}>
+    December is a popular month for visiting Agra because daytime
+    temperatures are generally cooler than during summer. However,
+    early mornings can be cold, and winter fog sometimes reduces
+    visibility around the Taj Mahal.
+  </p>
+
+  <p style={paragraphStyle}>
+    If you plan a sunrise visit in December, remember that fog may
+    affect the view and photography conditions. Carry warm clothing
+    and allow some flexibility in your itinerary. Late morning visits
+    may offer better visibility on days when the fog clears.
+  </p>
+
+  <h3 style={{ ...headingStyle, fontSize: "23px", marginTop: "28px" }}>
+    September vs December: Which Month Should You Choose?
+  </h3>
+
+  <div style={{ overflowX: "auto", marginTop: "20px" }}>
+    <table style={tableStyle}>
+      <thead>
+        <tr style={{ background: "#08142d", color: "#fff" }}>
+          <th style={cellStyle}>What to consider</th>
+          <th style={cellStyle}>September</th>
+          <th style={cellStyle}>December</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style={cellStyle}>Weather</td>
+          <td style={cellStyle}>Humid with possible rain</td>
+          <td style={cellStyle}>Cool, especially in the morning</td>
+        </tr>
+        <tr style={{ background: "#f8f9fb" }}>
+          <td style={cellStyle}>Visibility</td>
+          <td style={cellStyle}>Clouds or rain may affect views</td>
+          <td style={cellStyle}>Fog may affect early views</td>
+        </tr>
+        <tr>
+          <td style={cellStyle}>What to carry</td>
+          <td style={cellStyle}>Umbrella and comfortable footwear</td>
+          <td style={cellStyle}>Warm clothing</td>
+        </tr>
+        <tr style={{ background: "#f8f9fb" }}>
+          <td style={cellStyle}>Planning advice</td>
+          <td style={cellStyle}>Allow flexibility for rain</td>
+          <td style={cellStyle}>Allow flexibility for winter fog</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style={paragraphStyle}>
+    Both months can be suitable for visiting the Taj Mahal. Your
+    choice depends on your preference for monsoon scenery or cooler
+    winter weather. Check the forecast shortly before travelling
+    and plan your visit accordingly.
+  </p>
+</section>
 
         <section id="crowds" style={sectionStyle}>
           <h2 style={{ ...headingStyle, fontSize: "32px" }}>
