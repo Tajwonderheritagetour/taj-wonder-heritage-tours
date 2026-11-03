@@ -1,3 +1,4 @@
+
 import { Tour } from "./types";
 
 export const sameDayTajMahal: Tour = {
@@ -11,10 +12,10 @@ export const sameDayTajMahal: Tour = {
   featured: true,
 
   seoTitle:
-    "Same Day Taj Mahal Tour from Delhi | Private Agra Trip",
+    "Same Day Taj Mahal Tour from Delhi | Private 12-Hour Trip",
 
   seoDescription:
-    "Explore the Taj Mahal and Agra Fort on a private same-day tour from Delhi. Includes AC transport, chauffeur, pickup and drop-off. Enquire about your Agra trip.",
+    "Plan a private same-day Taj Mahal tour from Delhi. Visit the Taj Mahal and Agra Fort with AC transport, chauffeur, pickup and drop-off. Tickets and guide extra.",
 
   canonical:
     "https://www.tajwonderheritagetours.com/tours/same-day-taj-mahal-tour",
