@@ -7,11 +7,10 @@ const canonicalUrl =
   "https://www.tajwonderheritagetours.com/blog/best-places-to-visit-in-agra";
 
 export const metadata: Metadata = {
-  title: "10 Best Places to Visit in Agra in 2026 | Top Attractions",
+  title: "10 Best Places to Visit in Agra | Top Attractions & Tips",
 
-  description:
-    "Discover the 10 best places to visit in Agra in 2026, including the Taj Mahal, Agra Fort, Mehtab Bagh, Baby Taj and Fatehpur Sikri.",
-
+description:
+  "Explore the 10 best places to visit in Agra, including the Taj Mahal, Agra Fort, Mehtab Bagh, Baby Taj and Fatehpur Sikri, with helpful sightseeing tips.",
   alternates: {
     canonical: canonicalUrl,
   },
@@ -141,7 +140,7 @@ export default function BestPlacesAgra() {
                 lineHeight: "1.15",
               }}
             >
-              10 Best Places to Visit in Agra (2026 Guide)
+              10 Best Places to Visit in Agra: Top Attractions & Travel Tips
             </h1>
 
             <p
@@ -409,6 +408,58 @@ export default function BestPlacesAgra() {
           </p>
 
           <hr style={{ margin: "60px 0" }} />
+
+{/* Agra Sightseeing Guide */}
+
+<section style={{ marginBottom: "50px" }}>
+  <h2>How Many Days Are Enough to Visit Agra?</h2>
+
+  <p>
+    One full day is enough to explore Agra&apos;s main attractions,
+    including the Taj Mahal and Agra Fort. If you have more time,
+    you can visit Mehtab Bagh, the Baby Taj and other historic
+    landmarks at a relaxed pace.
+  </p>
+
+  <h3>Suggested Agra Sightseeing Plans</h3>
+
+  <ul>
+    <li>
+      <strong>Half day:</strong> Visit the Taj Mahal and explore
+      its main areas.
+    </li>
+    <li>
+      <strong>One day:</strong> Visit the Taj Mahal, Agra Fort,
+      the Baby Taj and Mehtab Bagh.
+    </li>
+    <li>
+      <strong>Two days:</strong> Explore Agra&apos;s main monuments
+      and add Fatehpur Sikri, Akbar&apos;s Tomb or local markets.
+    </li>
+  </ul>
+
+  <h3>Best Way to Explore Agra</h3>
+
+  <p>
+    A private car with a local guide can make sightseeing more
+    comfortable, especially when visiting several monuments in
+    one day. Plan your route in advance and check monument opening
+    days and ticket information before travelling.
+  </p>
+
+  <p>
+    Travelling from Delhi? You can explore our{" "}
+    <Link
+      href="/tours/same-day-taj-mahal-tour"
+      style={{ color: "#b08d1e", fontWeight: 600 }}
+    >
+      private Same Day Taj Mahal Tour
+    </Link>{" "}
+    for a planned Agra sightseeing experience.
+  </p>
+</section>
+
+<hr style={{ margin: "60px 0" }} />
 
           {/* Best Time */}
 
