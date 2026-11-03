@@ -7,11 +7,10 @@ const canonicalUrl =
   "https://www.tajwonderheritagetours.com/blog/best-time-to-visit-taj-mahal";
 
 const title =
-  "Best Time to Visit the Taj Mahal: Months, Weather & Tips";
+  "Best Time to Visit Taj Mahal (2027): Best Months & Weather";
 
 const description =
-  "Find the best time to visit the Taj Mahal in Agra. Compare seasons, monthly weather, sunrise and sunset, crowds, photography tips and visitor advice.";
-
+  "Planning a Taj Mahal visit? Discover the best months to visit Agra, seasonal weather, sunrise and sunset views, photography tips and travel advice.";
 export const metadata: Metadata = {
   title,
   description,
