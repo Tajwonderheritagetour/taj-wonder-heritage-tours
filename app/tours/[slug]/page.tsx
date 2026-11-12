@@ -151,7 +151,8 @@ export default async function TourPage({
 
             {/* Inquiry Form */}
 
-            <TourInquiryForm />
+           <TourInquiryForm tourTitle={tour.title} />
+           
            <RelatedTours currentSlug={tour.slug} />
            
           </div>
