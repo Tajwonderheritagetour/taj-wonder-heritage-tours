@@ -66,7 +66,7 @@ export default function TourInquiryForm({
       }
 
       setSuccess(
-        "Thank you! Your tour inquiry has been sent successfully. Our team will contact you soon."
+        "Thank you! Your inquiry has been sent successfully. Our team will contact you soon."
       );
 
       setForm({
@@ -87,24 +87,100 @@ export default function TourInquiryForm({
     }
   }
 
+  const fieldStyle = {
+    width: "100%",
+    padding: "14px 16px",
+    border: "1px solid #dce1e9",
+    borderRadius: "12px",
+    backgroundColor: "#ffffff",
+    color: "#08142d",
+    fontSize: "15px",
+    outline: "none",
+    boxSizing: "border-box" as const,
+  };
+
+  const labelStyle = {
+    display: "block",
+    marginBottom: "8px",
+    color: "#08142d",
+    fontSize: "14px",
+    fontWeight: 600,
+  };
+
   return (
-    <section className="container mx-auto px-4 py-16" id="tour-inquiry">
+    <section
+      id="tour-inquiry"
+      style={{
+        width: "100%",
+        padding: "70px 16px",
+        backgroundColor: "#f5f6f9",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "850px",
+          margin: "0 auto",
+          padding: "36px 24px",
+          backgroundColor: "#ffffff",
+          border: "1px solid #e8eaf0",
+          borderTop: "5px solid #d4af37",
+          borderRadius: "22px",
+          boxShadow: "0 15px 45px rgba(8, 20, 45, 0.09)",
+          boxSizing: "border-box",
+        }}
+      >
+        <div style={{ textAlign: "center", marginBottom: "32px" }}>
+          <p
+            style={{
+              color: "#b58b18",
+              fontSize: "13px",
+              fontWeight: 700,
+              letterSpacing: "3px",
+              marginBottom: "12px",
+            }}
+          >
+            PLAN YOUR INDIA JOURNEY
+          </p>
 
-      <div className="mx-auto max-w-3xl rounded-3xl border bg-white p-6 shadow-xl sm:p-8">
+          <h2
+            style={{
+              color: "#08142d",
+              fontSize: "clamp(27px, 4vw, 36px)",
+              fontWeight: 800,
+              lineHeight: 1.25,
+              margin: "0 0 14px",
+            }}
+          >
+            Get Your Free Tour Quote
+          </h2>
 
-        <h2 className="text-center text-3xl font-bold text-gray-900">
-          Plan Your Private Tour
-        </h2>
-
-        <p className="mb-8 mt-2 text-center text-gray-600">
-          Interested in {tourTitle}? Tell us your travel plans and receive
-          a personalized quotation.
-        </p>
+          <p
+            style={{
+              color: "#647084",
+              fontSize: "15px",
+              lineHeight: 1.8,
+              maxWidth: "620px",
+              margin: "0 auto",
+            }}
+          >
+            Interested in {tourTitle}? Share your travel plans with us.
+            We will help you plan a private journey with a personalized quotation.
+          </p>
+        </div>
 
         {success && (
           <div
             role="status"
-            className="mb-6 rounded-xl bg-green-50 p-4 text-sm leading-6 text-green-800"
+            aria-live="polite"
+            style={{
+              padding: "16px",
+              marginBottom: "24px",
+              borderRadius: "12px",
+              backgroundColor: "#ecfdf3",
+              color: "#166534",
+              border: "1px solid #bbf7d0",
+              lineHeight: 1.6,
+            }}
           >
             {success}
           </div>
@@ -113,132 +189,206 @@ export default function TourInquiryForm({
         {error && (
           <div
             role="alert"
-            className="mb-6 rounded-xl bg-red-50 p-4 text-sm leading-6 text-red-800"
+            aria-live="assertive"
+            style={{
+              padding: "16px",
+              marginBottom: "24px",
+              borderRadius: "12px",
+              backgroundColor: "#fef2f2",
+              color: "#b91c1c",
+              border: "1px solid #fecaca",
+              lineHeight: 1.6,
+            }}
           >
             {error}
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form onSubmit={handleSubmit}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 260px), 1fr))",
+              gap: "20px",
+            }}
+          >
+            <div>
+              <label htmlFor="tour-name" style={labelStyle}>
+                Full Name *
+              </label>
+              <input
+                id="tour-name"
+                type="text"
+                name="name"
+                placeholder="Enter your full name"
+                required
+                maxLength={100}
+                autoComplete="name"
+                value={form.name}
+                onChange={handleChange}
+                style={fieldStyle}
+              />
+            </div>
 
-          <div>
-            <label htmlFor="tour-name" className="mb-2 block font-medium text-gray-800">
-              Full Name *
-            </label>
-            <input
-              id="tour-name"
-              type="text"
-              name="name"
-              placeholder="Enter your full name"
-              required
-              maxLength={100}
-              autoComplete="name"
-              value={form.name}
-              onChange={handleChange}
-              className="w-full rounded-xl border p-4 text-gray-900 outline-none focus:border-orange-500"
-            />
-          </div>
+            <div>
+              <label htmlFor="tour-email" style={labelStyle}>
+                Email Address *
+              </label>
+              <input
+                id="tour-email"
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+                maxLength={254}
+                autoComplete="email"
+                value={form.email}
+                onChange={handleChange}
+                style={fieldStyle}
+              />
+            </div>
 
-          <div>
-            <label htmlFor="tour-email" className="mb-2 block font-medium text-gray-800">
-              Email Address *
-            </label>
-            <input
-              id="tour-email"
-              type="email"
-              name="email"
-              placeholder="Enter your email address"
-              required
-              maxLength={254}
-              autoComplete="email"
-              value={form.email}
-              onChange={handleChange}
-              className="w-full rounded-xl border p-4 text-gray-900 outline-none focus:border-orange-500"
-            />
-          </div>
+            <div>
+              <label htmlFor="tour-phone" style={labelStyle}>
+                WhatsApp / Phone Number *
+              </label>
+              <input
+                id="tour-phone"
+                type="tel"
+                name="phone"
+                placeholder="Include your country code"
+                required
+                maxLength={30}
+                autoComplete="tel"
+                value={form.phone}
+                onChange={handleChange}
+                style={fieldStyle}
+              />
+            </div>
 
-          <div>
-            <label htmlFor="tour-phone" className="mb-2 block font-medium text-gray-800">
-              WhatsApp / Phone Number *
-            </label>
-            <input
-              id="tour-phone"
-              type="tel"
-              name="phone"
-              placeholder="Include your country code"
-              required
-              maxLength={30}
-              autoComplete="tel"
-              value={form.phone}
-              onChange={handleChange}
-              className="w-full rounded-xl border p-4 text-gray-900 outline-none focus:border-orange-500"
-            />
-          </div>
+            <div>
+              <label htmlFor="tour-date" style={labelStyle}>
+                Expected Travel Date
+              </label>
+              <input
+                id="tour-date"
+                type="date"
+                name="travelDate"
+                value={form.travelDate}
+                onChange={handleChange}
+                style={fieldStyle}
+              />
+            </div>
 
-          <div>
-            <label htmlFor="tour-date" className="mb-2 block font-medium text-gray-800">
-              Expected Travel Date
-            </label>
-            <input
-              id="tour-date"
-              type="date"
-              name="travelDate"
-              value={form.travelDate}
-              onChange={handleChange}
-              className="w-full rounded-xl border p-4 text-gray-900 outline-none focus:border-orange-500"
-            />
-          </div>
+            <div>
+              <label htmlFor="tour-travelers" style={labelStyle}>
+                Number of Travellers
+              </label>
+              <select
+                id="tour-travelers"
+                name="travelers"
+                value={form.travelers}
+                onChange={handleChange}
+                style={fieldStyle}
+              >
+                <option value="1">1 Traveller</option>
+                <option value="2">2 Travellers</option>
+                <option value="3">3 Travellers</option>
+                <option value="4">4 Travellers</option>
+                <option value="5">5 Travellers</option>
+                <option value="6+">6 or more Travellers</option>
+              </select>
+            </div>
 
-          <div>
-            <label htmlFor="tour-travelers" className="mb-2 block font-medium text-gray-800">
-              Number of Travellers
-            </label>
-            <select
-              id="tour-travelers"
-              name="travelers"
-              value={form.travelers}
-              onChange={handleChange}
-              className="w-full rounded-xl border bg-white p-4 text-gray-900 outline-none focus:border-orange-500"
-            >
-              <option value="1">1 Traveller</option>
-              <option value="2">2 Travellers</option>
-              <option value="3">3 Travellers</option>
-              <option value="4">4 Travellers</option>
-              <option value="5">5 Travellers</option>
-              <option value="6+">6 or more Travellers</option>
-            </select>
-          </div>
-
-          <div>
-            <label htmlFor="tour-message" className="mb-2 block font-medium text-gray-800">
-              Your Travel Requirements *
-            </label>
-            <textarea
-              id="tour-message"
-              name="message"
-              rows={5}
-              placeholder="Tell us about your travel plans, hotel preferences, pickup location or questions..."
-              required
-              maxLength={3000}
-              value={form.message}
-              onChange={handleChange}
-              className="w-full rounded-xl border p-4 text-gray-900 outline-none focus:border-orange-500"
-            />
+            <div style={{ gridColumn: "1 / -1" }}>
+              <label htmlFor="tour-message" style={labelStyle}>
+                Tell Us About Your Travel Plans *
+              </label>
+              <textarea
+                id="tour-message"
+                name="message"
+                rows={5}
+                placeholder="Tell us your travel plans, hotel preferences, pickup location or any special requirements..."
+                required
+                maxLength={3000}
+                value={form.message}
+                onChange={handleChange}
+                style={{
+                  ...fieldStyle,
+                  resize: "vertical",
+                  minHeight: "130px",
+                  fontFamily: "inherit",
+                }}
+              />
+            </div>
           </div>
 
           <button
             type="submit"
             disabled={loading}
-            className="w-full rounded-xl bg-orange-600 py-4 font-semibold text-white transition hover:bg-orange-700 disabled:cursor-not-allowed disabled:bg-gray-400"
+            style={{
+              width: "100%",
+              marginTop: "25px",
+              padding: "17px 20px",
+              border: "none",
+              borderRadius: "12px",
+              backgroundColor: loading ? "#aab0bc" : "#d4af37",
+              color: "#08142d",
+              fontSize: "16px",
+              fontWeight: 800,
+              cursor: loading ? "not-allowed" : "pointer",
+              transition: "background-color 0.2s ease",
+            }}
           >
-            {loading ? "Sending Your Inquiry..." : "Get My Free Tour Quote"}
+            {loading ? "Sending Your Inquiry..." : "Get My Free Tour Quote →"}
           </button>
 
-          <p className="text-center text-xs leading-5 text-gray-500">
-            Our team will use your details to respond to your travel inquiry.
+          <p
+            style={{
+              textAlign: "center",
+              color: "#788397",
+              fontSize: "12px",
+              lineHeight: 1.7,
+              marginTop: "15px",
+            }}
+          >
+            No obligation to book. Share your plans and receive a personalized response.
+          </p>
+        </form>
+
+        <div
+          style={{
+            marginTop: "25px",
+            paddingTop: "22px",
+            borderTop: "1px solid #e8eaf0",
+            textAlign: "center",
+          }}
+        >
+          <p style={{ color: "#647084", fontSize: "14px", marginBottom: "12px" }}>
+            Prefer to chat directly?
           </p>
 
-        </form>
+          <a
+            href={`https://wa.me/917830716981?text=${encodeURIComponent(
+              `Hello Taj Wonder Heritage Tours, I am interested in ${tourTitle}. Please share details and a quotation.`
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-block",
+              padding: "12px 22px",
+              borderRadius: "30px",
+              backgroundColor: "#eaf8ef",
+              color: "#168344",
+              border: "1px solid #c5ead1",
+              fontWeight: 700,
+              fontSize: "14px",
+              textDecoration: "none",
+            }}
+          >
+            Chat on WhatsApp
+          </a>
+        </div>
       </div>
     </section>
   );
