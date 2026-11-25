@@ -2,6 +2,7 @@
 "use client";
 
 import { useState, type ChangeEvent, type FormEvent } from "react";
+import { trackGAEvent } from "@/lib/analytics";
 
 const inputStyle = {
   width: "100%",
@@ -65,9 +66,16 @@ export default function ContactForm() {
       const data = await response.json();
 
       if (!response.ok || !data.success) {
-        setError(data.message || "Unable to send your inquiry. Please try again.");
+        setError(
+          data.message || "Unable to send your inquiry. Please try again."
+        );
         return;
       }
+
+      // Track a lead only after successful inquiry submission.
+      trackGAEvent("generate_lead", {
+        form_name: "contact_form",
+      });
 
       setSuccess(
         "Thank you for contacting Taj Wonder Heritage Tours! Your inquiry has been received. We will get back to you soon."
@@ -84,7 +92,9 @@ export default function ContactForm() {
       });
     } catch (err) {
       console.error("Contact form error:", err);
-      setError("Something went wrong. Please try again or contact us on WhatsApp.");
+      setError(
+        "Something went wrong. Please try again or contact us on WhatsApp."
+      );
     } finally {
       setLoading(false);
     }

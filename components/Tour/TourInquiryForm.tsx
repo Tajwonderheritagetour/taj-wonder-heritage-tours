@@ -1,7 +1,8 @@
-
+﻿
 "use client";
 
 import { useState, type ChangeEvent, type FormEvent } from "react";
+import { trackGAEvent } from "@/lib/analytics";
 
 interface TourInquiryFormProps {
   tourTitle?: string;
@@ -64,6 +65,11 @@ export default function TourInquiryForm({
         );
         return;
       }
+
+      // Track a lead only after successful inquiry submission.
+      trackGAEvent("generate_lead", {
+        form_name: "tour_inquiry_form",
+      });
 
       setSuccess(
         "Thank you! Your inquiry has been sent successfully. Our team will contact you soon."
